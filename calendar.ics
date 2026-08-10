@@ -1,0 +1,9 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Jannik Sinner Calendar//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Jannik Sinner Calendar
+X-WR-TIMEZONE:Europe/Rome
+X-WR-CALDESC:Partite ufficialmente confermate di Jannik Sinner
+END:VCALENDAR
