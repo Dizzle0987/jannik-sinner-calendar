@@ -2,7 +2,7 @@
 
 Calendario iCalendar indipendente dedicato esclusivamente alle partite ufficialmente confermate di Jannik Sinner.
 
-**Sito:** [dizzle0987.github.io/jannik-sinner-calendar](https://dizzle0987.github.io/jannik-sinner-calendar)  
+**Pagina tecnica:** [dizzle0987.github.io/jannik-sinner-calendar](https://dizzle0987.github.io/jannik-sinner-calendar)  
 **Calendario:** [calendar.ics](https://dizzle0987.github.io/jannik-sinner-calendar/calendar.ics)
 
 ## Cosa contiene
@@ -11,16 +11,14 @@ Calendario iCalendar indipendente dedicato esclusivamente alle partite ufficialm
 - partite ufficialmente confermate della stagione corrente;
 - torneo, categoria, turno, avversario, campo e superficie quando disponibili;
 - risultati delle partite concluse;
-- sezioni separate per emittenti austriache e italiane;
 - indicazione `Da confermare` quando un dato non è verificato;
-- interfaccia responsive in italiano;
 - compatibilità con Apple Calendar, Google Calendar e Outlook.
 
 Il calendario non include allenamenti, esibizioni, indiscrezioni, possibili turni futuri o partecipazioni non confermate.
 
 ## Sottoscrizione
 
-Dal sito premi **Sottoscrivi il calendario**. In alternativa usa direttamente:
+Dalla pagina tecnica premi **Sottoscrivi il calendario**. In alternativa usa direttamente:
 
 ```text
 https://dizzle0987.github.io/jannik-sinner-calendar/calendar.ics
@@ -40,17 +38,15 @@ Le partite attualmente presenti sono verificate tramite le pagine risultati e gl
 
 ## Struttura pubblica
 
-- `index.html` — sito GitHub Pages;
+- `index.html` — pagina tecnica minima che mantiene stabile il collegamento;
 - `calendar.ics` — unico calendario sottoscrivibile;
-- `sinner-logo.png` — logo fornito dall’utente, con sfondo reso trasparente;
-- `og.png` — anteprima social del progetto.
 
 ## Avvertenze
 
 Programmi, ordini di gioco e palinsesti possono cambiare anche con poco preavviso. Il progetto non inventa informazioni mancanti e non associa automaticamente un’emittente a una partita sulla sola base dei diritti generali di un torneo.
 
-Questo è un progetto indipendente e non ufficiale. Jannik Sinner, il suo nome, il logo e gli altri marchi appartengono ai rispettivi titolari. La presenza del logo nel repository non ne modifica la titolarità e non implica approvazione o affiliazione.
+Questo è un progetto indipendente e non ufficiale. Jannik Sinner, il suo nome e gli altri marchi appartengono ai rispettivi titolari. Il progetto non implica approvazione o affiliazione.
 
 ## Licenza
 
-Il codice originale del progetto è distribuito con licenza [MIT](LICENSE). La licenza MIT non concede diritti sui nomi, sui loghi, sulle fotografie o sugli altri marchi di terzi presenti nel progetto.
+Il codice originale del progetto è distribuito con licenza [MIT](LICENSE). La licenza MIT non concede diritti sui nomi o sugli altri marchi di terzi.
