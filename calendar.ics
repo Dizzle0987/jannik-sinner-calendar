@@ -1,11 +1,12 @@
 BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:-//Jannik Sinner Calendar//IT
+PRODID:-//Italian Tennis Calendar//IT
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
-X-WR-CALNAME:Jannik Sinner Calendar
+X-WR-CALNAME:Italian Tennis Calendar
 X-WR-TIMEZONE:Europe/Rome
-X-WR-CALDESC:Partite ufficialmente confermate di Jannik Sinner
+X-WR-CALDESC:Partite ufficialmente confermate dei principali tennisti
+ italiani ATP e WTA
 BEGIN:VEVENT
 UID:wimbledon-2026-r128-sinner-kecmanovic@sinner-calendar
 DTSTAMP:20260811T000000Z

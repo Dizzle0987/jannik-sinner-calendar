@@ -1,6 +1,6 @@
-# Jannik Sinner Calendar
+# Italian Tennis Calendar
 
-Calendario iCalendar indipendente dedicato esclusivamente alle partite ufficialmente confermate di Jannik Sinner.
+Calendario iCalendar indipendente dedicato alle partite ufficialmente confermate dei principali tennisti italiani, uomini e donne.
 
 **Pagina tecnica:** [dizzle0987.github.io/jannik-sinner-calendar](https://dizzle0987.github.io/jannik-sinner-calendar)  
 **Calendario:** [calendar.ics](https://dizzle0987.github.io/jannik-sinner-calendar/calendar.ics)
@@ -8,11 +8,13 @@ Calendario iCalendar indipendente dedicato esclusivamente alle partite ufficialm
 ## Cosa contiene
 
 - un unico URL iCalendar stabile;
-- partite ufficialmente confermate della stagione corrente;
+- partite ufficialmente confermate della stagione corrente per i principali giocatori italiani ATP e WTA;
 - torneo, categoria, turno, avversario, campo e superficie quando disponibili;
 - risultati delle partite concluse;
 - indicazione `Da confermare` quando un dato non è verificato;
 - compatibilità con Apple Calendar, Google Calendar e Outlook.
+
+La selezione iniziale comprende Jannik Sinner, Flavio Cobolli, Lorenzo Musetti, Luciano Darderi, Matteo Arnaldi, Matteo Berrettini, Jasmine Paolini, Elisabetta Cocciaretto e Lucia Bronzetti. La rosa può cambiare seguendo le classifiche ufficiali ATP e WTA.
 
 Il calendario non include allenamenti, esibizioni, indiscrezioni, possibili turni futuri o partecipazioni non confermate.
 
@@ -45,7 +47,7 @@ Le partite attualmente presenti sono verificate tramite le pagine risultati e gl
 
 Programmi, ordini di gioco e palinsesti possono cambiare anche con poco preavviso. Il progetto non inventa informazioni mancanti e non associa automaticamente un’emittente a una partita sulla sola base dei diritti generali di un torneo.
 
-Questo è un progetto indipendente e non ufficiale. Jannik Sinner, il suo nome e gli altri marchi appartengono ai rispettivi titolari. Il progetto non implica approvazione o affiliazione.
+Questo è un progetto indipendente e non ufficiale. I nomi degli atleti e gli altri marchi appartengono ai rispettivi titolari. Il progetto non implica approvazione o affiliazione.
 
 ## Licenza
 
