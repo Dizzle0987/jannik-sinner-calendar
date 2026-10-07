@@ -16,6 +16,8 @@ Calendario iCalendar indipendente dedicato alle partite ufficialmente confermate
 
 La selezione iniziale comprende Jannik Sinner, Flavio Cobolli, Lorenzo Musetti, Luciano Darderi, Matteo Arnaldi, Matteo Berrettini, Jasmine Paolini, Elisabetta Cocciaretto e Lucia Bronzetti. La rosa può cambiare seguendo le classifiche ufficiali ATP e WTA.
 
+Gli eventi vengono pubblicati quando torneo e partecipazione sono confermati. Avversario, campo e orario vengono aggiunti appena compaiono nei tabelloni e negli ordini di gioco ufficiali; quando l'orario non è fisso, il calendario usa un evento giornaliero e lo spiega nella descrizione.
+
 Il calendario non include allenamenti, esibizioni, indiscrezioni, possibili turni futuri o partecipazioni non confermate.
 
 ## Sottoscrizione
