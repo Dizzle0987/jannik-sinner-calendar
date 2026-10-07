@@ -105,51 +105,60 @@ URL:https://www.atptour.com/en/news/sinner-zverev-wimbledon-2026-final
 END:VEVENT
 BEGIN:VEVENT
 UID:shanghai-2026-r128-berrettini-kovacevic@italian-tennis-calendar
-DTSTAMP:20261007T074500Z
+DTSTAMP:20261007T083000Z
 DTSTART;VALUE=DATE:20261007
 DTEND;VALUE=DATE:20261008
 SUMMARY:Matteo Berrettini vs Aleksandar Kovacevic
 LOCATION:Stadium Court\, Shanghai\, Cina
 STATUS:CONFIRMED
-SEQUENCE:0
+SEQUENCE:1
 TRANSP:TRANSPARENT
 CATEGORIES:Shanghai Masters\,ATP Masters 1000\,ATP
 DESCRIPTION:Shanghai Masters 2026 - Primo turno\nConclusa: vittoria
  Berrettini 6-7(3) 6-1 6-4\nSuperficie: cemento\nFonte: FITP /
- SuperTennis
-URL:https://www.supertennis.tv/News/Atp/berrettini-dichiarazioni-kovacevic-primo-turno-shanghai
+ SuperTennis\nIn chiaro in Italia: nessuna diretta annunciata\nDiretta TV:
+ Sky Sport Tennis e Sky Sport Uno\nStreaming: Sky Go e NOW\nAustria:
+ nessuna diretta su ORF o ServusTV confermata
+URL:https://www.supertennis.tv/News/Atp/berrettini-dichiarazioni-kovacevic-
+ primo-turno-shanghai
 END:VEVENT
 BEGIN:VEVENT
 UID:shanghai-2026-r128-arnaldi-tomic@italian-tennis-calendar
-DTSTAMP:20261007T074500Z
+DTSTAMP:20261007T083000Z
 DTSTART;VALUE=DATE:20261008
 DTEND;VALUE=DATE:20261009
 SUMMARY:Matteo Arnaldi vs Bernard Tomic
 LOCATION:Show Court 3\, Shanghai\, Cina
 STATUS:CONFIRMED
-SEQUENCE:0
+SEQUENCE:1
 TRANSP:TRANSPARENT
 CATEGORIES:Shanghai Masters\,ATP Masters 1000\,ATP
 DESCRIPTION:Shanghai Masters 2026 - Primo turno\nSecondo incontro sullo
  Show Court 3. Il programma del campo inizia alle 12:00 locali (06:00 in
  Italia); l'orario esatto dipende dalla durata del match precedente.\n
- Superficie: cemento\nFonte: ordine di gioco ufficiale ATP
+ Superficie: cemento\nIn chiaro in Italia: nessuna diretta annunciata\n
+ Diretta TV: Sky Sport Tennis e Sky Sport Uno\nStreaming: Sky Go e NOW\n
+ Austria: nessuna diretta su ORF o ServusTV confermata\nFonte: ordine di
+ gioco ufficiale ATP
 URL:https://www.protennislive.com/posting/2026/5014/OP.pdf
 END:VEVENT
 BEGIN:VEVENT
 UID:wuhan-2026-paolini-entry@italian-tennis-calendar
-DTSTAMP:20261007T074500Z
+DTSTAMP:20261007T083000Z
 DTSTART;VALUE=DATE:20261012
 DTEND;VALUE=DATE:20261019
 SUMMARY:Torneo: Jasmine Paolini al Wuhan Open
 LOCATION:Optics Valley International Tennis Centre\, Wuhan\, Cina
 STATUS:TENTATIVE
-SEQUENCE:0
+SEQUENCE:1
 TRANSP:TRANSPARENT
 CATEGORIES:Wuhan Open\,WTA 1000\,WTA
 DESCRIPTION:Iscrizione ufficiale confermata in singolare e in doppio con
  Sara Errani. Il sorteggio è previsto il 10 ottobre; avversaria e orario
- saranno aggiunti appena pubblicati.\nSuperficie: cemento\nFonte: WTA
+ saranno aggiunti appena pubblicati.\nSuperficie: cemento\nIn chiaro in
+ Italia: SuperTennis HD (canale 64 del digitale terrestre)\nStreaming
+ gratuito: SuperTennis Plus e supertennis.tv\nAustria: nessuna diretta su
+ ORF o ServusTV confermata\nFonte: WTA / SuperTennis
 URL:https://www.wtatennis.com/tournaments/wuhan-open/player-list
 END:VEVENT
 END:VCALENDAR

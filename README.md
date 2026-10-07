@@ -18,6 +18,8 @@ La selezione iniziale comprende Jannik Sinner, Flavio Cobolli, Lorenzo Musetti, 
 
 Gli eventi vengono pubblicati quando torneo e partecipazione sono confermati. Avversario, campo e orario vengono aggiunti appena compaiono nei tabelloni e negli ordini di gioco ufficiali; quando l'orario non è fisso, il calendario usa un evento giornaliero e lo spiega nella descrizione.
 
+Per ogni appuntamento attuale viene indicata anche la disponibilità televisiva in Italia, dando evidenza all'eventuale trasmissione gratuita in chiaro. Il calendario controlla inoltre i palinsesti austriaci di ORF e ServusTV. Se non esiste una copertura gratuita confermata, lo dichiara esplicitamente e riporta le opzioni in abbonamento verificate.
+
 Il calendario non include allenamenti, esibizioni, indiscrezioni, possibili turni futuri o partecipazioni non confermate.
 
 ## Sottoscrizione
