@@ -258,9 +258,18 @@ function matchEntry(record) {
   return `<div class="match-entry"><span class="tournament">${record.tournament}</span><h3>${title}</h3><p>${details.join(" · ")}.</p><p class="watch">${tv}.</p></div>`;
 }
 
-function groupCard(label, records, className) {
+function groupCard(label, records, className, { completed = false } = {}) {
   const count = `${records.length} ${records.length === 1 ? "incontro" : "incontri"}`;
-  return `        <article class="match match-group ${className}"><span class="state">${label} · ${count}</span><div class="match-list">${records.map(matchEntry).join("")}</div></article>`;
+  if (!records.length) {
+    return `        <article class="match match-group ${className}"><span class="state">${label} · 0 incontri</span><p class="empty-state">Nessun incontro al momento.</p></article>`;
+  }
+  if (!completed || records.length <= 2) {
+    return `        <article class="match match-group ${className}"><span class="state">${label} · ${count}</span><div class="match-list">${records.map(matchEntry).join("")}</div></article>`;
+  }
+  const visible = records.slice(-2);
+  const older = records.slice(0, -2).reverse();
+  const moreLabel = `Vedi altri ${older.length} ${older.length === 1 ? "risultato" : "risultati"}`;
+  return `        <article class="match match-group ${className}"><span class="state">${label} · ${count}</span><div class="match-list">${visible.map(matchEntry).join("")}</div><details class="more-results"><summary>${moreLabel}</summary><div class="match-list older-results">${older.map(matchEntry).join("")}</div></details></article>`;
 }
 
 function updatePage(raw, records, now) {
@@ -268,13 +277,11 @@ function updatePage(raw, records, now) {
   const completed = records.filter(record => record.completed).sort((a, b) => a.start - b.start);
   const live = records.filter(record => record.inProgress).sort((a, b) => a.start - b.start);
   const upcoming = records.filter(record => !record.completed && !record.inProgress).sort((a, b) => a.start - b.start);
-  const groups = [];
-  if (completed.length) {
-    const width = upcoming.length ? "" : live.length ? " span-two" : " span-three";
-    groups.push(groupCard("Conclusi", completed, `done results${width}`));
-  }
-  if (live.length) groups.push(groupCard("In corso", live, `live${upcoming.length ? "" : " right"}`));
-  if (upcoming.length) groups.push(groupCard("In programma", upcoming, "upcoming"));
+  const groups = [
+    groupCard("Conclusi", completed, "done results", { completed: true }),
+    groupCard("In corso", live, "live"),
+    groupCard("In programma", upcoming, "upcoming"),
+  ];
   const content = groups.join("\n");
   let updated = raw.replace(/Aggiornato il [^<]+/i, `Aggiornato automaticamente il ${italianDate(now)}`);
   updated = updated.replace(/(?<=<!-- AUTO_SCHEDULE_START -->)[\s\S]*?(?=<!-- AUTO_SCHEDULE_END -->)/, `\n${content}\n        `);
