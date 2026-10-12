@@ -94,9 +94,11 @@ function recordFromCompetition(tournament, grouping, competition, league) {
   const opponent = competitors.find(item => item !== italian);
   const start = new Date(competition.date ?? competition.startDate);
   if (Number.isNaN(start.getTime())) return null;
-  const completed = competition.status?.type?.completed === true || competition.status?.type?.state === "post";
+  const state = competition.status?.type?.state ?? "pre";
+  const completed = competition.status?.type?.completed === true || state === "post";
+  const inProgress = state === "in";
   const winner = completed ? italian.winner === true : null;
-  const score = completed ? scoreFor(italian, opponent) : "";
+  const score = completed || inProgress ? scoreFor(italian, opponent) : "";
   const round = competition.round?.displayName ?? "Turno da confermare";
   const venueParts = [competition.venue?.fullName ?? tournament.venue?.displayName, competition.venue?.court].filter(Boolean);
   const tournamentUrl = (tournament.links ?? []).find(link => link.rel?.includes("summary"))?.href ?? "https://www.espn.com/tennis/scoreboard";
@@ -109,7 +111,10 @@ function recordFromCompetition(tournament, grouping, competition, league) {
     start,
     date: localDate(start),
     timeValid: competition.timeValid === true,
+    state,
     completed,
+    inProgress,
+    statusDetail: competition.status?.type?.detail ?? "",
     winner,
     score,
     italian: italian.athlete.displayName,
@@ -160,7 +165,9 @@ function buildEvent(record, { uid, stamp, sequence }) {
     `${record.tournament} - ${record.round}`,
     record.completed
       ? `Conclusa: ${record.winner ? "vittoria" : "sconfitta"} ${record.italian}${record.score ? ` ${record.score}` : ""}`
-      : record.timeValid ? "In programma" : "In programma; orario da confermare",
+      : record.inProgress
+        ? `In corso${record.score ? `: ${record.score}` : ""}`
+        : record.timeValid ? "In programma" : "In programma; orario da confermare",
     "Superficie e programma soggetti agli aggiornamenti del torneo",
     ...television(record.league),
     "Dati partita: ESPN; verificare le fonti ufficiali del torneo",
@@ -180,7 +187,7 @@ function buildEvent(record, { uid, stamp, sequence }) {
   lines.push(
     `SUMMARY:${escapeText(`${record.italian} vs ${record.opponent}`)}`,
     `LOCATION:${escapeText(record.location || record.tournament)}`,
-    `STATUS:${record.completed || record.timeValid ? "CONFIRMED" : "TENTATIVE"}`,
+    `STATUS:${record.completed || record.inProgress || record.timeValid ? "CONFIRMED" : "TENTATIVE"}`,
     `SEQUENCE:${sequence}`,
     "TRANSP:TRANSPARENT",
     `CATEGORIES:${escapeText(`${record.tournament},${record.league.toUpperCase()}`)}`,
@@ -240,23 +247,31 @@ function italianDateTime(record) {
 }
 
 function card(record) {
-  const state = record.completed ? "Conclusa" : "In programma";
+  const state = record.completed ? "Conclusa" : record.inProgress ? "In corso" : "In programma";
   const title = record.completed
     ? `${record.italian} ${record.winner ? "batte" : "perde con"} ${record.opponent}`
     : `${record.italian} vs ${record.opponent}`;
   const details = [record.round, italianDateTime(record)];
-  if (record.completed && record.score) details.push(record.score);
-  if (!record.completed && !record.timeValid) details.push("orario da confermare");
+  if ((record.completed || record.inProgress) && record.score) details.push(record.score);
+  if (record.inProgress && record.statusDetail) details.push(record.statusDetail);
+  if (!record.completed && !record.inProgress && !record.timeValid) details.push("orario da confermare");
   const tv = television(record.league).join(". ");
-  return `        <article class="match${record.completed ? " done" : ""}"><span class="state">${state} · ${record.tournament}</span><h3>${title}</h3><p>${details.join(" · ")}.</p><p class="watch">${tv}.</p></article>`;
+  const className = record.completed ? " done" : record.inProgress ? " live" : "";
+  return `        <article class="match${className}"><span class="state">${state} · ${record.tournament}</span><h3>${title}</h3><p>${details.join(" · ")}.</p><p class="watch">${tv}.</p></article>`;
 }
 
 function updatePage(raw, records, now) {
   if (!records.length) return raw;
-  const upcoming = records.filter(record => !record.completed).sort((a, b) => a.start - b.start);
-  const completed = records.filter(record => record.completed).sort((a, b) => b.start - a.start);
-  const selected = [...upcoming, ...completed].slice(0, 3);
-  const content = selected.map(card).join("\n");
+  const completed = records.filter(record => record.completed).sort((a, b) => a.start - b.start);
+  const live = records.filter(record => record.inProgress).sort((a, b) => a.start - b.start);
+  const upcoming = records.filter(record => !record.completed && !record.inProgress).sort((a, b) => a.start - b.start);
+  const selected = [completed[0], live[0], upcoming[0]];
+  const alreadySelected = new Set(selected.filter(Boolean).map(record => record.id));
+  const remaining = [...completed, ...live, ...upcoming].filter(record => !alreadySelected.has(record.id));
+  for (let index = 0; index < selected.length; index += 1) {
+    if (!selected[index]) selected[index] = remaining.shift();
+  }
+  const content = selected.filter(Boolean).map(card).join("\n");
   let updated = raw.replace(/Aggiornato il [^<]+/i, `Aggiornato automaticamente il ${italianDate(now)}`);
   updated = updated.replace(/(?<=<!-- AUTO_SCHEDULE_START -->)[\s\S]*?(?=<!-- AUTO_SCHEDULE_END -->)/, `\n${content}\n        `);
   return updated;
