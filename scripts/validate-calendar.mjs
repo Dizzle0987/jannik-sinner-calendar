@@ -16,6 +16,13 @@ for (const event of events) {
   const start = parseIcsDate((event.match(/^DTSTART(?:;[^:]*)?:(.+)$/m) ?? [])[1]);
   const eventSeason = Number((event.match(/^X-TENNIS-SEASON:(\d{4})$/m) ?? [])[1]) || (start && fallbackSeason(start));
   if (!eventSeason || eventSeason < currentSeason) throw new Error(`Evento della stagione ${eventSeason ?? "sconosciuta"} ancora presente nel calendario ${currentSeason}`);
+  const timedUpcoming = /^DTSTART:\d{8}T\d{6}Z$/m.test(event) && /^DESCRIPTION:.*\\nIn programma/m.test(event);
+  if (timedUpcoming && !/^BEGIN:VALARM$/m.test(event)) throw new Error("Promemoria mancante in un incontro futuro con orario confermato");
+  if (/^BEGIN:VALARM$/m.test(event)) {
+    for (const alarmLine of ["ACTION:DISPLAY", "TRIGGER:-PT2H", "END:VALARM"]) {
+      if (!event.includes(alarmLine)) throw new Error(`Promemoria non valido: manca ${alarmLine}`);
+    }
+  }
 }
 for (const line of raw.split(/\r?\n/)) {
   if (Buffer.byteLength(line, "utf8") > 75) throw new Error(`Riga iCalendar oltre 75 byte: ${line}`);

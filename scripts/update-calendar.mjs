@@ -203,8 +203,17 @@ function buildEvent(record, { uid, stamp, sequence }) {
     `X-TENNIS-SEASON:${record.season}`,
     `DESCRIPTION:${escapeText(description)}`,
     `URL:${record.url}`,
-    "END:VEVENT",
   );
+  if (!record.completed && !record.inProgress && record.timeValid) {
+    lines.push(
+      "BEGIN:VALARM",
+      "ACTION:DISPLAY",
+      "TRIGGER:-PT2H",
+      `DESCRIPTION:${escapeText(`Tra due ore: ${record.italian} vs ${record.opponent}`)}`,
+      "END:VALARM",
+    );
+  }
+  lines.push("END:VEVENT");
   return lines.map(foldLine).join("\n");
 }
 
