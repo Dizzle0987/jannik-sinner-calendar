@@ -44,6 +44,8 @@ Sul sito sono sempre presenti tre riquadri, da sinistra a destra: incontri concl
 
 L'automazione evita avversari indicati come `TBD`, valida il file `.ics` prima di ogni pubblicazione e si arresta in caso di errore della fonte invece di cancellare eventi esistenti.
 
+Il calendario conserva soltanto la stagione corrente e quelle future: al primo aggiornamento del nuovo anno elimina automaticamente tutti gli eventi della stagione precedente. Anche il riquadro dei risultati conclusi riparte senza incontri della vecchia stagione.
+
 ## Fonti e criteri
 
 Le informazioni pubblicate devono provenire prioritariamente da ATP Tour, siti ufficiali dei tornei, ordini di gioco e tabelloni ufficiali. Una partita viene inserita soltanto quando partecipazione, turno e avversario risultano confermati. Orario, campo e copertura televisiva restano `Da confermare` finché non sono supportati da una fonte ufficiale specifica.
