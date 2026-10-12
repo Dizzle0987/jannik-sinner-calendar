@@ -36,6 +36,12 @@ https://dizzle0987.github.io/jannik-sinner-calendar/calendar.ics
 
 La sottoscrizione è preferibile al download: permette all’app calendario di ricevere gli aggiornamenti mantenendo lo stesso indirizzo.
 
+## Aggiornamento automatico
+
+Il repository esegue autonomamente un controllo ogni due ore tramite GitHub Actions. Lo script interroga i tabelloni pubblici ATP e WTA disponibili sul servizio risultati ESPN, seleziona soltanto gli incontri dei giocatori seguiti, aggiorna orari e risultati mantenendo stabili gli UID iCalendar e pubblica una nuova versione solo quando i dati cambiano. Non sono richieste chiavi API, pianificazioni Codex o interventi manuali.
+
+L'automazione evita avversari indicati come `TBD`, valida il file `.ics` prima di ogni pubblicazione e si arresta in caso di errore della fonte invece di cancellare eventi esistenti.
+
 ## Fonti e criteri
 
 Le informazioni pubblicate devono provenire prioritariamente da ATP Tour, siti ufficiali dei tornei, ordini di gioco e tabelloni ufficiali. Una partita viene inserita soltanto quando partecipazione, turno e avversario risultano confermati. Orario, campo e copertura televisiva restano `Da confermare` finché non sono supportati da una fonte ufficiale specifica.

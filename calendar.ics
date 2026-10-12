@@ -104,153 +104,231 @@ DESCRIPTION:Wimbledon 2026 - Finale\nConclusa: vittoria Sinner 6-7(7)
 URL:https://www.atptour.com/en/news/sinner-zverev-wimbledon-2026-final
 END:VEVENT
 BEGIN:VEVENT
-UID:shanghai-2026-r128-berrettini-kovacevic@italian-tennis-calendar
-DTSTAMP:20261007T083000Z
-DTSTART;VALUE=DATE:20261007
-DTEND;VALUE=DATE:20261008
-SUMMARY:Matteo Berrettini vs Aleksandar Kovacevic
-LOCATION:Stadium Court\, Shanghai\, Cina
+UID:espn-183441@italian-tennis-calendar
+DTSTAMP:20261012T181601Z
+DTSTART:20261001T061500Z
+DTEND:20261001T091500Z
+SUMMARY:Flavio Cobolli vs Roman Safiullin
+LOCATION:Beijing\, China PR\, Capital Group Diamond
 STATUS:CONFIRMED
 SEQUENCE:1
 TRANSP:TRANSPARENT
-CATEGORIES:Shanghai Masters\,ATP Masters 1000\,ATP
-DESCRIPTION:Shanghai Masters 2026 - Primo turno\nConclusa: vittoria
- Berrettini 6-7(3) 6-1 6-4\nSuperficie: cemento\nFonte: FITP /
- SuperTennis\nIn chiaro in Italia: nessuna diretta annunciata\nDiretta TV:
- Sky Sport Tennis e Sky Sport Uno\nStreaming: Sky Go e NOW\nAustria:
- nessuna diretta su ORF o ServusTV confermata
-URL:https://www.supertennis.tv/News/Atp/berrettini-dichiarazioni-kovacevic-
- primo-turno-shanghai
+CATEGORIES:China Open\,ATP
+DESCRIPTION:China Open - Round 1\nConclusa: sconfitta Flavio Cobolli 3-6 2-
+ 6\nSuperficie e programma soggetti agli aggiornamenti del torneo\nTV Itali
+ a: controllare Sky Sport e NOW\nTV Austria: controllare ORF\, ServusTV e g
+ uide TV aggregate\nDati partita: ESPN\; verificare le fonti ufficiali del
+  torneo
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/959-2026/co
+ mpetitionType/1
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-184299@italian-tennis-calendar
+DTSTAMP:20261012T181526Z
+DTSTART:20261002T055500Z
+DTEND:20261002T085500Z
+SUMMARY:Jasmine Paolini vs Daria Snigur
+LOCATION:Beijing\, China PR\, HSBC Moon
+STATUS:CONFIRMED
+SEQUENCE:0
+TRANSP:TRANSPARENT
+CATEGORIES:China Open\,WTA
+DESCRIPTION:China Open - Round 2\nConclusa: sconfitta Jasmine Paolini 6-3 6
+ -7(5) 2-6\nSuperficie e programma soggetti agli aggiornamenti del torneo\n
+ TV Italia: controllare SuperTennis HD e SuperTennis Plus\nTV Austria: cont
+ rollare ORF\, ServusTV e guide TV aggregate\nDati partita: ESPN\; verifica
+ re le fonti ufficiali del torneo
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/959-2026/co
+ mpetitionType/1
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-185235@italian-tennis-calendar
+DTSTAMP:20261012T181601Z
+DTSTART:20261005T111000Z
+DTEND:20261005T141000Z
+SUMMARY:Lucia Bronzetti vs Fiona Crawley
+LOCATION:Samsun\, Türkiye\, Court 2 - Reha Ergor
+STATUS:CONFIRMED
+SEQUENCE:1
+TRANSP:TRANSPARENT
+CATEGORIES:Samsun Open\,WTA
+DESCRIPTION:Samsun Open - Round 1\nConclusa: sconfitta Lucia Bronzetti 2-6
+  4-6\nSuperficie e programma soggetti agli aggiornamenti del torneo\nTV It
+ alia: controllare SuperTennis HD e SuperTennis Plus\nTV Austria: controlla
+ re ORF\, ServusTV e guide TV aggregate\nDati partita: ESPN\; verificare le
+  fonti ufficiali del torneo
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/1036-2026/c
+ ompetitionType/2
+END:VEVENT
+BEGIN:VEVENT
+UID:shanghai-2026-r128-berrettini-kovacevic@italian-tennis-calendar
+DTSTAMP:20261012T181526Z
+DTSTART:20261007T041000Z
+DTEND:20261007T071000Z
+SUMMARY:Matteo Berrettini vs Aleksandar Kovacevic
+LOCATION:Shanghai\, China PR\, Stadium Court
+STATUS:CONFIRMED
+SEQUENCE:2
+TRANSP:TRANSPARENT
+CATEGORIES:Rolex Shanghai Masters\,ATP
+DESCRIPTION:Rolex Shanghai Masters - Round 1\nConclusa: vittoria Matteo Ber
+ rettini 6-7(3) 6-1 6-4\nSuperficie e programma soggetti agli aggiornamenti
+  del torneo\nTV Italia: controllare Sky Sport e NOW\nTV Austria: controlla
+ re ORF\, ServusTV e guide TV aggregate\nDati partita: ESPN\; verificare le
+  fonti ufficiali del torneo
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/315-2026/co
+ mpetitionType/1
 END:VEVENT
 BEGIN:VEVENT
 UID:shanghai-2026-r128-arnaldi-tomic@italian-tennis-calendar
-DTSTAMP:20261012T123500Z
-DTSTART;VALUE=DATE:20261008
-DTEND;VALUE=DATE:20261009
+DTSTAMP:20261012T181526Z
+DTSTART:20261008T060000Z
+DTEND:20261008T090000Z
 SUMMARY:Matteo Arnaldi vs Bernard Tomic
-LOCATION:Show Court 3\, Shanghai\, Cina
+LOCATION:Shanghai\, China PR\, Show Court 3
 STATUS:CONFIRMED
-SEQUENCE:2
+SEQUENCE:3
 TRANSP:TRANSPARENT
-CATEGORIES:Shanghai Masters\,ATP Masters 1000\,ATP
-DESCRIPTION:Shanghai Masters 2026 - Primo turno\nConclusa: vittoria
- Arnaldi 6-3 6-1\nSuperficie: cemento\nIn chiaro in Italia: nessuna
- diretta annunciata\nDiretta TV: Sky Sport Tennis e Sky Sport Uno\n
- Streaming: Sky Go e NOW\nAustria: nessuna diretta su ORF o ServusTV
- confermata\nFonte: ATP Tour / RaiNews
-URL:https://www.rainews.it/maratona/2026/10/tennis-atp-shanghai-
- masters-1000-news-aggiornamenti-video-cronaca-82ff4e28-70ea-4a98-
- 9f04-6f6982734ccf.html
-END:VEVENT
-BEGIN:VEVENT
-UID:shanghai-2026-r64-berrettini-nakashima@italian-tennis-calendar
-DTSTAMP:20261012T123500Z
-DTSTART;VALUE=DATE:20261009
-DTEND;VALUE=DATE:20261010
-SUMMARY:Matteo Berrettini vs Brandon Nakashima
-LOCATION:Show Court 3\, Shanghai\, Cina
-STATUS:CONFIRMED
-SEQUENCE:0
-TRANSP:TRANSPARENT
-CATEGORIES:Shanghai Masters\,ATP Masters 1000\,ATP
-DESCRIPTION:Shanghai Masters 2026 - Secondo turno\nConclusa: sconfitta
- Berrettini 6-7(4) 5-7\nSuperficie: cemento\nDiretta TV Italia: Sky
- Sport\nStreaming Italia: NOW\nAustria: nessuna diretta su ORF o
- ServusTV confermata\nFonte: Sky Sport
-URL:https://sport.sky.it/tennis/2026/10/09/berrettini-nakashima-atp-
- shanghai-risultato
+CATEGORIES:Rolex Shanghai Masters\,ATP
+DESCRIPTION:Rolex Shanghai Masters - Round 1\nConclusa: vittoria Matteo Arn
+ aldi 6-3 6-1\nSuperficie e programma soggetti agli aggiornamenti del torne
+ o\nTV Italia: controllare Sky Sport e NOW\nTV Austria: controllare ORF\, S
+ ervusTV e guide TV aggregate\nDati partita: ESPN\; verificare le fonti uff
+ iciali del torneo
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/315-2026/co
+ mpetitionType/1
 END:VEVENT
 BEGIN:VEVENT
 UID:shanghai-2026-r64-cobolli-mannarino@italian-tennis-calendar
-DTSTAMP:20261012T123500Z
-DTSTART;VALUE=DATE:20261009
-DTEND;VALUE=DATE:20261010
+DTSTAMP:20261012T181601Z
+DTSTART:20261009T041000Z
+DTEND:20261009T071000Z
 SUMMARY:Flavio Cobolli vs Adrian Mannarino
-LOCATION:Shanghai\, Cina
-STATUS:CONFIRMED
-SEQUENCE:0
-TRANSP:TRANSPARENT
-CATEGORIES:Shanghai Masters\,ATP Masters 1000\,ATP
-DESCRIPTION:Shanghai Masters 2026 - Secondo turno\nConclusa: sconfitta
- Cobolli 1-6 6-4 3-6\nSuperficie: cemento\nDiretta TV Italia: Sky
- Sport\nStreaming Italia: NOW\nAustria: nessuna diretta su ORF o
- ServusTV confermata\nFonte: RaiNews
-URL:https://www.rainews.it/maratona/2026/10/tennis-atp-shanghai-
- masters-1000-news-aggiornamenti-video-cronaca-82ff4e28-70ea-4a98-
- 9f04-6f6982734ccf.html
-END:VEVENT
-BEGIN:VEVENT
-UID:shanghai-2026-r64-musetti-zhou@italian-tennis-calendar
-DTSTAMP:20261012T123500Z
-DTSTART;VALUE=DATE:20261009
-DTEND;VALUE=DATE:20261010
-SUMMARY:Lorenzo Musetti vs Yi Zhou
-LOCATION:Shanghai\, Cina
-STATUS:CONFIRMED
-SEQUENCE:0
-TRANSP:TRANSPARENT
-CATEGORIES:Shanghai Masters\,ATP Masters 1000\,ATP
-DESCRIPTION:Shanghai Masters 2026 - Secondo turno\nConclusa: sconfitta
- Musetti 6-7(7) 6-3 6-7(1)\nSuperficie: cemento\nDiretta TV Italia:
- Sky Sport\nStreaming Italia: NOW\nAustria: nessuna diretta su ORF o
- ServusTV confermata\nFonte: RaiNews
-URL:https://www.rainews.it/maratona/2026/10/tennis-atp-shanghai-
- masters-1000-news-aggiornamenti-video-cronaca-82ff4e28-70ea-4a98-
- 9f04-6f6982734ccf.html
-END:VEVENT
-BEGIN:VEVENT
-UID:shanghai-2026-r64-arnaldi-fritz@italian-tennis-calendar
-DTSTAMP:20261012T123500Z
-DTSTART;VALUE=DATE:20261010
-DTEND;VALUE=DATE:20261011
-SUMMARY:Matteo Arnaldi vs Taylor Fritz
-LOCATION:Shanghai\, Cina
-STATUS:CONFIRMED
-SEQUENCE:0
-TRANSP:TRANSPARENT
-CATEGORIES:Shanghai Masters\,ATP Masters 1000\,ATP
-DESCRIPTION:Shanghai Masters 2026 - Secondo turno\nConclusa: sconfitta
- Arnaldi 5-7 4-6\nSuperficie: cemento\nDiretta TV Italia: Sky Sport\n
- Streaming Italia: NOW\nAustria: nessuna diretta su ORF o ServusTV
- confermata\nFonte: RaiNews
-URL:https://www.rainews.it/maratona/2026/10/tennis-atp-shanghai-
- masters-1000-news-aggiornamenti-video-cronaca-82ff4e28-70ea-4a98-
- 9f04-6f6982734ccf.html
-END:VEVENT
-BEGIN:VEVENT
-UID:shanghai-2026-r64-darderi-tsitsipas@italian-tennis-calendar
-DTSTAMP:20261012T123500Z
-DTSTART;VALUE=DATE:20261010
-DTEND;VALUE=DATE:20261011
-SUMMARY:Luciano Darderi vs Stefanos Tsitsipas
-LOCATION:Shanghai\, Cina
-STATUS:CONFIRMED
-SEQUENCE:0
-TRANSP:TRANSPARENT
-CATEGORIES:Shanghai Masters\,ATP Masters 1000\,ATP
-DESCRIPTION:Shanghai Masters 2026 - Secondo turno\nConclusa: sconfitta
- Darderi 3-6 4-6\nSuperficie: cemento\nDiretta TV Italia: Sky Sport\n
- Streaming Italia: NOW\nAustria: nessuna diretta su ORF o ServusTV
- confermata\nFonte: Sky Sport
-URL:https://sport.sky.it/tennis/2026/10/10/darderi-tsitsipas-atp-shanghai-
- risultato
-END:VEVENT
-BEGIN:VEVENT
-UID:wuhan-2026-paolini-entry@italian-tennis-calendar
-DTSTAMP:20261012T123500Z
-DTSTART;VALUE=DATE:20261012
-DTEND;VALUE=DATE:20261013
-SUMMARY:Jasmine Paolini vs Sara Bejlek
-LOCATION:Optics Valley International Tennis Centre\, Wuhan\, Cina
+LOCATION:Shanghai\, China PR\, Grandstand 2
 STATUS:CONFIRMED
 SEQUENCE:2
 TRANSP:TRANSPARENT
-CATEGORIES:Wuhan Open\,WTA 1000\,WTA
-DESCRIPTION:Wuhan Open 2026 - Primo turno\nConclusa: vittoria Paolini
- 6-3 6-4\nSuperficie: cemento\nIn chiaro in Italia: SuperTennis HD
- (canale 64 del digitale terrestre)\nStreaming gratuito: SuperTennis Plus
- e supertennis.tv\nAustria: nessuna diretta su ORF o ServusTV confermata
- \nFonte: WTA / SuperTennis
-URL:https://www.supertennis.tv/News/Wta/Paolini-parte-bene-a-Wuhan
+CATEGORIES:Rolex Shanghai Masters\,ATP
+DESCRIPTION:Rolex Shanghai Masters - Round 2\nConclusa: sconfitta Flavio Co
+ bolli 1-6 6-4 3-6\nSuperficie e programma soggetti agli aggiornamenti del
+  torneo\nTV Italia: controllare Sky Sport e NOW\nTV Austria: controllare O
+ RF\, ServusTV e guide TV aggregate\nDati partita: ESPN\; verificare le fon
+ ti ufficiali del torneo
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/315-2026/co
+ mpetitionType/1
+END:VEVENT
+BEGIN:VEVENT
+UID:shanghai-2026-r64-berrettini-nakashima@italian-tennis-calendar
+DTSTAMP:20261012T181601Z
+DTSTART:20261009T055000Z
+DTEND:20261009T085000Z
+SUMMARY:Matteo Berrettini vs Brandon Nakashima
+LOCATION:Shanghai\, China PR\, Show Court 3
+STATUS:CONFIRMED
+SEQUENCE:2
+TRANSP:TRANSPARENT
+CATEGORIES:Rolex Shanghai Masters\,ATP
+DESCRIPTION:Rolex Shanghai Masters - Round 2\nConclusa: sconfitta Matteo Be
+ rrettini 6-7(4) 5-7\nSuperficie e programma soggetti agli aggiornamenti de
+ l torneo\nTV Italia: controllare Sky Sport e NOW\nTV Austria: controllare
+  ORF\, ServusTV e guide TV aggregate\nDati partita: ESPN\; verificare le f
+ onti ufficiali del torneo
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/315-2026/co
+ mpetitionType/1
+END:VEVENT
+BEGIN:VEVENT
+UID:shanghai-2026-r64-musetti-zhou@italian-tennis-calendar
+DTSTAMP:20261012T181601Z
+DTSTART:20261009T115500Z
+DTEND:20261009T145500Z
+SUMMARY:Lorenzo Musetti vs Zhou Yi
+LOCATION:Shanghai\, China PR\, Stadium Court
+STATUS:CONFIRMED
+SEQUENCE:1
+TRANSP:TRANSPARENT
+CATEGORIES:Rolex Shanghai Masters\,ATP
+DESCRIPTION:Rolex Shanghai Masters - Round 2\nConclusa: sconfitta Lorenzo M
+ usetti 6-7(7) 6-3 6-7(1)\nSuperficie e programma soggetti agli aggiornamen
+ ti del torneo\nTV Italia: controllare Sky Sport e NOW\nTV Austria: control
+ lare ORF\, ServusTV e guide TV aggregate\nDati partita: ESPN\; verificare
+  le fonti ufficiali del torneo
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/315-2026/co
+ mpetitionType/1
+END:VEVENT
+BEGIN:VEVENT
+UID:shanghai-2026-r64-arnaldi-fritz@italian-tennis-calendar
+DTSTAMP:20261012T181601Z
+DTSTART:20261010T062500Z
+DTEND:20261010T092500Z
+SUMMARY:Matteo Arnaldi vs Taylor Fritz
+LOCATION:Shanghai\, China PR\, Grandstand 2
+STATUS:CONFIRMED
+SEQUENCE:2
+TRANSP:TRANSPARENT
+CATEGORIES:Rolex Shanghai Masters\,ATP
+DESCRIPTION:Rolex Shanghai Masters - Round 2\nConclusa: sconfitta Matteo Ar
+ naldi 5-7 4-6\nSuperficie e programma soggetti agli aggiornamenti del torn
+ eo\nTV Italia: controllare Sky Sport e NOW\nTV Austria: controllare ORF\,
+  ServusTV e guide TV aggregate\nDati partita: ESPN\; verificare le fonti u
+ fficiali del torneo
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/315-2026/co
+ mpetitionType/1
+END:VEVENT
+BEGIN:VEVENT
+UID:shanghai-2026-r64-darderi-tsitsipas@italian-tennis-calendar
+DTSTAMP:20261012T181526Z
+DTSTART:20261010T102000Z
+DTEND:20261010T132000Z
+SUMMARY:Luciano Darderi vs Stefanos Tsitsipas
+LOCATION:Shanghai\, China PR\, Grandstand 2
+STATUS:CONFIRMED
+SEQUENCE:1
+TRANSP:TRANSPARENT
+CATEGORIES:Rolex Shanghai Masters\,ATP
+DESCRIPTION:Rolex Shanghai Masters - Round 2\nConclusa: sconfitta Luciano D
+ arderi 3-6 4-6\nSuperficie e programma soggetti agli aggiornamenti del tor
+ neo\nTV Italia: controllare Sky Sport e NOW\nTV Austria: controllare ORF\,
+  ServusTV e guide TV aggregate\nDati partita: ESPN\; verificare le fonti u
+ fficiali del torneo
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/315-2026/co
+ mpetitionType/1
+END:VEVENT
+BEGIN:VEVENT
+UID:wuhan-2026-paolini-entry@italian-tennis-calendar
+DTSTAMP:20261012T181526Z
+DTSTART:20261012T061000Z
+DTEND:20261012T091000Z
+SUMMARY:Jasmine Paolini vs Sara Bejlek
+LOCATION:Wuhan\, China PR\, Court 1
+STATUS:CONFIRMED
+SEQUENCE:3
+TRANSP:TRANSPARENT
+CATEGORIES:Dongfeng Voyah Wuhan Open\,WTA
+DESCRIPTION:Dongfeng Voyah Wuhan Open - Round 1\nConclusa: vittoria Jasmine
+  Paolini 6-3 6-4\nSuperficie e programma soggetti agli aggiornamenti del t
+ orneo\nTV Italia: controllare SuperTennis HD e SuperTennis Plus\nTV Austri
+ a: controllare ORF\, ServusTV e guide TV aggregate\nDati partita: ESPN\; v
+ erificare le fonti ufficiali del torneo
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/381-2026/co
+ mpetitionType/2
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-185454@italian-tennis-calendar
+DTSTAMP:20261012T181526Z
+DTSTART:20261012T174500Z
+DTEND:20261012T204500Z
+SUMMARY:Lucia Bronzetti vs Mona Barthel
+LOCATION:Rovereto\, Italy\, Centre Court
+STATUS:CONFIRMED
+SEQUENCE:0
+TRANSP:TRANSPARENT
+CATEGORIES:RoveretOpen Città della Pace\,WTA
+DESCRIPTION:RoveretOpen Città della Pace - Round 1\nIn programma\nSuperfic
+ ie e programma soggetti agli aggiornamenti del torneo\nTV Italia: controll
+ are SuperTennis HD e SuperTennis Plus\nTV Austria: controllare ORF\, Servu
+ sTV e guide TV aggregate\nDati partita: ESPN\; verificare le fonti ufficia
+ li del torneo
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/1025-2026/c
+ ompetitionType/2
 END:VEVENT
 END:VCALENDAR
