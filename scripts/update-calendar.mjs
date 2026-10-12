@@ -1,9 +1,9 @@
 import { readFile, writeFile } from "node:fs/promises";
+import { parseIcsDate, tennisSeason, TIME_ZONE } from "./tennis-season.mjs";
 
 const ROOT = new URL("../", import.meta.url);
 const CALENDAR_PATH = new URL("calendar.ics", ROOT);
 const PAGE_PATH = new URL("index.html", ROOT);
-const TIME_ZONE = "Europe/Rome";
 const ESPN = "https://site.api.espn.com/apis/site/v2/sports/tennis";
 
 const PLAYERS = new Map([
@@ -25,7 +25,6 @@ const localDate = date => new Intl.DateTimeFormat("en-CA", { timeZone: TIME_ZONE
 const icsDate = value => value.replaceAll("-", "");
 const addDays = (date, amount) => new Date(date.getTime() + amount * 86400000);
 const addHours = (date, amount) => new Date(date.getTime() + amount * 3600000);
-const seasonYear = date => Number(new Intl.DateTimeFormat("en", { timeZone: TIME_ZONE, year: "numeric" }).format(date));
 
 function escapeText(value) {
   return String(value ?? "")
@@ -126,7 +125,7 @@ function recordFromCompetition(tournament, grouping, competition, league) {
 }
 
 async function fetchScoreboards(now) {
-  const currentSeason = seasonYear(now);
+  const currentSeason = tennisSeason(now);
   const offsets = [-2, 0, 2, 5, 8];
   const requests = [];
   for (const league of ["atp", "wta"]) {
@@ -152,7 +151,7 @@ async function fetchScoreboards(now) {
         for (const competition of grouping.competitions ?? []) {
           const record = recordFromCompetition(tournament, grouping, competition, response.league);
           if (!record) continue;
-          if (seasonYear(record.start) < currentSeason) continue;
+          if (tennisSeason(record.start) < currentSeason) continue;
           const distance = record.start.getTime() - now.getTime();
           if (distance < -21 * 86400000 || distance > 21 * 86400000) continue;
           records.set(record.id, record);
@@ -211,10 +210,13 @@ function matchesRecord(block, record) {
 }
 
 function updateCalendar(raw, records, now) {
-  const currentSeason = seasonYear(now);
+  const currentSeason = tennisSeason(now);
   const blocks = [...raw.matchAll(/BEGIN:VEVENT\r?\n[\s\S]*?END:VEVENT/g)]
     .map(match => match[0])
-    .filter(block => Number(field(block, "DTSTART").slice(0, 4)) >= currentSeason);
+    .filter(block => {
+      const start = parseIcsDate(field(block, "DTSTART"));
+      return start && tennisSeason(start) >= currentSeason;
+    });
   const header = raw.slice(0, raw.indexOf("BEGIN:VEVENT"));
   const byUid = new Map(blocks.map(block => [field(block, "UID"), block]));
   const replacements = new Map();

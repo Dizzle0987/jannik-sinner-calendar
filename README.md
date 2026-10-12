@@ -44,7 +44,7 @@ Sul sito sono sempre presenti tre riquadri, da sinistra a destra: incontri concl
 
 L'automazione evita avversari indicati come `TBD`, valida il file `.ics` prima di ogni pubblicazione e si arresta in caso di errore della fonte invece di cancellare eventi esistenti.
 
-Il calendario conserva soltanto la stagione corrente e quelle future: al primo aggiornamento del nuovo anno elimina automaticamente tutti gli eventi della stagione precedente. Anche il riquadro dei risultati conclusi riparte senza incontri della vecchia stagione.
+Il calendario conserva soltanto la stagione tennistica corrente e quelle future. Il cambio stagione è fissato al 1º dicembre, dopo ATP Finals e WTA Finals: al primo aggiornamento di dicembre vengono eliminati gli eventi della stagione terminata, mentre gli incontri di dicembre appartengono già alla stagione successiva. Anche il riquadro dei risultati conclusi riparte senza incontri della vecchia stagione.
 
 ## Fonti e criteri
 
