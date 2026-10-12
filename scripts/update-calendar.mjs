@@ -246,8 +246,7 @@ function italianDateTime(record) {
   return new Intl.DateTimeFormat("it-IT", options).format(record.start);
 }
 
-function card(record) {
-  const state = record.completed ? "Conclusa" : record.inProgress ? "In corso" : "In programma";
+function matchEntry(record) {
   const title = record.completed
     ? `${record.italian} ${record.winner ? "batte" : "perde con"} ${record.opponent}`
     : `${record.italian} vs ${record.opponent}`;
@@ -256,8 +255,12 @@ function card(record) {
   if (record.inProgress && record.statusDetail) details.push(record.statusDetail);
   if (!record.completed && !record.inProgress && !record.timeValid) details.push("orario da confermare");
   const tv = television(record.league).join(". ");
-  const className = record.completed ? " done" : record.inProgress ? " live" : "";
-  return `        <article class="match${className}"><span class="state">${state} · ${record.tournament}</span><h3>${title}</h3><p>${details.join(" · ")}.</p><p class="watch">${tv}.</p></article>`;
+  return `<div class="match-entry"><span class="tournament">${record.tournament}</span><h3>${title}</h3><p>${details.join(" · ")}.</p><p class="watch">${tv}.</p></div>`;
+}
+
+function groupCard(label, records, className) {
+  const count = `${records.length} ${records.length === 1 ? "incontro" : "incontri"}`;
+  return `        <article class="match match-group ${className}"><span class="state">${label} · ${count}</span><div class="match-list">${records.map(matchEntry).join("")}</div></article>`;
 }
 
 function updatePage(raw, records, now) {
@@ -265,13 +268,14 @@ function updatePage(raw, records, now) {
   const completed = records.filter(record => record.completed).sort((a, b) => a.start - b.start);
   const live = records.filter(record => record.inProgress).sort((a, b) => a.start - b.start);
   const upcoming = records.filter(record => !record.completed && !record.inProgress).sort((a, b) => a.start - b.start);
-  const selected = [completed[0], live[0], upcoming[0]];
-  const alreadySelected = new Set(selected.filter(Boolean).map(record => record.id));
-  const remaining = [...completed, ...live, ...upcoming].filter(record => !alreadySelected.has(record.id));
-  for (let index = 0; index < selected.length; index += 1) {
-    if (!selected[index]) selected[index] = remaining.shift();
+  const groups = [];
+  if (completed.length) {
+    const width = upcoming.length ? "" : live.length ? " span-two" : " span-three";
+    groups.push(groupCard("Conclusi", completed, `done results${width}`));
   }
-  const content = selected.filter(Boolean).map(card).join("\n");
+  if (live.length) groups.push(groupCard("In corso", live, `live${upcoming.length ? "" : " right"}`));
+  if (upcoming.length) groups.push(groupCard("In programma", upcoming, "upcoming"));
+  const content = groups.join("\n");
   let updated = raw.replace(/Aggiornato il [^<]+/i, `Aggiornato automaticamente il ${italianDate(now)}`);
   updated = updated.replace(/(?<=<!-- AUTO_SCHEDULE_START -->)[\s\S]*?(?=<!-- AUTO_SCHEDULE_END -->)/, `\n${content}\n        `);
   return updated;

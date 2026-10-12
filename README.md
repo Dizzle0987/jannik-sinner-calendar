@@ -40,7 +40,7 @@ La sottoscrizione è preferibile al download: permette all’app calendario di r
 
 Il repository esegue autonomamente un controllo ogni 15 minuti tramite GitHub Actions, così durante tornei e partite gli aggiornamenti arrivano rapidamente. Lo script interroga i tabelloni pubblici ATP e WTA disponibili sul servizio risultati ESPN, seleziona soltanto gli incontri dei giocatori seguiti, aggiorna orari e risultati mantenendo stabili gli UID iCalendar e pubblica una nuova versione solo quando i dati cambiano. Non sono richieste chiavi API, pianificazioni Codex o interventi manuali.
 
-Sul sito i riquadri procedono da sinistra a destra: incontri conclusi (dal più vecchio), incontri in corso e incontri in programma. Se una categoria è vuota, lo spazio viene occupato dagli altri incontri disponibili.
+Sul sito i riquadri procedono da sinistra a destra: incontri conclusi (dal più vecchio), incontri in corso e incontri in programma. Ogni riquadro raccoglie tutti gli incontri della propria categoria. Se non ci sono partite future, il riquadro live passa a destra e i risultati occupano lo spazio disponibile a partire da sinistra.
 
 L'automazione evita avversari indicati come `TBD`, valida il file `.ics` prima di ogni pubblicazione e si arresta in caso di errore della fonte invece di cancellare eventi esistenti.
 
