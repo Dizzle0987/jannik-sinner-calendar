@@ -124,41 +124,133 @@ URL:https://www.supertennis.tv/News/Atp/berrettini-dichiarazioni-kovacevic-
 END:VEVENT
 BEGIN:VEVENT
 UID:shanghai-2026-r128-arnaldi-tomic@italian-tennis-calendar
-DTSTAMP:20261007T083000Z
+DTSTAMP:20261012T123500Z
 DTSTART;VALUE=DATE:20261008
 DTEND;VALUE=DATE:20261009
 SUMMARY:Matteo Arnaldi vs Bernard Tomic
 LOCATION:Show Court 3\, Shanghai\, Cina
 STATUS:CONFIRMED
-SEQUENCE:1
+SEQUENCE:2
 TRANSP:TRANSPARENT
 CATEGORIES:Shanghai Masters\,ATP Masters 1000\,ATP
-DESCRIPTION:Shanghai Masters 2026 - Primo turno\nSecondo incontro sullo
- Show Court 3. Il programma del campo inizia alle 12:00 locali (06:00 in
- Italia); l'orario esatto dipende dalla durata del match precedente.\n
- Superficie: cemento\nIn chiaro in Italia: nessuna diretta annunciata\n
- Diretta TV: Sky Sport Tennis e Sky Sport Uno\nStreaming: Sky Go e NOW\n
- Austria: nessuna diretta su ORF o ServusTV confermata\nFonte: ordine di
- gioco ufficiale ATP
-URL:https://www.protennislive.com/posting/2026/5014/OP.pdf
+DESCRIPTION:Shanghai Masters 2026 - Primo turno\nConclusa: vittoria
+ Arnaldi 6-3 6-1\nSuperficie: cemento\nIn chiaro in Italia: nessuna
+ diretta annunciata\nDiretta TV: Sky Sport Tennis e Sky Sport Uno\n
+ Streaming: Sky Go e NOW\nAustria: nessuna diretta su ORF o ServusTV
+ confermata\nFonte: ATP Tour / RaiNews
+URL:https://www.rainews.it/maratona/2026/10/tennis-atp-shanghai-
+ masters-1000-news-aggiornamenti-video-cronaca-82ff4e28-70ea-4a98-
+ 9f04-6f6982734ccf.html
+END:VEVENT
+BEGIN:VEVENT
+UID:shanghai-2026-r64-berrettini-nakashima@italian-tennis-calendar
+DTSTAMP:20261012T123500Z
+DTSTART;VALUE=DATE:20261009
+DTEND;VALUE=DATE:20261010
+SUMMARY:Matteo Berrettini vs Brandon Nakashima
+LOCATION:Show Court 3\, Shanghai\, Cina
+STATUS:CONFIRMED
+SEQUENCE:0
+TRANSP:TRANSPARENT
+CATEGORIES:Shanghai Masters\,ATP Masters 1000\,ATP
+DESCRIPTION:Shanghai Masters 2026 - Secondo turno\nConclusa: sconfitta
+ Berrettini 6-7(4) 5-7\nSuperficie: cemento\nDiretta TV Italia: Sky
+ Sport\nStreaming Italia: NOW\nAustria: nessuna diretta su ORF o
+ ServusTV confermata\nFonte: Sky Sport
+URL:https://sport.sky.it/tennis/2026/10/09/berrettini-nakashima-atp-
+ shanghai-risultato
+END:VEVENT
+BEGIN:VEVENT
+UID:shanghai-2026-r64-cobolli-mannarino@italian-tennis-calendar
+DTSTAMP:20261012T123500Z
+DTSTART;VALUE=DATE:20261009
+DTEND;VALUE=DATE:20261010
+SUMMARY:Flavio Cobolli vs Adrian Mannarino
+LOCATION:Shanghai\, Cina
+STATUS:CONFIRMED
+SEQUENCE:0
+TRANSP:TRANSPARENT
+CATEGORIES:Shanghai Masters\,ATP Masters 1000\,ATP
+DESCRIPTION:Shanghai Masters 2026 - Secondo turno\nConclusa: sconfitta
+ Cobolli 1-6 6-4 3-6\nSuperficie: cemento\nDiretta TV Italia: Sky
+ Sport\nStreaming Italia: NOW\nAustria: nessuna diretta su ORF o
+ ServusTV confermata\nFonte: RaiNews
+URL:https://www.rainews.it/maratona/2026/10/tennis-atp-shanghai-
+ masters-1000-news-aggiornamenti-video-cronaca-82ff4e28-70ea-4a98-
+ 9f04-6f6982734ccf.html
+END:VEVENT
+BEGIN:VEVENT
+UID:shanghai-2026-r64-musetti-zhou@italian-tennis-calendar
+DTSTAMP:20261012T123500Z
+DTSTART;VALUE=DATE:20261009
+DTEND;VALUE=DATE:20261010
+SUMMARY:Lorenzo Musetti vs Yi Zhou
+LOCATION:Shanghai\, Cina
+STATUS:CONFIRMED
+SEQUENCE:0
+TRANSP:TRANSPARENT
+CATEGORIES:Shanghai Masters\,ATP Masters 1000\,ATP
+DESCRIPTION:Shanghai Masters 2026 - Secondo turno\nConclusa: sconfitta
+ Musetti 6-7(7) 6-3 6-7(1)\nSuperficie: cemento\nDiretta TV Italia:
+ Sky Sport\nStreaming Italia: NOW\nAustria: nessuna diretta su ORF o
+ ServusTV confermata\nFonte: RaiNews
+URL:https://www.rainews.it/maratona/2026/10/tennis-atp-shanghai-
+ masters-1000-news-aggiornamenti-video-cronaca-82ff4e28-70ea-4a98-
+ 9f04-6f6982734ccf.html
+END:VEVENT
+BEGIN:VEVENT
+UID:shanghai-2026-r64-arnaldi-fritz@italian-tennis-calendar
+DTSTAMP:20261012T123500Z
+DTSTART;VALUE=DATE:20261010
+DTEND;VALUE=DATE:20261011
+SUMMARY:Matteo Arnaldi vs Taylor Fritz
+LOCATION:Shanghai\, Cina
+STATUS:CONFIRMED
+SEQUENCE:0
+TRANSP:TRANSPARENT
+CATEGORIES:Shanghai Masters\,ATP Masters 1000\,ATP
+DESCRIPTION:Shanghai Masters 2026 - Secondo turno\nConclusa: sconfitta
+ Arnaldi 5-7 4-6\nSuperficie: cemento\nDiretta TV Italia: Sky Sport\n
+ Streaming Italia: NOW\nAustria: nessuna diretta su ORF o ServusTV
+ confermata\nFonte: RaiNews
+URL:https://www.rainews.it/maratona/2026/10/tennis-atp-shanghai-
+ masters-1000-news-aggiornamenti-video-cronaca-82ff4e28-70ea-4a98-
+ 9f04-6f6982734ccf.html
+END:VEVENT
+BEGIN:VEVENT
+UID:shanghai-2026-r64-darderi-tsitsipas@italian-tennis-calendar
+DTSTAMP:20261012T123500Z
+DTSTART;VALUE=DATE:20261010
+DTEND;VALUE=DATE:20261011
+SUMMARY:Luciano Darderi vs Stefanos Tsitsipas
+LOCATION:Shanghai\, Cina
+STATUS:CONFIRMED
+SEQUENCE:0
+TRANSP:TRANSPARENT
+CATEGORIES:Shanghai Masters\,ATP Masters 1000\,ATP
+DESCRIPTION:Shanghai Masters 2026 - Secondo turno\nConclusa: sconfitta
+ Darderi 3-6 4-6\nSuperficie: cemento\nDiretta TV Italia: Sky Sport\n
+ Streaming Italia: NOW\nAustria: nessuna diretta su ORF o ServusTV
+ confermata\nFonte: Sky Sport
+URL:https://sport.sky.it/tennis/2026/10/10/darderi-tsitsipas-atp-shanghai-
+ risultato
 END:VEVENT
 BEGIN:VEVENT
 UID:wuhan-2026-paolini-entry@italian-tennis-calendar
-DTSTAMP:20261007T083000Z
+DTSTAMP:20261012T123500Z
 DTSTART;VALUE=DATE:20261012
-DTEND;VALUE=DATE:20261019
-SUMMARY:Torneo: Jasmine Paolini al Wuhan Open
+DTEND;VALUE=DATE:20261013
+SUMMARY:Jasmine Paolini vs Sara Bejlek
 LOCATION:Optics Valley International Tennis Centre\, Wuhan\, Cina
-STATUS:TENTATIVE
-SEQUENCE:1
+STATUS:CONFIRMED
+SEQUENCE:2
 TRANSP:TRANSPARENT
 CATEGORIES:Wuhan Open\,WTA 1000\,WTA
-DESCRIPTION:Iscrizione ufficiale confermata in singolare e in doppio con
- Sara Errani. Il sorteggio è previsto il 10 ottobre; avversaria e orario
- saranno aggiunti appena pubblicati.\nSuperficie: cemento\nIn chiaro in
- Italia: SuperTennis HD (canale 64 del digitale terrestre)\nStreaming
- gratuito: SuperTennis Plus e supertennis.tv\nAustria: nessuna diretta su
- ORF o ServusTV confermata\nFonte: WTA / SuperTennis
-URL:https://www.wtatennis.com/tournaments/wuhan-open/player-list
+DESCRIPTION:Wuhan Open 2026 - Primo turno\nConclusa: vittoria Paolini
+ 6-3 6-4\nSuperficie: cemento\nIn chiaro in Italia: SuperTennis HD
+ (canale 64 del digitale terrestre)\nStreaming gratuito: SuperTennis Plus
+ e supertennis.tv\nAustria: nessuna diretta su ORF o ServusTV confermata
+ \nFonte: WTA / SuperTennis
+URL:https://www.supertennis.tv/News/Wta/Paolini-parte-bene-a-Wuhan
 END:VEVENT
 END:VCALENDAR
