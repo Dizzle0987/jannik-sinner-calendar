@@ -2,7 +2,7 @@ name: Aggiorna calendario automaticamente
 
 on:
   schedule:
-    - cron: "17 */2 * * *"
+    - cron: "*/15 * * * *"
   workflow_dispatch:
   push:
     branches: [main]
