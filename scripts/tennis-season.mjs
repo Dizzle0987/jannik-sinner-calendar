@@ -1,14 +1,10 @@
 export const TIME_ZONE = "Europe/Rome";
 
-export function tennisSeason(date) {
-  const parts = new Intl.DateTimeFormat("en", {
+export function fallbackSeason(date) {
+  return Number(new Intl.DateTimeFormat("en", {
     timeZone: TIME_ZONE,
     year: "numeric",
-    month: "2-digit",
-  }).formatToParts(date);
-  const year = Number(parts.find(part => part.type === "year")?.value);
-  const month = Number(parts.find(part => part.type === "month")?.value);
-  return month === 12 ? year + 1 : year;
+  }).format(date));
 }
 
 export function parseIcsDate(value) {

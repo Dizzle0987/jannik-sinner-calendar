@@ -1,5 +1,5 @@
 import { readFile, writeFile } from "node:fs/promises";
-import { parseIcsDate, tennisSeason, TIME_ZONE } from "./tennis-season.mjs";
+import { fallbackSeason, parseIcsDate, TIME_ZONE } from "./tennis-season.mjs";
 
 const ROOT = new URL("../", import.meta.url);
 const CALENDAR_PATH = new URL("calendar.ics", ROOT);
@@ -121,11 +121,11 @@ function recordFromCompetition(tournament, grouping, competition, league) {
     opponent: opponent.athlete.displayName,
     location: venueParts.join(", "),
     url: tournamentUrl,
+    season: Number(tournament.season?.year) || fallbackSeason(start),
   };
 }
 
 async function fetchScoreboards(now) {
-  const currentSeason = tennisSeason(now);
   const offsets = [-2, 0, 2, 5, 8];
   const requests = [];
   for (const league of ["atp", "wta"]) {
@@ -145,13 +145,17 @@ async function fetchScoreboards(now) {
   if (!successful.length) throw new Error("Nessuna risposta valida ricevuta dai tabelloni ESPN");
 
   const records = new Map();
+  const activeSeasons = new Set();
   for (const response of successful) {
     for (const tournament of response.events) {
+      const tournamentStart = new Date(tournament.date);
+      const tournamentEnd = new Date(tournament.endDate);
+      const officialSeason = Number(tournament.season?.year);
+      if (officialSeason && tournamentStart <= now && now <= tournamentEnd) activeSeasons.add(officialSeason);
       for (const grouping of tournament.groupings ?? []) {
         for (const competition of grouping.competitions ?? []) {
           const record = recordFromCompetition(tournament, grouping, competition, response.league);
           if (!record) continue;
-          if (tennisSeason(record.start) < currentSeason) continue;
           const distance = record.start.getTime() - now.getTime();
           if (distance < -21 * 86400000 || distance > 21 * 86400000) continue;
           records.set(record.id, record);
@@ -159,7 +163,10 @@ async function fetchScoreboards(now) {
       }
     }
   }
-  return [...records.values()].sort((a, b) => a.start - b.start || a.id.localeCompare(b.id));
+  return {
+    records: [...records.values()].sort((a, b) => a.start - b.start || a.id.localeCompare(b.id)),
+    activeSeasons: [...activeSeasons],
+  };
 }
 
 function buildEvent(record, { uid, stamp, sequence }) {
@@ -193,6 +200,7 @@ function buildEvent(record, { uid, stamp, sequence }) {
     `SEQUENCE:${sequence}`,
     "TRANSP:TRANSPARENT",
     `CATEGORIES:${escapeText(`${record.tournament},${record.league.toUpperCase()}`)}`,
+    `X-TENNIS-SEASON:${record.season}`,
     `DESCRIPTION:${escapeText(description)}`,
     `URL:${record.url}`,
     "END:VEVENT",
@@ -209,15 +217,20 @@ function matchesRecord(block, record) {
     && containsName(record.opponent);
 }
 
-function updateCalendar(raw, records, now) {
-  const currentSeason = tennisSeason(now);
+function updateCalendar(raw, records, now, currentSeason) {
   const blocks = [...raw.matchAll(/BEGIN:VEVENT\r?\n[\s\S]*?END:VEVENT/g)]
     .map(match => match[0])
     .filter(block => {
       const start = parseIcsDate(field(block, "DTSTART"));
-      return start && tennisSeason(start) >= currentSeason;
+      const eventSeason = Number(field(block, "X-TENNIS-SEASON")) || (start && fallbackSeason(start));
+      return eventSeason && eventSeason >= currentSeason;
     });
-  const header = raw.slice(0, raw.indexOf("BEGIN:VEVENT"));
+  let header = raw.slice(0, raw.indexOf("BEGIN:VEVENT"));
+  if (/^X-CURRENT-TENNIS-SEASON:/m.test(header)) {
+    header = header.replace(/^X-CURRENT-TENNIS-SEASON:.*$/m, `X-CURRENT-TENNIS-SEASON:${currentSeason}`);
+  } else {
+    header = `${header.trimEnd()}\nX-CURRENT-TENNIS-SEASON:${currentSeason}\n`;
+  }
   const byUid = new Map(blocks.map(block => [field(block, "UID"), block]));
   const replacements = new Map();
   const removals = new Set();
@@ -281,7 +294,6 @@ function groupCard(label, records, className, { completed = false } = {}) {
 }
 
 function updatePage(raw, records, now) {
-  if (!records.length) return raw;
   const completed = records.filter(record => record.completed).sort((a, b) => a.start - b.start);
   const live = records.filter(record => record.inProgress).sort((a, b) => a.start - b.start);
   const upcoming = records.filter(record => !record.completed && !record.inProgress).sort((a, b) => a.start - b.start);
@@ -297,14 +309,14 @@ function updatePage(raw, records, now) {
 }
 
 const now = new Date();
-const records = await fetchScoreboards(now);
-if (!records.length) {
-  console.log("Nessuna partita confermata dei giocatori seguiti nei tornei vicini: nessuna modifica.");
-  process.exit(0);
-}
-
+const scoreboard = await fetchScoreboards(now);
 const oldCalendar = await readFile(CALENDAR_PATH, "utf8");
-const newCalendar = updateCalendar(oldCalendar, records, now);
+const savedSeason = Number(unfold(oldCalendar).match(/^X-CURRENT-TENNIS-SEASON:(\d{4})$/m)?.[1]);
+const sourceSeason = scoreboard.activeSeasons.length ? Math.max(...scoreboard.activeSeasons) : 0;
+const currentSeason = Math.max(savedSeason || fallbackSeason(now), sourceSeason);
+const records = scoreboard.records.filter(record => record.season >= currentSeason);
+
+const newCalendar = updateCalendar(oldCalendar, records, now, currentSeason);
 if (newCalendar !== oldCalendar) await writeFile(CALENDAR_PATH, newCalendar);
 
 const oldPage = await readFile(PAGE_PATH, "utf8");

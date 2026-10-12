@@ -7,6 +7,7 @@ X-WR-CALNAME:Italian Tennis Calendar
 X-WR-TIMEZONE:Europe/Rome
 X-WR-CALDESC:Partite ufficialmente confermate dei principali tennisti
  italiani ATP e WTA
+X-CURRENT-TENNIS-SEASON:2026
 BEGIN:VEVENT
 UID:wimbledon-2026-r128-sinner-kecmanovic@sinner-calendar
 DTSTAMP:20260811T000000Z
@@ -105,15 +106,16 @@ URL:https://www.atptour.com/en/news/sinner-zverev-wimbledon-2026-final
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-183441@italian-tennis-calendar
-DTSTAMP:20261012T181601Z
+DTSTAMP:20261012T184821Z
 DTSTART:20261001T061500Z
 DTEND:20261001T091500Z
 SUMMARY:Flavio Cobolli vs Roman Safiullin
 LOCATION:Beijing\, China PR\, Capital Group Diamond
 STATUS:CONFIRMED
-SEQUENCE:1
+SEQUENCE:2
 TRANSP:TRANSPARENT
 CATEGORIES:China Open\,ATP
+X-TENNIS-SEASON:2026
 DESCRIPTION:China Open - Round 1\nConclusa: sconfitta Flavio Cobolli 3-6 2-
  6\nSuperficie e programma soggetti agli aggiornamenti del torneo\nTV Itali
  a: controllare Sky Sport e NOW\nTV Austria: controllare ORF\, ServusTV e g
@@ -124,15 +126,16 @@ URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/959-2026/co
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-184299@italian-tennis-calendar
-DTSTAMP:20261012T181526Z
+DTSTAMP:20261012T184821Z
 DTSTART:20261002T055500Z
 DTEND:20261002T085500Z
 SUMMARY:Jasmine Paolini vs Daria Snigur
 LOCATION:Beijing\, China PR\, HSBC Moon
 STATUS:CONFIRMED
-SEQUENCE:0
+SEQUENCE:1
 TRANSP:TRANSPARENT
 CATEGORIES:China Open\,WTA
+X-TENNIS-SEASON:2026
 DESCRIPTION:China Open - Round 2\nConclusa: sconfitta Jasmine Paolini 6-3 6
  -7(5) 2-6\nSuperficie e programma soggetti agli aggiornamenti del torneo\n
  TV Italia: controllare SuperTennis HD e SuperTennis Plus\nTV Austria: cont
@@ -143,15 +146,16 @@ URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/959-2026/co
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-185235@italian-tennis-calendar
-DTSTAMP:20261012T181601Z
+DTSTAMP:20261012T184821Z
 DTSTART:20261005T111000Z
 DTEND:20261005T141000Z
 SUMMARY:Lucia Bronzetti vs Fiona Crawley
 LOCATION:Samsun\, Türkiye\, Court 2 - Reha Ergor
 STATUS:CONFIRMED
-SEQUENCE:1
+SEQUENCE:2
 TRANSP:TRANSPARENT
 CATEGORIES:Samsun Open\,WTA
+X-TENNIS-SEASON:2026
 DESCRIPTION:Samsun Open - Round 1\nConclusa: sconfitta Lucia Bronzetti 2-6
   4-6\nSuperficie e programma soggetti agli aggiornamenti del torneo\nTV It
  alia: controllare SuperTennis HD e SuperTennis Plus\nTV Austria: controlla
@@ -162,15 +166,16 @@ URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/1036-2026/c
 END:VEVENT
 BEGIN:VEVENT
 UID:shanghai-2026-r128-berrettini-kovacevic@italian-tennis-calendar
-DTSTAMP:20261012T181526Z
+DTSTAMP:20261012T184821Z
 DTSTART:20261007T041000Z
 DTEND:20261007T071000Z
 SUMMARY:Matteo Berrettini vs Aleksandar Kovacevic
 LOCATION:Shanghai\, China PR\, Stadium Court
 STATUS:CONFIRMED
-SEQUENCE:2
+SEQUENCE:3
 TRANSP:TRANSPARENT
 CATEGORIES:Rolex Shanghai Masters\,ATP
+X-TENNIS-SEASON:2026
 DESCRIPTION:Rolex Shanghai Masters - Round 1\nConclusa: vittoria Matteo Ber
  rettini 6-7(3) 6-1 6-4\nSuperficie e programma soggetti agli aggiornamenti
   del torneo\nTV Italia: controllare Sky Sport e NOW\nTV Austria: controlla
@@ -181,15 +186,16 @@ URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/315-2026/co
 END:VEVENT
 BEGIN:VEVENT
 UID:shanghai-2026-r128-arnaldi-tomic@italian-tennis-calendar
-DTSTAMP:20261012T181526Z
+DTSTAMP:20261012T184821Z
 DTSTART:20261008T060000Z
 DTEND:20261008T090000Z
 SUMMARY:Matteo Arnaldi vs Bernard Tomic
 LOCATION:Shanghai\, China PR\, Show Court 3
 STATUS:CONFIRMED
-SEQUENCE:3
+SEQUENCE:4
 TRANSP:TRANSPARENT
 CATEGORIES:Rolex Shanghai Masters\,ATP
+X-TENNIS-SEASON:2026
 DESCRIPTION:Rolex Shanghai Masters - Round 1\nConclusa: vittoria Matteo Arn
  aldi 6-3 6-1\nSuperficie e programma soggetti agli aggiornamenti del torne
  o\nTV Italia: controllare Sky Sport e NOW\nTV Austria: controllare ORF\, S
@@ -200,15 +206,16 @@ URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/315-2026/co
 END:VEVENT
 BEGIN:VEVENT
 UID:shanghai-2026-r64-cobolli-mannarino@italian-tennis-calendar
-DTSTAMP:20261012T181601Z
+DTSTAMP:20261012T184821Z
 DTSTART:20261009T041000Z
 DTEND:20261009T071000Z
 SUMMARY:Flavio Cobolli vs Adrian Mannarino
 LOCATION:Shanghai\, China PR\, Grandstand 2
 STATUS:CONFIRMED
-SEQUENCE:2
+SEQUENCE:3
 TRANSP:TRANSPARENT
 CATEGORIES:Rolex Shanghai Masters\,ATP
+X-TENNIS-SEASON:2026
 DESCRIPTION:Rolex Shanghai Masters - Round 2\nConclusa: sconfitta Flavio Co
  bolli 1-6 6-4 3-6\nSuperficie e programma soggetti agli aggiornamenti del
   torneo\nTV Italia: controllare Sky Sport e NOW\nTV Austria: controllare O
@@ -219,15 +226,16 @@ URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/315-2026/co
 END:VEVENT
 BEGIN:VEVENT
 UID:shanghai-2026-r64-berrettini-nakashima@italian-tennis-calendar
-DTSTAMP:20261012T181601Z
+DTSTAMP:20261012T184821Z
 DTSTART:20261009T055000Z
 DTEND:20261009T085000Z
 SUMMARY:Matteo Berrettini vs Brandon Nakashima
 LOCATION:Shanghai\, China PR\, Show Court 3
 STATUS:CONFIRMED
-SEQUENCE:2
+SEQUENCE:3
 TRANSP:TRANSPARENT
 CATEGORIES:Rolex Shanghai Masters\,ATP
+X-TENNIS-SEASON:2026
 DESCRIPTION:Rolex Shanghai Masters - Round 2\nConclusa: sconfitta Matteo Be
  rrettini 6-7(4) 5-7\nSuperficie e programma soggetti agli aggiornamenti de
  l torneo\nTV Italia: controllare Sky Sport e NOW\nTV Austria: controllare
@@ -238,15 +246,16 @@ URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/315-2026/co
 END:VEVENT
 BEGIN:VEVENT
 UID:shanghai-2026-r64-musetti-zhou@italian-tennis-calendar
-DTSTAMP:20261012T181601Z
+DTSTAMP:20261012T184821Z
 DTSTART:20261009T115500Z
 DTEND:20261009T145500Z
 SUMMARY:Lorenzo Musetti vs Zhou Yi
 LOCATION:Shanghai\, China PR\, Stadium Court
 STATUS:CONFIRMED
-SEQUENCE:1
+SEQUENCE:2
 TRANSP:TRANSPARENT
 CATEGORIES:Rolex Shanghai Masters\,ATP
+X-TENNIS-SEASON:2026
 DESCRIPTION:Rolex Shanghai Masters - Round 2\nConclusa: sconfitta Lorenzo M
  usetti 6-7(7) 6-3 6-7(1)\nSuperficie e programma soggetti agli aggiornamen
  ti del torneo\nTV Italia: controllare Sky Sport e NOW\nTV Austria: control
@@ -257,15 +266,16 @@ URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/315-2026/co
 END:VEVENT
 BEGIN:VEVENT
 UID:shanghai-2026-r64-arnaldi-fritz@italian-tennis-calendar
-DTSTAMP:20261012T181601Z
+DTSTAMP:20261012T184821Z
 DTSTART:20261010T062500Z
 DTEND:20261010T092500Z
 SUMMARY:Matteo Arnaldi vs Taylor Fritz
 LOCATION:Shanghai\, China PR\, Grandstand 2
 STATUS:CONFIRMED
-SEQUENCE:2
+SEQUENCE:3
 TRANSP:TRANSPARENT
 CATEGORIES:Rolex Shanghai Masters\,ATP
+X-TENNIS-SEASON:2026
 DESCRIPTION:Rolex Shanghai Masters - Round 2\nConclusa: sconfitta Matteo Ar
  naldi 5-7 4-6\nSuperficie e programma soggetti agli aggiornamenti del torn
  eo\nTV Italia: controllare Sky Sport e NOW\nTV Austria: controllare ORF\,
@@ -276,15 +286,16 @@ URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/315-2026/co
 END:VEVENT
 BEGIN:VEVENT
 UID:shanghai-2026-r64-darderi-tsitsipas@italian-tennis-calendar
-DTSTAMP:20261012T181526Z
+DTSTAMP:20261012T184821Z
 DTSTART:20261010T102000Z
 DTEND:20261010T132000Z
 SUMMARY:Luciano Darderi vs Stefanos Tsitsipas
 LOCATION:Shanghai\, China PR\, Grandstand 2
 STATUS:CONFIRMED
-SEQUENCE:1
+SEQUENCE:2
 TRANSP:TRANSPARENT
 CATEGORIES:Rolex Shanghai Masters\,ATP
+X-TENNIS-SEASON:2026
 DESCRIPTION:Rolex Shanghai Masters - Round 2\nConclusa: sconfitta Luciano D
  arderi 3-6 4-6\nSuperficie e programma soggetti agli aggiornamenti del tor
  neo\nTV Italia: controllare Sky Sport e NOW\nTV Austria: controllare ORF\,
@@ -295,15 +306,16 @@ URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/315-2026/co
 END:VEVENT
 BEGIN:VEVENT
 UID:wuhan-2026-paolini-entry@italian-tennis-calendar
-DTSTAMP:20261012T181526Z
+DTSTAMP:20261012T184821Z
 DTSTART:20261012T061000Z
 DTEND:20261012T091000Z
 SUMMARY:Jasmine Paolini vs Sara Bejlek
 LOCATION:Wuhan\, China PR\, Court 1
 STATUS:CONFIRMED
-SEQUENCE:3
+SEQUENCE:4
 TRANSP:TRANSPARENT
 CATEGORIES:Dongfeng Voyah Wuhan Open\,WTA
+X-TENNIS-SEASON:2026
 DESCRIPTION:Dongfeng Voyah Wuhan Open - Round 1\nConclusa: vittoria Jasmine
   Paolini 6-3 6-4\nSuperficie e programma soggetti agli aggiornamenti del t
  orneo\nTV Italia: controllare SuperTennis HD e SuperTennis Plus\nTV Austri
@@ -314,16 +326,17 @@ URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/381-2026/co
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-185454@italian-tennis-calendar
-DTSTAMP:20261012T183852Z
+DTSTAMP:20261012T184821Z
 DTSTART:20261012T174500Z
 DTEND:20261012T204500Z
 SUMMARY:Lucia Bronzetti vs Mona Barthel
 LOCATION:Rovereto\, Italy\, Centre Court
 STATUS:CONFIRMED
-SEQUENCE:4
+SEQUENCE:5
 TRANSP:TRANSPARENT
 CATEGORIES:RoveretOpen Città della Pace\,WTA
-DESCRIPTION:RoveretOpen Città della Pace - Round 1\nIn corso: 3-6 1-1\nSup
+X-TENNIS-SEASON:2026
+DESCRIPTION:RoveretOpen Città della Pace - Round 1\nIn corso: 3-6 2-1\nSup
  erficie e programma soggetti agli aggiornamenti del torneo\nTV Italia: con
  trollare SuperTennis HD e SuperTennis Plus\nTV Austria: controllare ORF\,
   ServusTV e guide TV aggregate\nDati partita: ESPN\; verificare le fonti u
