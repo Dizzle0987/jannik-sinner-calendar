@@ -254,8 +254,8 @@ function matchEntry(record) {
   if ((record.completed || record.inProgress) && record.score) details.push(record.score);
   if (record.inProgress && record.statusDetail) details.push(record.statusDetail);
   if (!record.completed && !record.inProgress && !record.timeValid) details.push("orario da confermare");
-  const tv = television(record.league).join(". ");
-  return `<div class="match-entry"><span class="tournament">${record.tournament}</span><h3>${title}</h3><p>${details.join(" · ")}.</p><p class="watch">${tv}.</p></div>`;
+  const tv = record.completed ? "" : `<p class="watch">${television(record.league).join(". ")}.</p>`;
+  return `<div class="match-entry"><span class="tournament">${record.tournament}</span><h3>${title}</h3><p>${details.join(" · ")}.</p>${tv}</div>`;
 }
 
 function groupCard(label, records, className, { completed = false } = {}) {
