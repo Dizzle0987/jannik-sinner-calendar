@@ -18,7 +18,7 @@ La selezione iniziale comprende Jannik Sinner, Flavio Cobolli, Lorenzo Musetti, 
 
 Gli eventi vengono pubblicati quando torneo e partecipazione sono confermati. Avversario, campo e orario vengono aggiunti appena compaiono nei tabelloni e negli ordini di gioco ufficiali; quando l'orario non è fisso, il calendario usa un evento giornaliero e lo spiega nella descrizione.
 
-Per ogni appuntamento attuale vengono cercate sia la copertura televisiva o streaming italiana sia alternative gratuite estere. Le opzioni confermate sono ordinate da quelle gratuite a quelle a pagamento; fra le emittenti estere la verifica dà priorità a ORF e ServusTV, ricevibili anche a Bolzano. Una rete viene indicata come confermata soltanto quando il palinsesto specifico riporta l'incontro; i diritti generali del torneo non bastano.
+Per ogni appuntamento attuale vengono cercate sia la copertura televisiva o streaming italiana sia alternative gratuite estere. Le opzioni confermate sono ordinate così: canali gratuiti italiani, canali gratuiti austriaci, altre alternative gratuite e infine servizi a pagamento. Fra le emittenti estere la verifica dà priorità a ServusTV e ORF, ricevibili anche a Bolzano. Una rete viene indicata come confermata soltanto quando il palinsesto specifico riporta l'incontro; i diritti generali del torneo non bastano.
 
 Il calendario non include allenamenti, esibizioni, indiscrezioni, possibili turni futuri o partecipazioni non confermate.
 
@@ -38,7 +38,7 @@ La sottoscrizione è preferibile al download: permette all’app calendario di r
 
 ## Aggiornamento automatico
 
-Il repository esegue autonomamente un controllo ogni 15 minuti tramite GitHub Actions, così durante tornei e partite gli aggiornamenti arrivano rapidamente. Lo script interroga i tabelloni pubblici ATP e WTA disponibili sul servizio risultati ESPN, seleziona soltanto gli incontri dei giocatori seguiti, aggiorna orari e risultati mantenendo stabili gli UID iCalendar e pubblica una nuova versione solo quando i dati cambiano. Non sono richieste chiavi API, pianificazioni Codex o interventi manuali.
+Il repository esegue autonomamente un controllo di partite e risultati ogni 15 minuti tramite GitHub Actions, così durante tornei e incontri gli aggiornamenti arrivano rapidamente. I palinsesti TV, che cambiano meno spesso, vengono invece consultati al massimo ogni tre ore e l'ultima verifica viene conservata in cache. Lo script interroga i tabelloni pubblici ATP e WTA disponibili sul servizio risultati ESPN, seleziona soltanto gli incontri dei giocatori seguiti, aggiorna orari e risultati mantenendo stabili gli UID iCalendar e pubblica una nuova versione solo quando i dati cambiano. Non sono richieste chiavi API, pianificazioni Codex o interventi manuali.
 
 Gli incontri futuri con orario confermato includono un promemoria iCalendar due ore prima dell’inizio. Gli eventi ancora senza orario ricevono il promemoria automaticamente non appena l’orario viene confermato.
 
@@ -46,7 +46,7 @@ Sul sito sono sempre presenti tre riquadri, da sinistra a destra: incontri concl
 
 L'automazione evita avversari indicati come `TBD`, valida il file `.ics` prima di ogni pubblicazione e si arresta in caso di errore della fonte invece di cancellare eventi esistenti.
 
-Le indicazioni TV includono il collegamento alla fonte e sono ordinate `GRATIS` → `A pagamento`. Una copertura a pagamento confermata può essere mostrata mentre la ricerca di un'alternativa gratuita resta `Da confermare`. Per l'estero vengono controllati prima i palinsesti di ORF e ServusTV, poi le altre fonti configurate. Le partite concluse non mostrano più informazioni TV.
+Le indicazioni TV includono il collegamento alla fonte e sono ordinate `GRATIS Italia` → `GRATIS Austria` → `GRATIS altri Paesi` → `A pagamento`. Una copertura a pagamento confermata può essere mostrata mentre la ricerca di un'alternativa gratuita resta `Da confermare`. Per l'estero vengono controllati prima i palinsesti di ServusTV e ORF, poi le altre fonti configurate. Guide aggregate specifiche, come TV Spielfilm, possono essere usate come secondo riscontro quando la pagina della trasmissione è pubblicamente accessibile; l'automazione non forza le pagine protette da sistemi anti-bot. Le partite concluse non mostrano più informazioni TV.
 
 Il calendario conserva soltanto la stagione tennistica corrente e quelle future. La stagione non viene dedotta da una data fissa: per ogni torneo viene letto il campo ufficiale `season.year` pubblicato nel tabellone. Quando i tornei attivi passano alla nuova stagione, l’automazione elimina gli eventi della stagione terminata; la data dell’incontro viene usata soltanto come ripiego se la fonte non espone la stagione. Anche il riquadro dei risultati conclusi riparte senza incontri della vecchia stagione.
 

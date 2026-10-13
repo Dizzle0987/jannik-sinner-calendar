@@ -1,10 +1,12 @@
-import { readFile, writeFile } from "node:fs/promises";
+import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { fallbackSeason, parseIcsDate, TIME_ZONE } from "./tennis-season.mjs";
 
 const ROOT = new URL("../", import.meta.url);
 const CALENDAR_PATH = new URL("calendar.ics", ROOT);
 const PAGE_PATH = new URL("index.html", ROOT);
+const BROADCAST_CACHE_PATH = new URL("data/verified-broadcasts.json", ROOT);
 const ESPN = "https://site.api.espn.com/apis/site/v2/sports/tennis";
+const BROADCAST_REFRESH_MS = 3 * 60 * 60 * 1000;
 
 const PLAYERS = new Map([
   ["Jannik Sinner", "atp"],
@@ -122,19 +124,40 @@ function programmeConfirmsRecord(programme, record) {
   return programme.start <= addHours(record.start, 0.25) && programme.end >= addHours(record.start, 1.25);
 }
 
-async function attachVerifiedFreeBroadcasts(records) {
+async function readBroadcastCache() {
+  try {
+    const parsed = JSON.parse(await readFile(BROADCAST_CACHE_PATH, "utf8"));
+    return parsed?.version === 1 && parsed.records ? parsed : { version: 1, records: {} };
+  } catch {
+    return { version: 1, records: {} };
+  }
+}
+
+async function attachVerifiedFreeBroadcasts(records, now) {
   const targets = records.filter(record => !record.completed && record.timeValid);
   if (!targets.length) return;
+  const cache = await readBroadcastCache();
+  for (const record of targets) {
+    const cached = cache.records[record.id];
+    if (cached?.options?.length) record.verifiedFreeBroadcasts = cached.options;
+  }
+  const due = targets.filter(record => {
+    const checkedAt = new Date(cache.records[record.id]?.checkedAt ?? 0);
+    return Number.isNaN(checkedAt.getTime()) || now - checkedAt >= BROADCAST_REFRESH_MS;
+  });
+  if (!due.length) return;
+  const fresh = new Map(due.map(record => [record.id, []]));
+  let successfulSources = 0;
   const headers = { "User-Agent": "Italian-Tennis-Calendar/1.0" };
 
   try {
     const response = await fetch("https://www.servustv.com/de/epg", { headers });
     if (response.ok) {
+      successfulSources += 1;
       const programmes = parseServusEpg(await response.text());
-      for (const record of targets) {
+      for (const record of due) {
         if (programmes.some(programme => programmeConfirmsRecord(programme, record))) {
-          record.verifiedFreeBroadcasts ??= [];
-          record.verifiedFreeBroadcasts.push({
+          fresh.get(record.id).push({
             label: "Austria: ServusTV / ServusTV On",
             access: "GRATIS",
             country: "🇦🇹",
@@ -149,11 +172,11 @@ async function attachVerifiedFreeBroadcasts(records) {
   try {
     const response = await fetch("https://plus.supertennis.tv/live", { headers });
     if (response.ok) {
+      successfulSources += 1;
       const html = await response.text();
-      for (const record of targets) {
+      for (const record of due) {
         if (pageConfirmsPlayers(html, record)) {
-          record.verifiedFreeBroadcasts ??= [];
-          record.verifiedFreeBroadcasts.push({
+          fresh.get(record.id).push({
             label: "Italia: SuperTennis Plus",
             access: "GRATIS",
             country: "🇮🇹",
@@ -168,9 +191,10 @@ async function attachVerifiedFreeBroadcasts(records) {
   try {
     const response = await fetch("https://tv.orf.at/", { headers });
     if (response.ok) {
+      successfulSources += 1;
       const index = await response.text();
       const pages = new Map();
-      for (const record of targets) {
+      for (const record of due) {
         const [year, month, day] = record.date.split("-");
         for (const channel of ["orf1", "orf2", "orfs"]) {
           const pattern = new RegExp(`href="(?<path>/program/${channel}/index~_day-${day}-${month}-${year}_[^"]+\\.html)"`);
@@ -182,8 +206,7 @@ async function attachVerifiedFreeBroadcasts(records) {
             pages.set(url, page.ok ? await page.text() : "");
           }
           if (pageConfirmsPlayers(pages.get(url), record)) {
-            record.verifiedFreeBroadcasts ??= [];
-            record.verifiedFreeBroadcasts.push({
+            fresh.get(record.id).push({
               label: `Austria: ${channel === "orfs" ? "ORF SPORT +" : channel.toUpperCase()} / ORF ON`,
               access: "GRATIS",
               country: "🇦🇹",
@@ -195,12 +218,26 @@ async function attachVerifiedFreeBroadcasts(records) {
       }
     }
   } catch {}
+
+  if (successfulSources !== 3) return;
+  const activeIds = new Set(targets.map(record => record.id));
+  for (const id of Object.keys(cache.records)) if (!activeIds.has(id)) delete cache.records[id];
+  for (const record of due) {
+    record.verifiedFreeBroadcasts = fresh.get(record.id);
+    cache.records[record.id] = {
+      checkedAt: now.toISOString(),
+      options: record.verifiedFreeBroadcasts,
+    };
+  }
+  await mkdir(new URL("data/", ROOT), { recursive: true });
+  await writeFile(BROADCAST_CACHE_PATH, `${JSON.stringify(cache, null, 2)}\n`);
 }
 
 function television(record) {
   const options = [...(record.verifiedFreeBroadcasts ?? []), ...paidAndKnownBroadcasts(record)];
+  const rank = option => option.access !== "GRATIS" ? 3 : option.country === "🇮🇹" ? 0 : option.country === "🇦🇹" ? 1 : 2;
   const unique = [...new Map(options.map(option => [`${option.country}-${option.label}`, option])).values()]
-    .sort((a, b) => (a.access === "GRATIS" ? 0 : 1) - (b.access === "GRATIS" ? 0 : 1) || b.priority - a.priority);
+    .sort((a, b) => rank(a) - rank(b) || b.priority - a.priority);
   return {
     options: unique,
     freeConfirmed: unique.some(option => option.access === "GRATIS"),
@@ -462,7 +499,7 @@ const savedSeason = Number(unfold(oldCalendar).match(/^X-CURRENT-TENNIS-SEASON:(
 const sourceSeason = scoreboard.activeSeasons.length ? Math.max(...scoreboard.activeSeasons) : 0;
 const currentSeason = Math.max(savedSeason || fallbackSeason(now), sourceSeason);
 const records = scoreboard.records.filter(record => record.season >= currentSeason);
-await attachVerifiedFreeBroadcasts(records);
+await attachVerifiedFreeBroadcasts(records, now);
 
 const newCalendar = updateCalendar(oldCalendar, records, now, currentSeason);
 if (newCalendar !== oldCalendar) await writeFile(CALENDAR_PATH, newCalendar);
