@@ -6,7 +6,7 @@ const CALENDAR_PATH = new URL("calendar.ics", ROOT);
 const PAGE_PATH = new URL("index.html", ROOT);
 const BROADCAST_CACHE_PATH = new URL("data/verified-broadcasts.json", ROOT);
 const ESPN = "https://site.api.espn.com/apis/site/v2/sports/tennis";
-const BROADCAST_REFRESH_MS = 3 * 60 * 60 * 1000;
+const HOUR_MS = 60 * 60 * 1000;
 
 const PLAYERS = new Map([
   ["Jannik Sinner", "atp"],
@@ -58,6 +58,33 @@ const unfold = value => value.replace(/\r?\n[ \t]/g, "");
 const field = (block, name) => (unfold(block).match(new RegExp(`^${name}(?:;[^:]*)?:(.*)$`, "m")) ?? [])[1] ?? "";
 const canonical = block => unfold(block).replace(/^DTSTAMP:.*\n/m, "").replace(/^SEQUENCE:.*\n/m, "").trim();
 const normalized = value => value.normalize("NFD").replace(/\p{Diacritic}/gu, "").toLowerCase();
+
+function refreshCadence(raw, now) {
+  const blocks = [...raw.matchAll(/BEGIN:VEVENT\r?\n[\s\S]*?END:VEVENT/g)].map(match => match[0]);
+  let nearMatch = false;
+  let activeTournament = false;
+  for (const block of blocks) {
+    const start = parseIcsDate(field(block, "DTSTART"));
+    if (!start) continue;
+    const description = normalized(field(block, "DESCRIPTION")).replaceAll("\\n", " ");
+    const completed = description.includes("conclusa:");
+    const inProgress = description.includes("in corso");
+    const distance = start - now;
+    if (inProgress || (!completed && distance >= -0.5 * HOUR_MS && distance <= 4 * HOUR_MS)) nearMatch = true;
+    if ((!completed && distance >= -4 * HOUR_MS && distance <= 72 * HOUR_MS)
+      || (completed && distance >= -48 * HOUR_MS && distance <= 0)) activeTournament = true;
+  }
+  if (nearMatch) return { label: "partita", hours: 0.25 };
+  if (activeTournament) return { label: "torneo attivo", hours: 1 };
+  return { label: "periodo inattivo", hours: 6 };
+}
+
+function scheduledSlotIsDue(cadence, now) {
+  if (cadence.hours === 0.25) return true;
+  const hourlySlot = now.getUTCMinutes() >= 11 && now.getUTCMinutes() < 26;
+  if (!hourlySlot) return false;
+  return cadence.hours === 1 || now.getUTCHours() % 6 === 0;
+}
 
 function scoreFor(italian, opponent) {
   const italianSets = italian.linescores ?? [];
@@ -143,7 +170,9 @@ async function attachVerifiedFreeBroadcasts(records, now) {
   }
   const due = targets.filter(record => {
     const checkedAt = new Date(cache.records[record.id]?.checkedAt ?? 0);
-    return Number.isNaN(checkedAt.getTime()) || now - checkedAt >= BROADCAST_REFRESH_MS;
+    const distance = record.start - now;
+    const refreshMs = distance >= -4 * HOUR_MS && distance <= 24 * HOUR_MS ? 3 * HOUR_MS : 6 * HOUR_MS;
+    return Number.isNaN(checkedAt.getTime()) || now - checkedAt >= refreshMs;
   });
   if (!due.length) return;
   const fresh = new Map(due.map(record => [record.id, []]));
@@ -493,8 +522,13 @@ function updatePage(raw, records, now) {
 }
 
 const now = new Date();
-const scoreboard = await fetchScoreboards(now);
 const oldCalendar = await readFile(CALENDAR_PATH, "utf8");
+const cadence = refreshCadence(oldCalendar, now);
+if (process.env.SCHEDULED_RUN === "true" && !scheduledSlotIsDue(cadence, now)) {
+  console.log(`Controllo rinviato: ${cadence.label}, cadenza ${cadence.hours === 0.25 ? "15 minuti" : `${cadence.hours} ore`}.`);
+  process.exit(0);
+}
+const scoreboard = await fetchScoreboards(now);
 const savedSeason = Number(unfold(oldCalendar).match(/^X-CURRENT-TENNIS-SEASON:(\d{4})$/m)?.[1]);
 const sourceSeason = scoreboard.activeSeasons.length ? Math.max(...scoreboard.activeSeasons) : 0;
 const currentSeason = Math.max(savedSeason || fallbackSeason(now), sourceSeason);

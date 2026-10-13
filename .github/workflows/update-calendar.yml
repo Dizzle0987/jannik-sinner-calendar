@@ -2,7 +2,7 @@ name: Aggiorna calendario automaticamente
 
 on:
   schedule:
-    - cron: "*/15 * * * *"
+    - cron: "11,26,41,56 * * * *"
   workflow_dispatch:
   push:
     branches: [main]
@@ -33,6 +33,8 @@ jobs:
           node-version: "22"
 
       - name: Cerca partite e risultati
+        env:
+          SCHEDULED_RUN: ${{ github.event_name == 'schedule' }}
         run: node scripts/update-calendar.mjs
 
       - name: Valida il file iCalendar
