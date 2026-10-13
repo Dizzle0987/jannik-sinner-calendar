@@ -369,8 +369,8 @@ function buildEvent(record, { uid, stamp, sequence }) {
           `${option.country} ${option.label} — ${option.access}`,
           `Fonte TV: ${option.source}`,
         ]),
-        ...(!broadcast.freeConfirmed ? ["🇦🇹 Gratis su ORF / ServusTV: da confermare"] : []),
-        ...(!broadcast.options.length ? ["Altre coperture TV: da confermare"] : []),
+        ...(broadcast.options.length && !broadcast.freeConfirmed ? ["Alternativa gratuita non ancora confermata"] : []),
+        ...(!broadcast.options.length ? ["Copertura TV non ancora confermata"] : []),
       ];
   const description = [
     `${record.tournament} - ${record.round}`,
@@ -493,7 +493,7 @@ function matchEntry(record) {
   const broadcast = record.completed ? null : television(record);
   const tv = record.completed
     ? ""
-    : `<div class="watch">${broadcast.options.map(option => `<span class="broadcast-option"><b>${option.access}</b> ${option.country} ${option.label}. <a href="${option.source}" target="_blank" rel="noopener">Fonte ↗</a></span>`).join("")}${!broadcast.freeConfirmed ? '<span class="broadcast-tbc">Gratis in Austria, priorità ORF e ServusTV: da confermare.</span>' : ""}${!broadcast.options.length ? '<span class="broadcast-tbc">Altre coperture TV: da confermare.</span>' : ""}</div>`;
+    : `<div class="watch">${broadcast.options.map(option => `<span class="broadcast-option"><b>${option.access}</b> ${option.country} ${option.label}. <a href="${option.source}" target="_blank" rel="noopener">Fonte ↗</a></span>`).join("")}${broadcast.options.length && !broadcast.freeConfirmed ? '<span class="broadcast-tbc">Alternativa gratuita non ancora confermata.</span>' : ""}${!broadcast.options.length ? '<span class="broadcast-tbc">Copertura TV non ancora confermata.</span>' : ""}</div>`;
   return `<div class="match-entry"><span class="tournament">${record.tournament}</span><h3>${title}</h3><p>${details.join(" · ")}.</p>${tv}</div>`;
 }
 

@@ -345,20 +345,19 @@ URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/1025-2026/c
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-185351@italian-tennis-calendar
-DTSTAMP:20261013T114000Z
+DTSTAMP:20261013T114434Z
 DTSTART:20261014T043000Z
 DTEND:20261014T073000Z
 SUMMARY:Jasmine Paolini vs Nikola Bartunkova
 LOCATION:Wuhan\, China PR\, Court 1
 STATUS:CONFIRMED
-SEQUENCE:1
+SEQUENCE:2
 TRANSP:TRANSPARENT
 CATEGORIES:Dongfeng Voyah Wuhan Open\,WTA
 X-TENNIS-SEASON:2026
 DESCRIPTION:Dongfeng Voyah Wuhan Open - Round 2\nIn programma\nSuperficie e
-  programma soggetti agli aggiornamenti del torneo\n🇦🇹 Gratis su ORF
-  / ServusTV: da confermare\nAltre coperture TV: da confermare\nDati partit
- a: ESPN\; verificare le fonti ufficiali del torneo
+  programma soggetti agli aggiornamenti del torneo\nCopertura TV non ancora
+  confermata\nDati partita: ESPN\; verificare le fonti ufficiali del torneo
 URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/381-2026/co
  mpetitionType/2
 BEGIN:VALARM
