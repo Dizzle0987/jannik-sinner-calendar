@@ -316,16 +316,17 @@ function groupCard(label, records, className, { completed = false } = {}) {
   if (!completed || records.length <= 2) {
     return `        <article class="match match-group ${className}"><span class="state">${label} · ${count}</span><div class="match-list">${records.map(matchEntry).join("")}</div></article>`;
   }
-  const visible = records.slice(-2);
-  const older = records.slice(0, -2).reverse();
+  const visible = records.slice(0, 2);
+  const older = records.slice(2);
   const moreLabel = `Vedi altri ${older.length} ${older.length === 1 ? "risultato" : "risultati"}`;
   return `        <article class="match match-group ${className}"><span class="state">${label} · ${count}</span><div class="match-list">${visible.map(matchEntry).join("")}</div><details class="more-results"><summary>${moreLabel}</summary><div class="match-list older-results">${older.map(matchEntry).join("")}</div></details></article>`;
 }
 
 function updatePage(raw, records, now) {
-  const completed = records.filter(record => record.completed).sort((a, b) => a.start - b.start);
-  const live = records.filter(record => record.inProgress).sort((a, b) => a.start - b.start);
-  const upcoming = records.filter(record => !record.completed && !record.inProgress).sort((a, b) => a.start - b.start);
+  const newestFirst = (a, b) => b.start - a.start;
+  const completed = records.filter(record => record.completed).sort(newestFirst);
+  const live = records.filter(record => record.inProgress).sort(newestFirst);
+  const upcoming = records.filter(record => !record.completed && !record.inProgress).sort(newestFirst);
   const groups = [
     groupCard("Conclusi", completed, "done results", { completed: true }),
     groupCard("In corso", live, "live"),

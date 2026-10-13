@@ -42,7 +42,7 @@ Il repository esegue autonomamente un controllo ogni 15 minuti tramite GitHub Ac
 
 Gli incontri futuri con orario confermato includono un promemoria iCalendar due ore prima dell’inizio. Gli eventi ancora senza orario ricevono il promemoria automaticamente non appena l’orario viene confermato.
 
-Sul sito sono sempre presenti tre riquadri, da sinistra a destra: incontri conclusi, incontri in corso e incontri in programma. Il riquadro dei conclusi mostra i due risultati più recenti e permette di aprire i precedenti con il pulsante “Vedi altri”; i riquadri live e futuri raccolgono tutti gli incontri della propria categoria.
+Sul sito sono sempre presenti tre riquadri, da sinistra a destra: incontri conclusi, incontri in corso e incontri in programma. Gli elenchi sono ordinati dal più recente al meno recente. Il riquadro dei conclusi mostra i primi due risultati e permette di aprire i precedenti con il pulsante “Vedi altri”; i riquadri live e futuri raccolgono tutti gli incontri della propria categoria.
 
 L'automazione evita avversari indicati come `TBD`, valida il file `.ics` prima di ogni pubblicazione e si arresta in caso di errore della fonte invece di cancellare eventi esistenti.
 
