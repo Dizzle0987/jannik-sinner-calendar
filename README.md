@@ -18,7 +18,7 @@ La selezione iniziale comprende Jannik Sinner, Flavio Cobolli, Lorenzo Musetti, 
 
 Gli eventi vengono pubblicati quando torneo e partecipazione sono confermati. Avversario, campo e orario vengono aggiunti appena compaiono nei tabelloni e negli ordini di gioco ufficiali; quando l'orario non è fisso, il calendario usa un evento giornaliero e lo spiega nella descrizione.
 
-Per ogni appuntamento attuale viene indicata la copertura televisiva o streaming soltanto quando è confermata da una fonte specifica. Se non esiste una conferma verificabile, il calendario lo dichiara senza suggerire emittenti possibili.
+Per ogni appuntamento attuale vengono cercate sia la copertura televisiva o streaming italiana sia alternative gratuite estere. Le opzioni confermate sono ordinate da quelle gratuite a quelle a pagamento; fra le emittenti estere la verifica dà priorità a ORF e ServusTV, ricevibili anche a Bolzano. Una rete viene indicata come confermata soltanto quando il palinsesto specifico riporta l'incontro; i diritti generali del torneo non bastano.
 
 Il calendario non include allenamenti, esibizioni, indiscrezioni, possibili turni futuri o partecipazioni non confermate.
 
@@ -46,13 +46,13 @@ Sul sito sono sempre presenti tre riquadri, da sinistra a destra: incontri concl
 
 L'automazione evita avversari indicati come `TBD`, valida il file `.ics` prima di ogni pubblicazione e si arresta in caso di errore della fonte invece di cancellare eventi esistenti.
 
-Le indicazioni TV mostrano soltanto emittenti o piattaforme confermate per il torneo e includono il collegamento alla fonte. Se manca una conferma specifica, il sito e il calendario riportano “Copertura TV non confermata” senza suggerire canali possibili.
+Le indicazioni TV includono il collegamento alla fonte e sono ordinate `GRATIS` → `A pagamento`. Una copertura a pagamento confermata può essere mostrata mentre la ricerca di un'alternativa gratuita resta `Da confermare`. Per l'estero vengono controllati prima i palinsesti di ORF e ServusTV, poi le altre fonti configurate. Le partite concluse non mostrano più informazioni TV.
 
 Il calendario conserva soltanto la stagione tennistica corrente e quelle future. La stagione non viene dedotta da una data fissa: per ogni torneo viene letto il campo ufficiale `season.year` pubblicato nel tabellone. Quando i tornei attivi passano alla nuova stagione, l’automazione elimina gli eventi della stagione terminata; la data dell’incontro viene usata soltanto come ripiego se la fonte non espone la stagione. Anche il riquadro dei risultati conclusi riparte senza incontri della vecchia stagione.
 
 ## Fonti e criteri
 
-Le informazioni pubblicate devono provenire prioritariamente da ATP Tour, siti ufficiali dei tornei, ordini di gioco e tabelloni ufficiali. Una partita viene inserita soltanto quando partecipazione, turno e avversario risultano confermati. Orario, campo e copertura televisiva restano `Da confermare` finché non sono supportati da una fonte ufficiale specifica.
+Le informazioni pubblicate devono provenire prioritariamente da ATP Tour, siti ufficiali dei tornei, ordini di gioco e tabelloni ufficiali. Una partita viene inserita soltanto quando partecipazione, turno e avversario risultano confermati. Orario e campo restano `Da confermare` finché non sono supportati da una fonte ufficiale specifica. Per la TV, il controllo richiede la corrispondenza dell'incontro nella guida del giorno: nomi dei giocatori, data e indicazione della diretta devono essere coerenti.
 
 Le partite attualmente presenti sono verificate tramite le pagine risultati e gli articoli ufficiali di ATP Tour.
 

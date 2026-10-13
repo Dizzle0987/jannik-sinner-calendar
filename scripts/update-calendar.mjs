@@ -72,26 +72,139 @@ function scoreFor(italian, opponent) {
   }).filter(Boolean).join(" ");
 }
 
-function television(record) {
+function paidAndKnownBroadcasts(record) {
   if (record.season === 2026 && /Rolex Shanghai Masters/i.test(record.tournament)) {
-    return {
+    return [{
       label: "Italia: Sky Sport Tennis e NOW",
+      access: "A pagamento",
+      country: "🇮🇹",
+      priority: 50,
       source: "https://sport.sky.it/tennis/2026/10/06/atp-shanghai-2026-dove-vedere-tv-streaming",
-    };
+    }];
   }
   if (record.season === 2026 && /RoveretOpen/i.test(record.tournament)) {
-    return {
+    return [{
       label: "Italia: SuperTennis e SuperTennis Plus",
+      access: "GRATIS",
+      country: "🇮🇹",
+      priority: 100,
       source: "https://www.vitatrentina.it/2026/10/09/dal-12-al-18-ottobre-il-roveretopen-citta-della-pace-femminile-di-tennis/",
-    };
+    }];
   }
-  if (record.season === 2026 && record.league === "wta") {
-    return {
-      label: "Italia: SuperTennis Plus",
-      source: "https://plus.supertennis.tv/live",
-    };
+  return [];
+}
+
+const lastName = name => normalized(name).split(/\s+/).at(-1);
+const htmlText = html => normalized(String(html).replace(/<script[\s\S]*?<\/script>/gi, " ").replace(/<style[\s\S]*?<\/style>/gi, " ").replace(/<[^>]+>/g, " "));
+const pageConfirmsPlayers = (html, record) => {
+  const text = htmlText(html);
+  return text.includes(lastName(record.italian)) && text.includes(lastName(record.opponent));
+};
+
+function parseServusEpg(html) {
+  const rows = [];
+  for (const fragment of html.split("},{")) {
+    const start = fragment.match(/\\"start_time\\":\\"([^\\"]+)\\"/)?.[1];
+    const end = fragment.match(/\\"end_time\\":\\"([^\\"]+)\\"/)?.[1];
+    const titles = [...fragment.matchAll(/\\"title\\":\\"(.*?)\\"/g)];
+    if (!start || !end || !titles.length) continue;
+    let title = titles.at(-1)[1];
+    try { title = JSON.parse(`"${title}"`); } catch {}
+    rows.push({ title, start: new Date(start), end: new Date(end) });
   }
-  return null;
+  return rows;
+}
+
+function programmeConfirmsRecord(programme, record) {
+  if (!programme.start || !programme.end || Number.isNaN(programme.start.getTime()) || Number.isNaN(programme.end.getTime())) return false;
+  const title = normalized(programme.title);
+  if (!title.includes(lastName(record.italian)) || !title.includes(lastName(record.opponent))) return false;
+  return programme.start <= addHours(record.start, 0.25) && programme.end >= addHours(record.start, 1.25);
+}
+
+async function attachVerifiedFreeBroadcasts(records) {
+  const targets = records.filter(record => !record.completed && record.timeValid);
+  if (!targets.length) return;
+  const headers = { "User-Agent": "Italian-Tennis-Calendar/1.0" };
+
+  try {
+    const response = await fetch("https://www.servustv.com/de/epg", { headers });
+    if (response.ok) {
+      const programmes = parseServusEpg(await response.text());
+      for (const record of targets) {
+        if (programmes.some(programme => programmeConfirmsRecord(programme, record))) {
+          record.verifiedFreeBroadcasts ??= [];
+          record.verifiedFreeBroadcasts.push({
+            label: "Austria: ServusTV / ServusTV On",
+            access: "GRATIS",
+            country: "🇦🇹",
+            priority: 130,
+            source: "https://www.servustv.com/de/epg",
+          });
+        }
+      }
+    }
+  } catch {}
+
+  try {
+    const response = await fetch("https://plus.supertennis.tv/live", { headers });
+    if (response.ok) {
+      const html = await response.text();
+      for (const record of targets) {
+        if (pageConfirmsPlayers(html, record)) {
+          record.verifiedFreeBroadcasts ??= [];
+          record.verifiedFreeBroadcasts.push({
+            label: "Italia: SuperTennis Plus",
+            access: "GRATIS",
+            country: "🇮🇹",
+            priority: 110,
+            source: "https://plus.supertennis.tv/live",
+          });
+        }
+      }
+    }
+  } catch {}
+
+  try {
+    const response = await fetch("https://tv.orf.at/", { headers });
+    if (response.ok) {
+      const index = await response.text();
+      const pages = new Map();
+      for (const record of targets) {
+        const [year, month, day] = record.date.split("-");
+        for (const channel of ["orf1", "orf2", "orfs"]) {
+          const pattern = new RegExp(`href="(?<path>/program/${channel}/index~_day-${day}-${month}-${year}_[^"]+\\.html)"`);
+          const path = index.match(pattern)?.groups?.path;
+          if (!path) continue;
+          const url = new URL(path, "https://tv.orf.at/").href;
+          if (!pages.has(url)) {
+            const page = await fetch(url, { headers });
+            pages.set(url, page.ok ? await page.text() : "");
+          }
+          if (pageConfirmsPlayers(pages.get(url), record)) {
+            record.verifiedFreeBroadcasts ??= [];
+            record.verifiedFreeBroadcasts.push({
+              label: `Austria: ${channel === "orfs" ? "ORF SPORT +" : channel.toUpperCase()} / ORF ON`,
+              access: "GRATIS",
+              country: "🇦🇹",
+              priority: 125,
+              source: url,
+            });
+          }
+        }
+      }
+    }
+  } catch {}
+}
+
+function television(record) {
+  const options = [...(record.verifiedFreeBroadcasts ?? []), ...paidAndKnownBroadcasts(record)];
+  const unique = [...new Map(options.map(option => [`${option.country}-${option.label}`, option])).values()]
+    .sort((a, b) => (a.access === "GRATIS" ? 0 : 1) - (b.access === "GRATIS" ? 0 : 1) || b.priority - a.priority);
+  return {
+    options: unique,
+    freeConfirmed: unique.some(option => option.access === "GRATIS"),
+  };
 }
 
 function recordFromCompetition(tournament, grouping, competition, league) {
@@ -182,9 +295,15 @@ function buildEvent(record, { uid, stamp, sequence }) {
   const broadcast = record.completed ? null : television(record);
   const broadcastLines = record.completed
     ? []
-    : broadcast
-      ? [`TV confermata: ${broadcast.label}`, `Fonte TV: ${broadcast.source}`]
-      : ["Copertura TV non confermata"];
+    : [
+        ...(broadcast.options.length ? ["Dove vederla:"] : []),
+        ...broadcast.options.flatMap(option => [
+          `${option.country} ${option.label} — ${option.access}`,
+          `Fonte TV: ${option.source}`,
+        ]),
+        ...(!broadcast.freeConfirmed ? ["🇦🇹 Gratis su ORF / ServusTV: da confermare"] : []),
+        ...(!broadcast.options.length ? ["Altre coperture TV: da confermare"] : []),
+      ];
   const description = [
     `${record.tournament} - ${record.round}`,
     record.completed
@@ -302,9 +421,7 @@ function matchEntry(record) {
   const broadcast = record.completed ? null : television(record);
   const tv = record.completed
     ? ""
-    : broadcast
-      ? `<p class="watch">${broadcast.label}. <a href="${broadcast.source}" target="_blank" rel="noopener">Fonte ↗</a></p>`
-      : '<p class="watch">Copertura TV non confermata.</p>';
+    : `<div class="watch">${broadcast.options.map(option => `<span class="broadcast-option"><b>${option.access}</b> ${option.country} ${option.label}. <a href="${option.source}" target="_blank" rel="noopener">Fonte ↗</a></span>`).join("")}${!broadcast.freeConfirmed ? '<span class="broadcast-tbc">Gratis in Austria, priorità ORF e ServusTV: da confermare.</span>' : ""}${!broadcast.options.length ? '<span class="broadcast-tbc">Altre coperture TV: da confermare.</span>' : ""}</div>`;
   return `<div class="match-entry"><span class="tournament">${record.tournament}</span><h3>${title}</h3><p>${details.join(" · ")}.</p>${tv}</div>`;
 }
 
@@ -345,6 +462,7 @@ const savedSeason = Number(unfold(oldCalendar).match(/^X-CURRENT-TENNIS-SEASON:(
 const sourceSeason = scoreboard.activeSeasons.length ? Math.max(...scoreboard.activeSeasons) : 0;
 const currentSeason = Math.max(savedSeason || fallbackSeason(now), sourceSeason);
 const records = scoreboard.records.filter(record => record.season >= currentSeason);
+await attachVerifiedFreeBroadcasts(records);
 
 const newCalendar = updateCalendar(oldCalendar, records, now, currentSeason);
 if (newCalendar !== oldCalendar) await writeFile(CALENDAR_PATH, newCalendar);
