@@ -323,27 +323,6 @@ URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/1025-2026/c
  ompetitionType/2
 END:VEVENT
 BEGIN:VEVENT
-UID:espn-185457@italian-tennis-calendar
-DTSTAMP:20261013T114000Z
-DTSTART;VALUE=DATE:20261014
-DTEND;VALUE=DATE:20261015
-SUMMARY:Lucia Bronzetti vs Jil Teichmann
-LOCATION:Rovereto\, Italy
-STATUS:TENTATIVE
-SEQUENCE:1
-TRANSP:TRANSPARENT
-CATEGORIES:RoveretOpen Città della Pace\,WTA
-X-TENNIS-SEASON:2026
-DESCRIPTION:RoveretOpen Città della Pace - Round 2\nIn programma\; orario
-  da confermare\nSuperficie e programma soggetti agli aggiornamenti del tor
- neo\nDove vederla:\n🇮🇹 Italia: SuperTennis e SuperTennis Plus — GR
- ATIS\nFonte TV: https://www.vitatrentina.it/2026/10/09/dal-12-al-18-ottobr
- e-il-roveretopen-citta-della-pace-femminile-di-tennis/\nDati partita: ESPN
- \; verificare le fonti ufficiali del torneo
-URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/1025-2026/c
- ompetitionType/2
-END:VEVENT
-BEGIN:VEVENT
 UID:espn-185351@italian-tennis-calendar
 DTSTAMP:20261013T114434Z
 DTSTART:20261014T043000Z
@@ -364,6 +343,32 @@ BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT2H
 DESCRIPTION:Tra due ore: Jasmine Paolini vs Nikola Bartunkova
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-185457@italian-tennis-calendar
+DTSTAMP:20261013T202019Z
+DTSTART:20261014T133000Z
+DTEND:20261014T163000Z
+SUMMARY:Lucia Bronzetti vs Jil Teichmann
+LOCATION:Rovereto\, Italy\, Centre Court
+STATUS:CONFIRMED
+SEQUENCE:2
+TRANSP:TRANSPARENT
+CATEGORIES:RoveretOpen Città della Pace\,WTA
+X-TENNIS-SEASON:2026
+DESCRIPTION:RoveretOpen Città della Pace - Round 2\nIn programma\nSuperfic
+ ie e programma soggetti agli aggiornamenti del torneo\nDove vederla:\n🇮
+ 🇹 Italia: SuperTennis e SuperTennis Plus — GRATIS\nFonte TV: https://
+ www.vitatrentina.it/2026/10/09/dal-12-al-18-ottobre-il-roveretopen-citta-d
+ ella-pace-femminile-di-tennis/\nDati partita: ESPN\; verificare le fonti u
+ fficiali del torneo
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/1025-2026/c
+ ompetitionType/2
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT2H
+DESCRIPTION:Tra due ore: Lucia Bronzetti vs Jil Teichmann
 END:VALARM
 END:VEVENT
 END:VCALENDAR
