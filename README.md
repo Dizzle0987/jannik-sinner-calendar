@@ -16,7 +16,7 @@ Calendario iCalendar indipendente dedicato alle partite ufficialmente confermate
 
 La selezione iniziale comprende Jannik Sinner, Flavio Cobolli, Lorenzo Musetti, Luciano Darderi, Matteo Arnaldi, Matteo Berrettini, Jasmine Paolini, Elisabetta Cocciaretto e Lucia Bronzetti. La rosa può cambiare seguendo le classifiche ufficiali ATP e WTA.
 
-Gli eventi vengono pubblicati quando torneo e partecipazione sono confermati. Avversario, campo e orario vengono aggiunti appena compaiono nei tabelloni e negli ordini di gioco ufficiali; quando l'orario non è fisso, il calendario usa un evento giornaliero e lo spiega nella descrizione.
+Gli eventi vengono pubblicati quando torneo e partecipazione sono confermati. Se il tabellone ufficiale conferma il turno successivo ma non ha ancora determinato l'avversario, il sito e il calendario mostrano un evento provvisorio “prossimo turno” con avversario, data e orario da confermare. Appena il nome compare nella fonte, lo stesso evento viene aggiornato senza creare duplicati. Quando è nota la data ma l'orario non è fisso, il calendario usa un evento giornaliero e lo spiega nella descrizione.
 
 Per ogni appuntamento attuale vengono cercate sia la copertura televisiva o streaming italiana sia alternative gratuite estere. Le opzioni confermate sono ordinate così: canali gratuiti italiani, canali gratuiti austriaci, altre alternative gratuite e infine servizi a pagamento. Fra le emittenti estere la verifica dà priorità a ServusTV e ORF, ricevibili anche a Bolzano. Una rete viene indicata come confermata soltanto quando il palinsesto specifico riporta l'incontro; i diritti generali del torneo non bastano.
 
@@ -44,7 +44,7 @@ Gli incontri futuri con orario confermato includono un promemoria iCalendar due 
 
 Sul sito sono sempre presenti tre riquadri, da sinistra a destra: incontri conclusi, incontri in corso e incontri in programma. Gli elenchi sono ordinati dal più recente al meno recente. Il riquadro dei conclusi mostra i primi due risultati e permette di aprire i precedenti con il pulsante “Vedi altri”; i riquadri live e futuri raccolgono tutti gli incontri della propria categoria.
 
-L'automazione evita avversari indicati come `TBD`, valida il file `.ics` prima di ogni pubblicazione e si arresta in caso di errore della fonte invece di cancellare eventi esistenti.
+L'automazione trasforma gli avversari indicati come `TBD` in segnaposto chiari soltanto quando la partecipazione dell'italiano al turno è già confermata, valida il file `.ics` prima di ogni pubblicazione e si arresta in caso di errore della fonte invece di cancellare eventi esistenti.
 
 Le indicazioni TV includono il collegamento alla fonte e sono ordinate `GRATIS Italia` → `GRATIS Austria` → `GRATIS altri Paesi` → `A pagamento`. Una copertura a pagamento confermata può essere mostrata mentre la ricerca di un'alternativa gratuita resta `Da confermare`. La verifica usa prima le guide ufficiali delle emittenti, con priorità estera a ServusTV e ORF, e poi fonti aggregate accessibili. TV Spielfilm è soltanto un possibile secondo riscontro: può essere sostituito da una fonte più completa o affidabile e l'automazione non forza le sue pagine protette da sistemi anti-bot. Le partite concluse non mostrano più informazioni TV.
 

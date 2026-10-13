@@ -276,10 +276,11 @@ function television(record) {
 function recordFromCompetition(tournament, grouping, competition, league) {
   if (!String(grouping?.grouping?.slug ?? competition?.type?.slug).includes("singles")) return null;
   const competitors = (competition.competitors ?? []).filter(item => item.athlete?.displayName);
-  if (competitors.length !== 2 || competitors.some(item => item.athlete.displayName === "TBD")) return null;
+  if (competitors.length !== 2) return null;
   const italian = competitors.find(item => PLAYERS.get(item.athlete.displayName) === league);
   if (!italian) return null;
   const opponent = competitors.find(item => item !== italian);
+  const opponentPending = opponent.athlete.displayName === "TBD";
   const start = new Date(competition.date ?? competition.startDate);
   if (Number.isNaN(start.getTime())) return null;
   const state = competition.status?.type?.state ?? "pre";
@@ -306,7 +307,8 @@ function recordFromCompetition(tournament, grouping, competition, league) {
     winner,
     score,
     italian: italian.athlete.displayName,
-    opponent: opponent.athlete.displayName,
+    opponent: opponentPending ? (league === "wta" ? "Avversaria da definire" : "Avversario da definire") : opponent.athlete.displayName,
+    opponentPending,
     location: venueParts.join(", "),
     url: tournamentUrl,
     season: Number(tournament.season?.year) || fallbackSeason(start),
@@ -376,6 +378,8 @@ function buildEvent(record, { uid, stamp, sequence }) {
       ? `Conclusa: ${record.winner ? "vittoria" : "sconfitta"} ${record.italian}${record.score ? ` ${record.score}` : ""}`
       : record.inProgress
         ? `In corso${record.score ? `: ${record.score}` : ""}`
+        : record.opponentPending
+          ? `In programma; ${record.league === "wta" ? "avversaria" : "avversario"}, data e orario da confermare`
         : record.timeValid ? "In programma" : "In programma; orario da confermare",
     "Superficie e programma soggetti agli aggiornamenti del torneo",
     ...broadcastLines,
@@ -394,7 +398,7 @@ function buildEvent(record, { uid, stamp, sequence }) {
     lines.push(`DTEND;VALUE=DATE:${icsDate(localDate(addDays(record.start, 1)))}`);
   }
   lines.push(
-    `SUMMARY:${escapeText(`${record.italian} vs ${record.opponent}`)}`,
+    `SUMMARY:${escapeText(record.opponentPending ? `${record.italian} - prossimo turno` : `${record.italian} vs ${record.opponent}`)}`,
     `LOCATION:${escapeText(record.location || record.tournament)}`,
     `STATUS:${record.completed || record.inProgress || record.timeValid ? "CONFIRMED" : "TENTATIVE"}`,
     `SEQUENCE:${sequence}`,
@@ -477,13 +481,15 @@ function italianDateTime(record) {
 }
 
 function matchEntry(record) {
-  const title = record.completed
+  const title = record.opponentPending
+    ? `${record.italian} — prossimo turno`
+    : record.completed
     ? `${record.italian} ${record.winner ? "batte" : "perde con"} ${record.opponent}`
     : `${record.italian} vs ${record.opponent}`;
-  const details = [record.round, italianDateTime(record)];
+  const details = [record.round, record.opponentPending ? `${record.opponent}; data e orario da confermare` : italianDateTime(record)];
   if ((record.completed || record.inProgress) && record.score) details.push(record.score);
   if (record.inProgress && record.statusDetail) details.push(record.statusDetail);
-  if (!record.completed && !record.inProgress && !record.timeValid) details.push("orario da confermare");
+  if (!record.completed && !record.inProgress && !record.timeValid && !record.opponentPending) details.push("orario da confermare");
   const broadcast = record.completed ? null : television(record);
   const tv = record.completed
     ? ""
@@ -542,4 +548,4 @@ const oldPage = await readFile(PAGE_PATH, "utf8");
 const newPage = updatePage(oldPage, records, now);
 if (newPage !== oldPage) await writeFile(PAGE_PATH, newPage);
 
-console.log(`Controllate ${records.length} partite confermate; calendario ${newCalendar === oldCalendar ? "invariato" : "aggiornato"}.`);
+console.log(`Controllati ${records.length} eventi confermati o provvisori; calendario ${newCalendar === oldCalendar ? "invariato" : "aggiornato"}.`);
