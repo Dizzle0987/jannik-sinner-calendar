@@ -18,7 +18,7 @@ La selezione iniziale comprende Jannik Sinner, Flavio Cobolli, Lorenzo Musetti, 
 
 Gli eventi vengono pubblicati quando torneo e partecipazione sono confermati. Avversario, campo e orario vengono aggiunti appena compaiono nei tabelloni e negli ordini di gioco ufficiali; quando l'orario non è fisso, il calendario usa un evento giornaliero e lo spiega nella descrizione.
 
-Per ogni appuntamento attuale viene indicata anche la disponibilità televisiva in Italia, dando evidenza all'eventuale trasmissione gratuita in chiaro. Per l'Austria vengono controllate anche guide TV aggregate, oltre ai palinsesti ufficiali di ORF e ServusTV. Se non esiste una copertura gratuita confermata, il calendario lo dichiara esplicitamente e riporta le opzioni in abbonamento verificate.
+Per ogni appuntamento attuale viene indicata la copertura televisiva o streaming soltanto quando è confermata da una fonte specifica. Se non esiste una conferma verificabile, il calendario lo dichiara senza suggerire emittenti possibili.
 
 Il calendario non include allenamenti, esibizioni, indiscrezioni, possibili turni futuri o partecipazioni non confermate.
 
@@ -45,6 +45,8 @@ Gli incontri futuri con orario confermato includono un promemoria iCalendar due 
 Sul sito sono sempre presenti tre riquadri, da sinistra a destra: incontri conclusi, incontri in corso e incontri in programma. Il riquadro dei conclusi mostra i due risultati più recenti e permette di aprire i precedenti con il pulsante “Vedi altri”; i riquadri live e futuri raccolgono tutti gli incontri della propria categoria.
 
 L'automazione evita avversari indicati come `TBD`, valida il file `.ics` prima di ogni pubblicazione e si arresta in caso di errore della fonte invece di cancellare eventi esistenti.
+
+Le indicazioni TV mostrano soltanto emittenti o piattaforme confermate per il torneo e includono il collegamento alla fonte. Se manca una conferma specifica, il sito e il calendario riportano “Copertura TV non confermata” senza suggerire canali possibili.
 
 Il calendario conserva soltanto la stagione tennistica corrente e quelle future. La stagione non viene dedotta da una data fissa: per ogni torneo viene letto il campo ufficiale `season.year` pubblicato nel tabellone. Quando i tornei attivi passano alla nuova stagione, l’automazione elimina gli eventi della stagione terminata; la data dell’incontro viene usata soltanto come ripiego se la fonte non espone la stagione. Anche il riquadro dei risultati conclusi riparte senza incontri della vecchia stagione.
 

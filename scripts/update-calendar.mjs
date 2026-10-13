@@ -72,17 +72,26 @@ function scoreFor(italian, opponent) {
   }).filter(Boolean).join(" ");
 }
 
-function television(league) {
-  if (league === "wta") {
-    return [
-      "TV Italia: controllare SuperTennis HD e SuperTennis Plus",
-      "TV Austria: controllare ORF, ServusTV e guide TV aggregate",
-    ];
+function television(record) {
+  if (record.season === 2026 && /Rolex Shanghai Masters/i.test(record.tournament)) {
+    return {
+      label: "Italia: Sky Sport Tennis e NOW",
+      source: "https://sport.sky.it/tennis/2026/10/06/atp-shanghai-2026-dove-vedere-tv-streaming",
+    };
   }
-  return [
-    "TV Italia: controllare Sky Sport e NOW",
-    "TV Austria: controllare ORF, ServusTV e guide TV aggregate",
-  ];
+  if (record.season === 2026 && /RoveretOpen/i.test(record.tournament)) {
+    return {
+      label: "Italia: SuperTennis e SuperTennis Plus",
+      source: "https://www.vitatrentina.it/2026/10/09/dal-12-al-18-ottobre-il-roveretopen-citta-della-pace-femminile-di-tennis/",
+    };
+  }
+  if (record.season === 2026 && record.league === "wta") {
+    return {
+      label: "Italia: SuperTennis Plus",
+      source: "https://plus.supertennis.tv/live",
+    };
+  }
+  return null;
 }
 
 function recordFromCompetition(tournament, grouping, competition, league) {
@@ -170,6 +179,12 @@ async function fetchScoreboards(now) {
 }
 
 function buildEvent(record, { uid, stamp, sequence }) {
+  const broadcast = record.completed ? null : television(record);
+  const broadcastLines = record.completed
+    ? []
+    : broadcast
+      ? [`TV confermata: ${broadcast.label}`, `Fonte TV: ${broadcast.source}`]
+      : ["Copertura TV non confermata"];
   const description = [
     `${record.tournament} - ${record.round}`,
     record.completed
@@ -178,7 +193,7 @@ function buildEvent(record, { uid, stamp, sequence }) {
         ? `In corso${record.score ? `: ${record.score}` : ""}`
         : record.timeValid ? "In programma" : "In programma; orario da confermare",
     "Superficie e programma soggetti agli aggiornamenti del torneo",
-    ...television(record.league),
+    ...broadcastLines,
     "Dati partita: ESPN; verificare le fonti ufficiali del torneo",
   ].join("\n");
   const lines = [
@@ -284,7 +299,12 @@ function matchEntry(record) {
   if ((record.completed || record.inProgress) && record.score) details.push(record.score);
   if (record.inProgress && record.statusDetail) details.push(record.statusDetail);
   if (!record.completed && !record.inProgress && !record.timeValid) details.push("orario da confermare");
-  const tv = record.completed ? "" : `<p class="watch">${television(record.league).join(". ")}.</p>`;
+  const broadcast = record.completed ? null : television(record);
+  const tv = record.completed
+    ? ""
+    : broadcast
+      ? `<p class="watch">${broadcast.label}. <a href="${broadcast.source}" target="_blank" rel="noopener">Fonte ↗</a></p>`
+      : '<p class="watch">Copertura TV non confermata.</p>';
   return `<div class="match-entry"><span class="tournament">${record.tournament}</span><h3>${title}</h3><p>${details.join(" · ")}.</p>${tv}</div>`;
 }
 
