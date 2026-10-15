@@ -342,45 +342,38 @@ URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/381-2026/co
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-185457@italian-tennis-calendar
-DTSTAMP:20261013T202019Z
-DTSTART:20261014T133000Z
-DTEND:20261014T163000Z
+DTSTAMP:20261015T042902Z
+DTSTART:20261014T141000Z
+DTEND:20261014T171000Z
 SUMMARY:Lucia Bronzetti vs Jil Teichmann
 LOCATION:Rovereto\, Italy\, Centre Court
 STATUS:CONFIRMED
-SEQUENCE:2
+SEQUENCE:3
 TRANSP:TRANSPARENT
 CATEGORIES:RoveretOpen Città della Pace\,WTA
 X-TENNIS-SEASON:2026
-DESCRIPTION:RoveretOpen Città della Pace - Round 2\nIn programma\nSuperfic
- ie e programma soggetti agli aggiornamenti del torneo\nDove vederla:\n🇮
- 🇹 Italia: SuperTennis e SuperTennis Plus — GRATIS\nFonte TV: https://
- www.vitatrentina.it/2026/10/09/dal-12-al-18-ottobre-il-roveretopen-citta-d
- ella-pace-femminile-di-tennis/\nDati partita: ESPN\; verificare le fonti u
- fficiali del torneo
+DESCRIPTION:RoveretOpen Città della Pace - Round 2\nConclusa: sconfitta Lu
+ cia Bronzetti 4-6 5-7\nSuperficie e programma soggetti agli aggiornamenti
+  del torneo\nDati partita: ESPN\; verificare le fonti ufficiali del torneo
 URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/1025-2026/c
  ompetitionType/2
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT2H
-DESCRIPTION:Tra due ore: Lucia Bronzetti vs Jil Teichmann
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-185367@italian-tennis-calendar
-DTSTAMP:20261014T130713Z
-DTSTART:20261015T053000Z
-DTEND:20261015T083000Z
+DTSTAMP:20261015T042902Z
+DTSTART:20261015T060000Z
+DTEND:20261015T090000Z
 SUMMARY:Jasmine Paolini vs Sonay Kartal
 LOCATION:Wuhan\, China PR\, Court 1
 STATUS:CONFIRMED
-SEQUENCE:0
+SEQUENCE:1
 TRANSP:TRANSPARENT
 CATEGORIES:Dongfeng Voyah Wuhan Open\,WTA
 X-TENNIS-SEASON:2026
 DESCRIPTION:Dongfeng Voyah Wuhan Open - Round 3\nIn programma\nSuperficie e
-  programma soggetti agli aggiornamenti del torneo\nCopertura TV non ancora
-  confermata\nDati partita: ESPN\; verificare le fonti ufficiali del torneo
+  programma soggetti agli aggiornamenti del torneo\nDove vederla:\n🇮🇹
+  Italia: SuperTennis Plus — GRATIS\nFonte TV: https://plus.supertennis.t
+ v/live\nDati partita: ESPN\; verificare le fonti ufficiali del torneo
 URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/381-2026/co
  mpetitionType/2
 BEGIN:VALARM
