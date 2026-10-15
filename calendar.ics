@@ -360,25 +360,20 @@ URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/1025-2026/c
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-185367@italian-tennis-calendar
-DTSTAMP:20261015T092332Z
-DTSTART:20261015T093000Z
-DTEND:20261015T123000Z
+DTSTAMP:20261015T141518Z
+DTSTART:20261015T095000Z
+DTEND:20261015T125000Z
 SUMMARY:Jasmine Paolini vs Sonay Kartal
 LOCATION:Wuhan\, China PR\, Dongfeng Voyah Center Court
 STATUS:CONFIRMED
-SEQUENCE:2
+SEQUENCE:3
 TRANSP:TRANSPARENT
 CATEGORIES:Dongfeng Voyah Wuhan Open\,WTA
 X-TENNIS-SEASON:2026
-DESCRIPTION:Dongfeng Voyah Wuhan Open - Round 3\nIn programma\nSuperficie e
-  programma soggetti agli aggiornamenti del torneo\nCopertura TV non ancora
-  confermata\nDati partita: ESPN\; verificare le fonti ufficiali del torneo
+DESCRIPTION:Dongfeng Voyah Wuhan Open - Round 3\nConclusa: sconfitta Jasmin
+ e Paolini 2-6 0-6\nSuperficie e programma soggetti agli aggiornamenti del
+  torneo\nDati partita: ESPN\; verificare le fonti ufficiali del torneo
 URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/381-2026/co
  mpetitionType/2
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT2H
-DESCRIPTION:Tra due ore: Jasmine Paolini vs Sonay Kartal
-END:VALARM
 END:VEVENT
 END:VCALENDAR
