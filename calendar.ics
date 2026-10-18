@@ -378,32 +378,37 @@ URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/381-2026/co
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-185085@italian-tennis-calendar
-DTSTAMP:20261018T001635Z
-DTSTART;VALUE=DATE:20261019
-DTEND;VALUE=DATE:20261020
+DTSTAMP:20261018T131530Z
+DTSTART:20261019T143000Z
+DTEND:20261019T173000Z
 SUMMARY:Lorenzo Musetti vs Matteo Arnaldi
-LOCATION:Lyon\, France
-STATUS:TENTATIVE
-SEQUENCE:0
+LOCATION:Lyon\, France\, Court Central Auvergne-Rhone-Alpes
+STATUS:CONFIRMED
+SEQUENCE:1
 TRANSP:TRANSPARENT
 CATEGORIES:Grand Prix Auvergne-Rhône-Alpes\,ATP
 X-TENNIS-SEASON:2026
-DESCRIPTION:Grand Prix Auvergne-Rhône-Alpes - Round 1\nIn programma\; orar
- io da confermare\nSuperficie e programma soggetti agli aggiornamenti del t
- orneo\nCopertura TV non ancora confermata\nDati partita: ESPN\; verificare
-  le fonti ufficiali del torneo
+DESCRIPTION:Grand Prix Auvergne-Rhône-Alpes - Round 1\nIn programma\nSuper
+ ficie e programma soggetti agli aggiornamenti del torneo\nCopertura TV non
+  ancora confermata\nDati partita: ESPN\; verificare le fonti ufficiali del
+  torneo
 URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/452-2026/co
  mpetitionType/1
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT2H
+DESCRIPTION:Tra due ore: Lorenzo Musetti vs Matteo Arnaldi
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-185089@italian-tennis-calendar
-DTSTAMP:20261018T001635Z
-DTSTART;VALUE=DATE:20261019
-DTEND;VALUE=DATE:20261020
+DTSTAMP:20261018T131530Z
+DTSTART;VALUE=DATE:20261020
+DTEND;VALUE=DATE:20261021
 SUMMARY:Matteo Berrettini - prossimo turno
 LOCATION:Lyon\, France
 STATUS:TENTATIVE
-SEQUENCE:0
+SEQUENCE:1
 TRANSP:TRANSPARENT
 CATEGORIES:Grand Prix Auvergne-Rhône-Alpes\,ATP
 X-TENNIS-SEASON:2026
@@ -416,20 +421,20 @@ URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/452-2026/co
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-185532@italian-tennis-calendar
-DTSTAMP:20261018T001635Z
-DTSTART;VALUE=DATE:20261019
-DTEND;VALUE=DATE:20261020
-SUMMARY:Jasmine Paolini - prossimo turno
+DTSTAMP:20261018T131530Z
+DTSTART;VALUE=DATE:20261020
+DTEND;VALUE=DATE:20261021
+SUMMARY:Jasmine Paolini vs Anhelina Kalinina
 LOCATION:Ningbo\, China PR
 STATUS:TENTATIVE
-SEQUENCE:0
+SEQUENCE:1
 TRANSP:TRANSPARENT
 CATEGORIES:BNB Ningbo Open\,WTA
 X-TENNIS-SEASON:2026
-DESCRIPTION:BNB Ningbo Open - Round 1\nIn programma\; avversaria\, data e o
- rario da confermare\nSuperficie e programma soggetti agli aggiornamenti de
- l torneo\nCopertura TV non ancora confermata\nDati partita: ESPN\; verific
- are le fonti ufficiali del torneo
+DESCRIPTION:BNB Ningbo Open - Round 1\nIn programma\; orario da confermare\
+ nSuperficie e programma soggetti agli aggiornamenti del torneo\nCopertura
+  TV non ancora confermata\nDati partita: ESPN\; verificare le fonti uffici
+ ali del torneo
 URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/963-2026/co
  mpetitionType/2
 END:VEVENT
