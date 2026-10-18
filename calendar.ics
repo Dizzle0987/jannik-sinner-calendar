@@ -376,4 +376,99 @@ DESCRIPTION:Dongfeng Voyah Wuhan Open - Round 3\nConclusa: sconfitta Jasmin
 URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/381-2026/co
  mpetitionType/2
 END:VEVENT
+BEGIN:VEVENT
+UID:espn-185085@italian-tennis-calendar
+DTSTAMP:20261018T001635Z
+DTSTART;VALUE=DATE:20261019
+DTEND;VALUE=DATE:20261020
+SUMMARY:Lorenzo Musetti vs Matteo Arnaldi
+LOCATION:Lyon\, France
+STATUS:TENTATIVE
+SEQUENCE:0
+TRANSP:TRANSPARENT
+CATEGORIES:Grand Prix Auvergne-Rhône-Alpes\,ATP
+X-TENNIS-SEASON:2026
+DESCRIPTION:Grand Prix Auvergne-Rhône-Alpes - Round 1\nIn programma\; orar
+ io da confermare\nSuperficie e programma soggetti agli aggiornamenti del t
+ orneo\nCopertura TV non ancora confermata\nDati partita: ESPN\; verificare
+  le fonti ufficiali del torneo
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/452-2026/co
+ mpetitionType/1
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-185089@italian-tennis-calendar
+DTSTAMP:20261018T001635Z
+DTSTART;VALUE=DATE:20261019
+DTEND;VALUE=DATE:20261020
+SUMMARY:Matteo Berrettini - prossimo turno
+LOCATION:Lyon\, France
+STATUS:TENTATIVE
+SEQUENCE:0
+TRANSP:TRANSPARENT
+CATEGORIES:Grand Prix Auvergne-Rhône-Alpes\,ATP
+X-TENNIS-SEASON:2026
+DESCRIPTION:Grand Prix Auvergne-Rhône-Alpes - Round 1\nIn programma\; avve
+ rsario\, data e orario da confermare\nSuperficie e programma soggetti agli
+  aggiornamenti del torneo\nCopertura TV non ancora confermata\nDati partit
+ a: ESPN\; verificare le fonti ufficiali del torneo
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/452-2026/co
+ mpetitionType/1
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-185532@italian-tennis-calendar
+DTSTAMP:20261018T001635Z
+DTSTART;VALUE=DATE:20261019
+DTEND;VALUE=DATE:20261020
+SUMMARY:Jasmine Paolini - prossimo turno
+LOCATION:Ningbo\, China PR
+STATUS:TENTATIVE
+SEQUENCE:0
+TRANSP:TRANSPARENT
+CATEGORIES:BNB Ningbo Open\,WTA
+X-TENNIS-SEASON:2026
+DESCRIPTION:BNB Ningbo Open - Round 1\nIn programma\; avversaria\, data e o
+ rario da confermare\nSuperficie e programma soggetti agli aggiornamenti de
+ l torneo\nCopertura TV non ancora confermata\nDati partita: ESPN\; verific
+ are le fonti ufficiali del torneo
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/963-2026/co
+ mpetitionType/2
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-184998@italian-tennis-calendar
+DTSTAMP:20261018T001635Z
+DTSTART;VALUE=DATE:20261021
+DTEND;VALUE=DATE:20261022
+SUMMARY:Luciano Darderi - prossimo turno
+LOCATION:Almaty\, Kazakhstan
+STATUS:TENTATIVE
+SEQUENCE:0
+TRANSP:TRANSPARENT
+CATEGORIES:Almaty Open\,ATP
+X-TENNIS-SEASON:2026
+DESCRIPTION:Almaty Open - Round 2\nIn programma\; avversario\, data e orari
+ o da confermare\nSuperficie e programma soggetti agli aggiornamenti del to
+ rneo\nCopertura TV non ancora confermata\nDati partita: ESPN\; verificare
+  le fonti ufficiali del torneo
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/708-2026/co
+ mpetitionType/1
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-185097@italian-tennis-calendar
+DTSTAMP:20261018T001635Z
+DTSTART;VALUE=DATE:20261021
+DTEND;VALUE=DATE:20261022
+SUMMARY:Flavio Cobolli - prossimo turno
+LOCATION:Lyon\, France
+STATUS:TENTATIVE
+SEQUENCE:0
+TRANSP:TRANSPARENT
+CATEGORIES:Grand Prix Auvergne-Rhône-Alpes\,ATP
+X-TENNIS-SEASON:2026
+DESCRIPTION:Grand Prix Auvergne-Rhône-Alpes - Round 2\nIn programma\; avve
+ rsario\, data e orario da confermare\nSuperficie e programma soggetti agli
+  aggiornamenti del torneo\nCopertura TV non ancora confermata\nDati partit
+ a: ESPN\; verificare le fonti ufficiali del torneo
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/452-2026/co
+ mpetitionType/1
+END:VEVENT
 END:VCALENDAR
