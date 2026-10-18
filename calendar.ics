@@ -378,13 +378,13 @@ URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/381-2026/co
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-185085@italian-tennis-calendar
-DTSTAMP:20261018T131530Z
+DTSTAMP:20261018T211203Z
 DTSTART:20261019T143000Z
 DTEND:20261019T173000Z
 SUMMARY:Lorenzo Musetti vs Matteo Arnaldi
 LOCATION:Lyon\, France\, Court Central Auvergne-Rhone-Alpes
 STATUS:CONFIRMED
-SEQUENCE:1
+SEQUENCE:2
 TRANSP:TRANSPARENT
 CATEGORIES:Grand Prix Auvergne-Rhône-Alpes\,ATP
 X-TENNIS-SEASON:2026
@@ -392,7 +392,7 @@ DESCRIPTION:Grand Prix Auvergne-Rhône-Alpes - Round 1\nIn programma\nSuper
  ficie e programma soggetti agli aggiornamenti del torneo\nCopertura TV non
   ancora confermata\nDati partita: ESPN\; verificare le fonti ufficiali del
   torneo
-URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/452-2026/co
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/110-2026/co
  mpetitionType/1
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -402,13 +402,13 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-185089@italian-tennis-calendar
-DTSTAMP:20261018T131530Z
+DTSTAMP:20261018T211203Z
 DTSTART;VALUE=DATE:20261020
 DTEND;VALUE=DATE:20261021
 SUMMARY:Matteo Berrettini - prossimo turno
 LOCATION:Lyon\, France
 STATUS:TENTATIVE
-SEQUENCE:1
+SEQUENCE:2
 TRANSP:TRANSPARENT
 CATEGORIES:Grand Prix Auvergne-Rhône-Alpes\,ATP
 X-TENNIS-SEASON:2026
@@ -416,7 +416,7 @@ DESCRIPTION:Grand Prix Auvergne-Rhône-Alpes - Round 1\nIn programma\; avve
  rsario\, data e orario da confermare\nSuperficie e programma soggetti agli
   aggiornamenti del torneo\nCopertura TV non ancora confermata\nDati partit
  a: ESPN\; verificare le fonti ufficiali del torneo
-URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/452-2026/co
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/110-2026/co
  mpetitionType/1
 END:VEVENT
 BEGIN:VEVENT
@@ -459,13 +459,13 @@ URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/708-2026/co
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-185097@italian-tennis-calendar
-DTSTAMP:20261018T001635Z
+DTSTAMP:20261018T211203Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261022
 SUMMARY:Flavio Cobolli - prossimo turno
 LOCATION:Lyon\, France
 STATUS:TENTATIVE
-SEQUENCE:0
+SEQUENCE:1
 TRANSP:TRANSPARENT
 CATEGORIES:Grand Prix Auvergne-Rhône-Alpes\,ATP
 X-TENNIS-SEASON:2026
@@ -473,7 +473,7 @@ DESCRIPTION:Grand Prix Auvergne-Rhône-Alpes - Round 2\nIn programma\; avve
  rsario\, data e orario da confermare\nSuperficie e programma soggetti agli
   aggiornamenti del torneo\nCopertura TV non ancora confermata\nDati partit
  a: ESPN\; verificare le fonti ufficiali del torneo
-URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/452-2026/co
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/110-2026/co
  mpetitionType/1
 END:VEVENT
 END:VCALENDAR
