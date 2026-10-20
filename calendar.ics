@@ -397,26 +397,21 @@ URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/110-2026/co
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-185532@italian-tennis-calendar
-DTSTAMP:20261020T064417Z
-DTSTART:20261020T065000Z
-DTEND:20261020T095000Z
+DTSTAMP:20261020T122001Z
+DTSTART:20261020T075000Z
+DTEND:20261020T105000Z
 SUMMARY:Jasmine Paolini vs Anhelina Kalinina
 LOCATION:Ningbo\, China PR\, Center Court
 STATUS:CONFIRMED
-SEQUENCE:3
+SEQUENCE:4
 TRANSP:TRANSPARENT
 CATEGORIES:BNB Ningbo Open\,WTA
 X-TENNIS-SEASON:2026
-DESCRIPTION:BNB Ningbo Open - Round 1\nIn programma\nSuperficie e programma
-  soggetti agli aggiornamenti del torneo\nCopertura TV non ancora confermat
- a\nDati partita: ESPN\; verificare le fonti ufficiali del torneo
+DESCRIPTION:BNB Ningbo Open - Round 1\nConclusa: vittoria Jasmine Paolini 6
+ -2 7-5\nSuperficie e programma soggetti agli aggiornamenti del torneo\nDat
+ i partita: ESPN\; verificare le fonti ufficiali del torneo
 URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/963-2026/co
  mpetitionType/2
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT2H
-DESCRIPTION:Tra due ore: Jasmine Paolini vs Anhelina Kalinina
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-185089@italian-tennis-calendar
@@ -441,25 +436,6 @@ ACTION:DISPLAY
 TRIGGER:-PT2H
 DESCRIPTION:Tra due ore: Matteo Berrettini vs Kyrian Jacquet
 END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:espn-184998@italian-tennis-calendar
-DTSTAMP:20261019T140509Z
-DTSTART;VALUE=DATE:20261021
-DTEND;VALUE=DATE:20261022
-SUMMARY:Luciano Darderi vs James Duckworth
-LOCATION:Almaty\, Kazakhstan
-STATUS:TENTATIVE
-SEQUENCE:1
-TRANSP:TRANSPARENT
-CATEGORIES:Almaty Open\,ATP
-X-TENNIS-SEASON:2026
-DESCRIPTION:Almaty Open - Round 2\nIn programma\; orario da confermare\nSup
- erficie e programma soggetti agli aggiornamenti del torneo\nCopertura TV n
- on ancora confermata\nDati partita: ESPN\; verificare le fonti ufficiali d
- el torneo
-URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/708-2026/co
- mpetitionType/1
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-185088@italian-tennis-calendar
@@ -498,5 +474,47 @@ DESCRIPTION:Grand Prix Auvergne-Rhône-Alpes - Round 2\nIn programma\; avve
  a: ESPN\; verificare le fonti ufficiali del torneo
 URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/110-2026/co
  mpetitionType/1
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-184998@italian-tennis-calendar
+DTSTAMP:20261020T122001Z
+DTSTART:20261021T063000Z
+DTEND:20261021T093000Z
+SUMMARY:Luciano Darderi vs James Duckworth
+LOCATION:Almaty\, Kazakhstan\, Center Court
+STATUS:CONFIRMED
+SEQUENCE:2
+TRANSP:TRANSPARENT
+CATEGORIES:Almaty Open\,ATP
+X-TENNIS-SEASON:2026
+DESCRIPTION:Almaty Open - Round 2\nIn programma\nSuperficie e programma sog
+ getti agli aggiornamenti del torneo\nCopertura TV non ancora confermata\nD
+ ati partita: ESPN\; verificare le fonti ufficiali del torneo
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/708-2026/co
+ mpetitionType/1
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT2H
+DESCRIPTION:Tra due ore: Luciano Darderi vs James Duckworth
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-185537@italian-tennis-calendar
+DTSTAMP:20261020T122001Z
+DTSTART;VALUE=DATE:20261022
+DTEND;VALUE=DATE:20261023
+SUMMARY:Jasmine Paolini vs Iva Jovic
+LOCATION:Ningbo\, China PR
+STATUS:TENTATIVE
+SEQUENCE:0
+TRANSP:TRANSPARENT
+CATEGORIES:BNB Ningbo Open\,WTA
+X-TENNIS-SEASON:2026
+DESCRIPTION:BNB Ningbo Open - Round 2\nIn programma\; orario da confermare\
+ nSuperficie e programma soggetti agli aggiornamenti del torneo\nCopertura
+  TV non ancora confermata\nDati partita: ESPN\; verificare le fonti uffici
+ ali del torneo
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/963-2026/co
+ mpetitionType/2
 END:VEVENT
 END:VCALENDAR
