@@ -15,6 +15,7 @@ const PLAYERS = new Map([
   ["Luciano Darderi", "atp"],
   ["Matteo Arnaldi", "atp"],
   ["Matteo Berrettini", "atp"],
+  ["Sara Errani", "wta"],
   ["Jasmine Paolini", "wta"],
   ["Elisabetta Cocciaretto", "wta"],
   ["Lucia Bronzetti", "wta"],
@@ -124,10 +125,12 @@ function paidAndKnownBroadcasts(record) {
 }
 
 const lastName = name => normalized(name).split(/\s+/).at(-1);
+const sideLastNames = (record, side) => (record[`${side}Players`] ?? [record[side]]).map(lastName);
 const htmlText = html => normalized(String(html).replace(/<script[\s\S]*?<\/script>/gi, " ").replace(/<style[\s\S]*?<\/style>/gi, " ").replace(/<[^>]+>/g, " "));
 const pageConfirmsPlayers = (html, record) => {
   const text = htmlText(html);
-  return text.includes(lastName(record.italian)) && text.includes(lastName(record.opponent));
+  return sideLastNames(record, "italian").every(name => text.includes(name))
+    && sideLastNames(record, "opponent").every(name => text.includes(name));
 };
 
 function parseServusEpg(html) {
@@ -147,7 +150,8 @@ function parseServusEpg(html) {
 function programmeConfirmsRecord(programme, record) {
   if (!programme.start || !programme.end || Number.isNaN(programme.start.getTime()) || Number.isNaN(programme.end.getTime())) return false;
   const title = normalized(programme.title);
-  if (!title.includes(lastName(record.italian)) || !title.includes(lastName(record.opponent))) return false;
+  if (!sideLastNames(record, "italian").every(name => title.includes(name))
+    || !sideLastNames(record, "opponent").every(name => title.includes(name))) return false;
   return programme.start <= addHours(record.start, 0.25) && programme.end >= addHours(record.start, 1.25);
 }
 
@@ -274,13 +278,21 @@ function television(record) {
 }
 
 function recordFromCompetition(tournament, grouping, competition, league) {
-  if (!String(grouping?.grouping?.slug ?? competition?.type?.slug).includes("singles")) return null;
-  const competitors = (competition.competitors ?? []).filter(item => item.athlete?.displayName);
+  const discipline = String(grouping?.grouping?.slug ?? competition?.type?.slug);
+  const doubles = discipline.includes("doubles");
+  if (!discipline.includes("singles") && !doubles) return null;
+  const namesFor = item => item.athlete?.displayName
+    ? [item.athlete.displayName]
+    : (item.roster?.athletes ?? []).map(athlete => athlete.displayName).filter(Boolean);
+  const displayNameFor = item => item.athlete?.displayName ?? item.roster?.displayName ?? namesFor(item).join(" / ");
+  const competitors = (competition.competitors ?? []).filter(item => namesFor(item).length);
   if (competitors.length !== 2) return null;
-  const italian = competitors.find(item => PLAYERS.get(item.athlete.displayName) === league);
+  const italian = competitors.find(item => namesFor(item).some(name => PLAYERS.get(name) === league));
   if (!italian) return null;
   const opponent = competitors.find(item => item !== italian);
-  const opponentPending = opponent.athlete.displayName === "TBD";
+  const italianPlayers = namesFor(italian);
+  const opponentPlayers = namesFor(opponent);
+  const opponentPending = opponentPlayers.some(name => name === "TBD");
   const start = new Date(competition.date ?? competition.startDate);
   if (Number.isNaN(start.getTime())) return null;
   const state = competition.status?.type?.state ?? "pre";
@@ -295,6 +307,7 @@ function recordFromCompetition(tournament, grouping, competition, league) {
     id: String(competition.id),
     uid: `espn-${competition.id}@italian-tennis-calendar`,
     league,
+    doubles,
     tournament: tournament.name,
     round,
     start,
@@ -306,8 +319,12 @@ function recordFromCompetition(tournament, grouping, competition, league) {
     statusDetail: competition.status?.type?.detail ?? "",
     winner,
     score,
-    italian: italian.athlete.displayName,
-    opponent: opponentPending ? (league === "wta" ? "Avversaria da definire" : "Avversario da definire") : opponent.athlete.displayName,
+    italian: displayNameFor(italian),
+    italianPlayers,
+    opponent: opponentPending
+      ? doubles ? "Avversari da definire" : league === "wta" ? "Avversaria da definire" : "Avversario da definire"
+      : displayNameFor(opponent),
+    opponentPlayers,
     opponentPending,
     location: venueParts.join(", "),
     url: tournamentUrl,
@@ -379,7 +396,7 @@ function buildEvent(record, { uid, stamp, sequence }) {
       : record.inProgress
         ? `In corso${record.score ? `: ${record.score}` : ""}`
         : record.opponentPending
-          ? `In programma; ${record.league === "wta" ? "avversaria" : "avversario"}, data e orario da confermare`
+          ? `In programma; ${record.doubles ? "avversari" : record.league === "wta" ? "avversaria" : "avversario"}, data e orario da confermare`
         : record.timeValid ? "In programma" : "In programma; orario da confermare",
     "Superficie e programma soggetti agli aggiornamenti del torneo",
     ...broadcastLines,
@@ -403,7 +420,7 @@ function buildEvent(record, { uid, stamp, sequence }) {
     `STATUS:${record.completed || record.inProgress || record.timeValid ? "CONFIRMED" : "TENTATIVE"}`,
     `SEQUENCE:${sequence}`,
     "TRANSP:TRANSPARENT",
-    `CATEGORIES:${escapeText(`${record.tournament},${record.league.toUpperCase()}`)}`,
+    `CATEGORIES:${escapeText(`${record.tournament},${record.league.toUpperCase()}${record.doubles ? ",Doppio" : ""}`)}`,
     `X-TENNIS-SEASON:${record.season}`,
     `DESCRIPTION:${escapeText(description)}`,
     `URL:${record.url}`,
@@ -484,7 +501,7 @@ function matchEntry(record) {
   const title = record.opponentPending
     ? `${record.italian} — prossimo turno`
     : record.completed
-    ? `${record.italian} ${record.winner ? "batte" : "perde con"} ${record.opponent}`
+    ? `${record.italian} ${record.winner ? record.doubles ? "battono" : "batte" : record.doubles ? "perdono contro" : "perde con"} ${record.opponent}`
     : `${record.italian} vs ${record.opponent}`;
   const details = [record.round, record.opponentPending ? `${record.opponent}; data e orario da confermare` : italianDateTime(record)];
   if ((record.completed || record.inProgress) && record.score) details.push(record.score);

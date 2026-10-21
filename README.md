@@ -8,13 +8,13 @@ Calendario iCalendar indipendente dedicato alle partite ufficialmente confermate
 ## Cosa contiene
 
 - un unico URL iCalendar stabile;
-- partite ufficialmente confermate della stagione corrente per i principali giocatori italiani ATP e WTA;
+- partite ufficialmente confermate, in singolare e in doppio, della stagione corrente per i principali giocatori italiani ATP e WTA;
 - torneo, categoria, turno, avversario, campo e superficie quando disponibili;
 - risultati delle partite concluse;
 - indicazione `Da confermare` quando un dato non è verificato;
 - compatibilità con Apple Calendar, Google Calendar e Outlook.
 
-La selezione iniziale comprende Jannik Sinner, Flavio Cobolli, Lorenzo Musetti, Luciano Darderi, Matteo Arnaldi, Matteo Berrettini, Jasmine Paolini, Elisabetta Cocciaretto e Lucia Bronzetti. La rosa può cambiare seguendo le classifiche ufficiali ATP e WTA.
+La selezione iniziale comprende Jannik Sinner, Flavio Cobolli, Lorenzo Musetti, Luciano Darderi, Matteo Arnaldi, Matteo Berrettini, Sara Errani, Jasmine Paolini, Elisabetta Cocciaretto e Lucia Bronzetti. La rosa può cambiare seguendo le classifiche ufficiali ATP e WTA.
 
 Gli eventi vengono pubblicati quando torneo e partecipazione sono confermati. Se il tabellone ufficiale conferma il turno successivo ma non ha ancora determinato l'avversario, il sito e il calendario mostrano un evento provvisorio “prossimo turno” con avversario, data e orario da confermare. Appena il nome compare nella fonte, lo stesso evento viene aggiornato senza creare duplicati. Quando è nota la data ma l'orario non è fisso, il calendario usa un evento giornaliero e lo spiega nella descrizione.
 

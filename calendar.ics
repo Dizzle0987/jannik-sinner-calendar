@@ -377,6 +377,26 @@ URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/381-2026/co
  mpetitionType/2
 END:VEVENT
 BEGIN:VEVENT
+UID:espn-185034@italian-tennis-calendar
+DTSTAMP:20261021T063208Z
+DTSTART:20261019T091500Z
+DTEND:20261019T121500Z
+SUMMARY:Luciano Darderi / Tomas Martin Etcheverry vs Jason Kubler / John Pe
+ ers
+LOCATION:Almaty\, Kazakhstan\, Court 1
+STATUS:CONFIRMED
+SEQUENCE:0
+TRANSP:TRANSPARENT
+CATEGORIES:Almaty Open\,ATP\,Doppio
+X-TENNIS-SEASON:2026
+DESCRIPTION:Almaty Open - Round 1\nConclusa: sconfitta Luciano Darderi / To
+ mas Martin Etcheverry 6-4 6-7(8) 0-1\nSuperficie e programma soggetti agli
+  aggiornamenti del torneo\nDati partita: ESPN\; verificare le fonti uffici
+ ali del torneo
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/708-2026/co
+ mpetitionType/1
+END:VEVENT
+BEGIN:VEVENT
 UID:espn-185085@italian-tennis-calendar
 DTSTAMP:20261020T064417Z
 DTSTART:20261019T151500Z
@@ -415,37 +435,52 @@ URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/963-2026/co
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-185089@italian-tennis-calendar
-DTSTAMP:20261020T172135Z
-DTSTART:20261020T173000Z
-DTEND:20261020T203000Z
+DTSTAMP:20261021T063208Z
+DTSTART:20261020T181000Z
+DTEND:20261020T211000Z
 SUMMARY:Matteo Berrettini vs Kyrian Jacquet
 LOCATION:Lyon\, France\, Court Central Auvergne-Rhone-Alpes
 STATUS:CONFIRMED
-SEQUENCE:4
+SEQUENCE:5
 TRANSP:TRANSPARENT
 CATEGORIES:Grand Prix Auvergne-Rhône-Alpes\,ATP
 X-TENNIS-SEASON:2026
-DESCRIPTION:Grand Prix Auvergne-Rhône-Alpes - Round 1\nIn programma\nSuper
- ficie e programma soggetti agli aggiornamenti del torneo\nCopertura TV non
-  ancora confermata\nDati partita: ESPN\; verificare le fonti ufficiali del
+DESCRIPTION:Grand Prix Auvergne-Rhône-Alpes - Round 1\nConclusa: sconfitta
+  Matteo Berrettini 6-7(4) 5-7\nSuperficie e programma soggetti agli aggior
+ namenti del torneo\nDati partita: ESPN\; verificare le fonti ufficiali del
   torneo
 URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/110-2026/co
  mpetitionType/1
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT2H
-DESCRIPTION:Tra due ore: Matteo Berrettini vs Kyrian Jacquet
-END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-185552@italian-tennis-calendar
+DTSTAMP:20261021T063208Z
+DTSTART:20261021T052500Z
+DTEND:20261021T082500Z
+SUMMARY:Sara Errani / Jasmine Paolini vs Cristina Bucsa / Nicole Melichar-M
+ artinez
+LOCATION:Ningbo\, China PR\, Grandstand
+STATUS:CONFIRMED
+SEQUENCE:0
+TRANSP:TRANSPARENT
+CATEGORIES:BNB Ningbo Open\,WTA\,Doppio
+X-TENNIS-SEASON:2026
+DESCRIPTION:BNB Ningbo Open - Round 1\nIn corso: 5-7 1-2\nSuperficie e prog
+ ramma soggetti agli aggiornamenti del torneo\nDove vederla:\n🇮🇹 Ital
+ ia: SuperTennis Plus — GRATIS\nFonte TV: https://plus.supertennis.tv/liv
+ e\nDati partita: ESPN\; verificare le fonti ufficiali del torneo
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/963-2026/co
+ mpetitionType/2
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-184998@italian-tennis-calendar
-DTSTAMP:20261020T122001Z
-DTSTART:20261021T063000Z
-DTEND:20261021T093000Z
+DTSTAMP:20261021T063208Z
+DTSTART:20261021T063500Z
+DTEND:20261021T093500Z
 SUMMARY:Luciano Darderi vs James Duckworth
 LOCATION:Almaty\, Kazakhstan\, Center Court
 STATUS:CONFIRMED
-SEQUENCE:2
+SEQUENCE:3
 TRANSP:TRANSPARENT
 CATEGORIES:Almaty Open\,ATP
 X-TENNIS-SEASON:2026
