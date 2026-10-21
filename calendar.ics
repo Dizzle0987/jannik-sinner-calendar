@@ -473,19 +473,19 @@ URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/963-2026/co
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-184998@italian-tennis-calendar
-DTSTAMP:20261021T073039Z
+DTSTAMP:20261021T131153Z
 DTSTART:20261021T064000Z
 DTEND:20261021T094000Z
 SUMMARY:Luciano Darderi vs James Duckworth
 LOCATION:Almaty\, Kazakhstan\, Center Court
 STATUS:CONFIRMED
-SEQUENCE:4
+SEQUENCE:5
 TRANSP:TRANSPARENT
 CATEGORIES:Almaty Open\,ATP
 X-TENNIS-SEASON:2026
-DESCRIPTION:Almaty Open - Round 2\nIn corso: 5-7 0-1\nSuperficie e programm
- a soggetti agli aggiornamenti del torneo\nCopertura TV non ancora conferma
- ta\nDati partita: ESPN\; verificare le fonti ufficiali del torneo
+DESCRIPTION:Almaty Open - Round 2\nConclusa: sconfitta Luciano Darderi 5-7
+  6-7(7)\nSuperficie e programma soggetti agli aggiornamenti del torneo\nDa
+ ti partita: ESPN\; verificare le fonti ufficiali del torneo
 URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/708-2026/co
  mpetitionType/1
 END:VEVENT
@@ -534,21 +534,25 @@ URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/110-2026/co
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-185537@italian-tennis-calendar
-DTSTAMP:20261020T122001Z
-DTSTART;VALUE=DATE:20261022
-DTEND;VALUE=DATE:20261023
+DTSTAMP:20261021T131153Z
+DTSTART:20261022T050000Z
+DTEND:20261022T080000Z
 SUMMARY:Jasmine Paolini vs Iva Jovic
-LOCATION:Ningbo\, China PR
-STATUS:TENTATIVE
-SEQUENCE:0
+LOCATION:Ningbo\, China PR\, Center Court
+STATUS:CONFIRMED
+SEQUENCE:1
 TRANSP:TRANSPARENT
 CATEGORIES:BNB Ningbo Open\,WTA
 X-TENNIS-SEASON:2026
-DESCRIPTION:BNB Ningbo Open - Round 2\nIn programma\; orario da confermare\
- nSuperficie e programma soggetti agli aggiornamenti del torneo\nCopertura
-  TV non ancora confermata\nDati partita: ESPN\; verificare le fonti uffici
- ali del torneo
+DESCRIPTION:BNB Ningbo Open - Round 2\nIn programma\nSuperficie e programma
+  soggetti agli aggiornamenti del torneo\nCopertura TV non ancora confermat
+ a\nDati partita: ESPN\; verificare le fonti ufficiali del torneo
 URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/963-2026/co
  mpetitionType/2
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT2H
+DESCRIPTION:Tra due ore: Jasmine Paolini vs Iva Jovic
+END:VALARM
 END:VEVENT
 END:VCALENDAR
