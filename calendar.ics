@@ -454,46 +454,40 @@ URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/110-2026/co
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-185552@italian-tennis-calendar
-DTSTAMP:20261021T063208Z
+DTSTAMP:20261021T073039Z
 DTSTART:20261021T052500Z
 DTEND:20261021T082500Z
 SUMMARY:Sara Errani / Jasmine Paolini vs Cristina Bucsa / Nicole Melichar-M
  artinez
 LOCATION:Ningbo\, China PR\, Grandstand
 STATUS:CONFIRMED
-SEQUENCE:0
+SEQUENCE:1
 TRANSP:TRANSPARENT
 CATEGORIES:BNB Ningbo Open\,WTA\,Doppio
 X-TENNIS-SEASON:2026
-DESCRIPTION:BNB Ningbo Open - Round 1\nIn corso: 5-7 1-2\nSuperficie e prog
- ramma soggetti agli aggiornamenti del torneo\nDove vederla:\n🇮🇹 Ital
- ia: SuperTennis Plus — GRATIS\nFonte TV: https://plus.supertennis.tv/liv
- e\nDati partita: ESPN\; verificare le fonti ufficiali del torneo
+DESCRIPTION:BNB Ningbo Open - Round 1\nConclusa: sconfitta Sara Errani / Ja
+ smine Paolini 5-7 3-6\nSuperficie e programma soggetti agli aggiornamenti
+  del torneo\nDati partita: ESPN\; verificare le fonti ufficiali del torneo
 URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/963-2026/co
  mpetitionType/2
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-184998@italian-tennis-calendar
-DTSTAMP:20261021T063208Z
-DTSTART:20261021T063500Z
-DTEND:20261021T093500Z
+DTSTAMP:20261021T073039Z
+DTSTART:20261021T064000Z
+DTEND:20261021T094000Z
 SUMMARY:Luciano Darderi vs James Duckworth
 LOCATION:Almaty\, Kazakhstan\, Center Court
 STATUS:CONFIRMED
-SEQUENCE:3
+SEQUENCE:4
 TRANSP:TRANSPARENT
 CATEGORIES:Almaty Open\,ATP
 X-TENNIS-SEASON:2026
-DESCRIPTION:Almaty Open - Round 2\nIn programma\nSuperficie e programma sog
- getti agli aggiornamenti del torneo\nCopertura TV non ancora confermata\nD
- ati partita: ESPN\; verificare le fonti ufficiali del torneo
+DESCRIPTION:Almaty Open - Round 2\nIn corso: 5-7 0-1\nSuperficie e programm
+ a soggetti agli aggiornamenti del torneo\nCopertura TV non ancora conferma
+ ta\nDati partita: ESPN\; verificare le fonti ufficiali del torneo
 URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/708-2026/co
  mpetitionType/1
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT2H
-DESCRIPTION:Tra due ore: Luciano Darderi vs James Duckworth
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-185088@italian-tennis-calendar
