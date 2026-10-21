@@ -529,10 +529,12 @@ function groupCard(label, records, className, { completed = false } = {}) {
 }
 
 function updatePage(raw, records, now) {
-  const newestFirst = (a, b) => b.start - a.start;
+  const tieBreak = (a, b) => a.tournament.localeCompare(b.tournament, "it") || a.italian.localeCompare(b.italian, "it");
+  const newestFirst = (a, b) => b.start - a.start || tieBreak(a, b);
+  const nearestFirst = (a, b) => a.start - b.start || tieBreak(a, b);
   const completed = records.filter(record => record.completed).sort(newestFirst);
-  const live = records.filter(record => record.inProgress).sort(newestFirst);
-  const upcoming = records.filter(record => !record.completed && !record.inProgress).sort(newestFirst);
+  const live = records.filter(record => record.inProgress).sort(nearestFirst);
+  const upcoming = records.filter(record => !record.completed && !record.inProgress).sort(nearestFirst);
   const groups = [
     groupCard("Conclusi", completed, "done results", { completed: true }),
     groupCard("In corso", live, "live"),
