@@ -510,27 +510,21 @@ URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/110-2026/co
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-185537@italian-tennis-calendar
-DTSTAMP:20261022T050417Z
+DTSTAMP:20261022T151053Z
 DTSTART:20261022T050500Z
 DTEND:20261022T080500Z
 SUMMARY:Jasmine Paolini vs Iva Jovic
 LOCATION:Ningbo\, China PR\, Center Court
 STATUS:CONFIRMED
-SEQUENCE:3
+SEQUENCE:4
 TRANSP:TRANSPARENT
 CATEGORIES:BNB Ningbo Open\,WTA
 X-TENNIS-SEASON:2026
-DESCRIPTION:BNB Ningbo Open - Round 2\nIn programma\nSuperficie e programma
-  soggetti agli aggiornamenti del torneo\nDove vederla:\n🇮🇹 Italia: S
- uperTennis Plus — GRATIS\nFonte TV: https://plus.supertennis.tv/live\nDa
- ti partita: ESPN\; verificare le fonti ufficiali del torneo
+DESCRIPTION:BNB Ningbo Open - Round 2\nConclusa: sconfitta Jasmine Paolini
+  4-6 3-6\nSuperficie e programma soggetti agli aggiornamenti del torneo\nD
+ ati partita: ESPN\; verificare le fonti ufficiali del torneo
 URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/963-2026/co
  mpetitionType/2
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT2H
-DESCRIPTION:Tra due ore: Jasmine Paolini vs Iva Jovic
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-185097@italian-tennis-calendar
@@ -558,21 +552,26 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-185108@italian-tennis-calendar
-DTSTAMP:20261022T001112Z
-DTSTART;VALUE=DATE:20261023
-DTEND;VALUE=DATE:20261024
-SUMMARY:Lorenzo Musetti - prossimo turno
-LOCATION:Lyon\, France
-STATUS:TENTATIVE
-SEQUENCE:0
+DTSTAMP:20261022T151053Z
+DTSTART:20261023T183000Z
+DTEND:20261023T213000Z
+SUMMARY:Lorenzo Musetti vs Luca Van Assche
+LOCATION:Lyon\, France\, Court Central Auvergne-Rhone-Alpes
+STATUS:CONFIRMED
+SEQUENCE:1
 TRANSP:TRANSPARENT
 CATEGORIES:Grand Prix Auvergne-Rhône-Alpes\,ATP
 X-TENNIS-SEASON:2026
-DESCRIPTION:Grand Prix Auvergne-Rhône-Alpes - Quarterfinal\nIn programma\;
-  avversario\, data e orario da confermare\nSuperficie e programma soggetti
-  agli aggiornamenti del torneo\nCopertura TV non ancora confermata\nDati p
- artita: ESPN\; verificare le fonti ufficiali del torneo
+DESCRIPTION:Grand Prix Auvergne-Rhône-Alpes - Quarterfinal\nIn programma\n
+ Superficie e programma soggetti agli aggiornamenti del torneo\nCopertura T
+ V non ancora confermata\nDati partita: ESPN\; verificare le fonti ufficial
+ i del torneo
 URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/110-2026/co
  mpetitionType/1
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT2H
+DESCRIPTION:Tra due ore: Lorenzo Musetti vs Luca Van Assche
+END:VALARM
 END:VEVENT
 END:VCALENDAR
