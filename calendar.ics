@@ -491,13 +491,56 @@ URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/708-2026/co
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-185088@italian-tennis-calendar
-DTSTAMP:20261020T172135Z
-DTSTART:20261021T170000Z
-DTEND:20261021T200000Z
+DTSTAMP:20261022T001112Z
+DTSTART:20261021T171000Z
+DTEND:20261021T201000Z
 SUMMARY:Lorenzo Musetti vs Moise Kouame
 LOCATION:Lyon\, France\, Court Central Auvergne-Rhone-Alpes
 STATUS:CONFIRMED
-SEQUENCE:1
+SEQUENCE:2
+TRANSP:TRANSPARENT
+CATEGORIES:Grand Prix Auvergne-Rhône-Alpes\,ATP
+X-TENNIS-SEASON:2026
+DESCRIPTION:Grand Prix Auvergne-Rhône-Alpes - Round 2\nConclusa: vittoria
+  Lorenzo Musetti 6-4 6-4\nSuperficie e programma soggetti agli aggiornamen
+ ti del torneo\nDati partita: ESPN\; verificare le fonti ufficiali del torn
+ eo
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/110-2026/co
+ mpetitionType/1
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-185537@italian-tennis-calendar
+DTSTAMP:20261022T001112Z
+DTSTART:20261022T050000Z
+DTEND:20261022T080000Z
+SUMMARY:Jasmine Paolini vs Iva Jovic
+LOCATION:Ningbo\, China PR\, Center Court
+STATUS:CONFIRMED
+SEQUENCE:2
+TRANSP:TRANSPARENT
+CATEGORIES:BNB Ningbo Open\,WTA
+X-TENNIS-SEASON:2026
+DESCRIPTION:BNB Ningbo Open - Round 2\nIn programma\nSuperficie e programma
+  soggetti agli aggiornamenti del torneo\nDove vederla:\n🇮🇹 Italia: S
+ uperTennis Plus — GRATIS\nFonte TV: https://plus.supertennis.tv/live\nDa
+ ti partita: ESPN\; verificare le fonti ufficiali del torneo
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/963-2026/co
+ mpetitionType/2
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT2H
+DESCRIPTION:Tra due ore: Jasmine Paolini vs Iva Jovic
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-185097@italian-tennis-calendar
+DTSTAMP:20261022T001112Z
+DTSTART:20261022T170000Z
+DTEND:20261022T200000Z
+SUMMARY:Flavio Cobolli vs Stan Wawrinka
+LOCATION:Lyon\, France\, Court Central Auvergne-Rhone-Alpes
+STATUS:CONFIRMED
+SEQUENCE:3
 TRANSP:TRANSPARENT
 CATEGORIES:Grand Prix Auvergne-Rhône-Alpes\,ATP
 X-TENNIS-SEASON:2026
@@ -510,49 +553,26 @@ URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/110-2026/co
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT2H
-DESCRIPTION:Tra due ore: Lorenzo Musetti vs Moise Kouame
+DESCRIPTION:Tra due ore: Flavio Cobolli vs Stan Wawrinka
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:espn-185097@italian-tennis-calendar
-DTSTAMP:20261020T172135Z
-DTSTART;VALUE=DATE:20261022
-DTEND;VALUE=DATE:20261023
-SUMMARY:Flavio Cobolli - prossimo turno
+UID:espn-185108@italian-tennis-calendar
+DTSTAMP:20261022T001112Z
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261024
+SUMMARY:Lorenzo Musetti - prossimo turno
 LOCATION:Lyon\, France
 STATUS:TENTATIVE
-SEQUENCE:2
+SEQUENCE:0
 TRANSP:TRANSPARENT
 CATEGORIES:Grand Prix Auvergne-Rhône-Alpes\,ATP
 X-TENNIS-SEASON:2026
-DESCRIPTION:Grand Prix Auvergne-Rhône-Alpes - Round 2\nIn programma\; avve
- rsario\, data e orario da confermare\nSuperficie e programma soggetti agli
-  aggiornamenti del torneo\nCopertura TV non ancora confermata\nDati partit
- a: ESPN\; verificare le fonti ufficiali del torneo
+DESCRIPTION:Grand Prix Auvergne-Rhône-Alpes - Quarterfinal\nIn programma\;
+  avversario\, data e orario da confermare\nSuperficie e programma soggetti
+  agli aggiornamenti del torneo\nCopertura TV non ancora confermata\nDati p
+ artita: ESPN\; verificare le fonti ufficiali del torneo
 URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/110-2026/co
  mpetitionType/1
-END:VEVENT
-BEGIN:VEVENT
-UID:espn-185537@italian-tennis-calendar
-DTSTAMP:20261021T131153Z
-DTSTART:20261022T050000Z
-DTEND:20261022T080000Z
-SUMMARY:Jasmine Paolini vs Iva Jovic
-LOCATION:Ningbo\, China PR\, Center Court
-STATUS:CONFIRMED
-SEQUENCE:1
-TRANSP:TRANSPARENT
-CATEGORIES:BNB Ningbo Open\,WTA
-X-TENNIS-SEASON:2026
-DESCRIPTION:BNB Ningbo Open - Round 2\nIn programma\nSuperficie e programma
-  soggetti agli aggiornamenti del torneo\nCopertura TV non ancora confermat
- a\nDati partita: ESPN\; verificare le fonti ufficiali del torneo
-URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/963-2026/co
- mpetitionType/2
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT2H
-DESCRIPTION:Tra due ore: Jasmine Paolini vs Iva Jovic
-END:VALARM
 END:VEVENT
 END:VCALENDAR
