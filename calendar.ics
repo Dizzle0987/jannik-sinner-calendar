@@ -528,26 +528,45 @@ URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/963-2026/co
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-185097@italian-tennis-calendar
-DTSTAMP:20261022T001112Z
-DTSTART:20261022T170000Z
-DTEND:20261022T200000Z
+DTSTAMP:20261022T191245Z
+DTSTART:20261022T170500Z
+DTEND:20261022T200500Z
 SUMMARY:Flavio Cobolli vs Stan Wawrinka
 LOCATION:Lyon\, France\, Court Central Auvergne-Rhone-Alpes
 STATUS:CONFIRMED
-SEQUENCE:3
+SEQUENCE:4
 TRANSP:TRANSPARENT
 CATEGORIES:Grand Prix Auvergne-Rhône-Alpes\,ATP
 X-TENNIS-SEASON:2026
-DESCRIPTION:Grand Prix Auvergne-Rhône-Alpes - Round 2\nIn programma\nSuper
- ficie e programma soggetti agli aggiornamenti del torneo\nCopertura TV non
-  ancora confermata\nDati partita: ESPN\; verificare le fonti ufficiali del
-  torneo
+DESCRIPTION:Grand Prix Auvergne-Rhône-Alpes - Round 2\nConclusa: vittoria
+  Flavio Cobolli 6-2 6-4\nSuperficie e programma soggetti agli aggiornament
+ i del torneo\nDati partita: ESPN\; verificare le fonti ufficiali del torne
+ o
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/110-2026/co
+ mpetitionType/1
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-185107@italian-tennis-calendar
+DTSTAMP:20261022T191245Z
+DTSTART:20261023T170000Z
+DTEND:20261023T200000Z
+SUMMARY:Flavio Cobolli - prossimo turno
+LOCATION:Lyon\, France\, Court Central Auvergne-Rhone-Alpes
+STATUS:CONFIRMED
+SEQUENCE:0
+TRANSP:TRANSPARENT
+CATEGORIES:Grand Prix Auvergne-Rhône-Alpes\,ATP
+X-TENNIS-SEASON:2026
+DESCRIPTION:Grand Prix Auvergne-Rhône-Alpes - Quarterfinal\nIn programma\;
+  avversario\, data e orario da confermare\nSuperficie e programma soggetti
+  agli aggiornamenti del torneo\nCopertura TV non ancora confermata\nDati p
+ artita: ESPN\; verificare le fonti ufficiali del torneo
 URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/110-2026/co
  mpetitionType/1
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT2H
-DESCRIPTION:Tra due ore: Flavio Cobolli vs Stan Wawrinka
+DESCRIPTION:Tra due ore: Flavio Cobolli vs Avversario da definire
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
