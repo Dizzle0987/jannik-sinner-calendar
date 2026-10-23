@@ -547,26 +547,26 @@ URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/110-2026/co
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-185107@italian-tennis-calendar
-DTSTAMP:20261022T191245Z
+DTSTAMP:20261023T152637Z
 DTSTART:20261023T170000Z
 DTEND:20261023T200000Z
-SUMMARY:Flavio Cobolli - prossimo turno
+SUMMARY:Flavio Cobolli vs Brandon Nakashima
 LOCATION:Lyon\, France\, Court Central Auvergne-Rhone-Alpes
 STATUS:CONFIRMED
-SEQUENCE:0
+SEQUENCE:1
 TRANSP:TRANSPARENT
 CATEGORIES:Grand Prix Auvergne-Rhône-Alpes\,ATP
 X-TENNIS-SEASON:2026
-DESCRIPTION:Grand Prix Auvergne-Rhône-Alpes - Quarterfinal\nIn programma\;
-  avversario\, data e orario da confermare\nSuperficie e programma soggetti
-  agli aggiornamenti del torneo\nCopertura TV non ancora confermata\nDati p
- artita: ESPN\; verificare le fonti ufficiali del torneo
+DESCRIPTION:Grand Prix Auvergne-Rhône-Alpes - Quarterfinal\nIn programma\n
+ Superficie e programma soggetti agli aggiornamenti del torneo\nCopertura T
+ V non ancora confermata\nDati partita: ESPN\; verificare le fonti ufficial
+ i del torneo
 URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/110-2026/co
  mpetitionType/1
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT2H
-DESCRIPTION:Tra due ore: Flavio Cobolli vs Avversario da definire
+DESCRIPTION:Tra due ore: Flavio Cobolli vs Brandon Nakashima
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
