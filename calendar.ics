@@ -593,4 +593,264 @@ TRIGGER:-PT2H
 DESCRIPTION:Tra due ore: Lorenzo Musetti vs Luca Van Assche
 END:VALARM
 END:VEVENT
+BEGIN:VEVENT
+UID:espn-185182@italian-tennis-calendar
+DTSTAMP:20261029T002202Z
+DTSTART:20261026T124000Z
+DTEND:20261026T154000Z
+SUMMARY:Matteo Berrettini vs Tomas Martin Etcheverry
+LOCATION:Vienna\, Austria\, Centre Court
+STATUS:CONFIRMED
+SEQUENCE:0
+TRANSP:TRANSPARENT
+CATEGORIES:Erste Bank Open\,ATP
+X-TENNIS-SEASON:2026
+DESCRIPTION:Erste Bank Open - Round 1\nConclusa: vittoria Matteo Berrettini
+  6-3 6-4\nSuperficie e programma soggetti agli aggiornamenti del torneo\nD
+ ati partita: ESPN\; verificare le fonti ufficiali del torneo
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/10-2026/com
+ petitionType/1
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-185177@italian-tennis-calendar
+DTSTAMP:20261029T002202Z
+DTSTART:20261026T174500Z
+DTEND:20261026T204500Z
+SUMMARY:Matteo Arnaldi vs Luciano Darderi
+LOCATION:Vienna\, Austria\, Glaubandich Court
+STATUS:CONFIRMED
+SEQUENCE:0
+TRANSP:TRANSPARENT
+CATEGORIES:Erste Bank Open\,ATP
+X-TENNIS-SEASON:2026
+DESCRIPTION:Erste Bank Open - Round 1\nConclusa: sconfitta Matteo Arnaldi 5
+ -7 2-6\nSuperficie e programma soggetti agli aggiornamenti del torneo\nDat
+ i partita: ESPN\; verificare le fonti ufficiali del torneo
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/10-2026/com
+ petitionType/1
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-185763@italian-tennis-calendar
+DTSTAMP:20261029T002202Z
+DTSTART:20261026T193500Z
+DTEND:20261026T223500Z
+SUMMARY:Lucia Bronzetti vs Luisina Giovannini
+LOCATION:Curitiba\, Brazil\, Quadra Central
+STATUS:CONFIRMED
+SEQUENCE:0
+TRANSP:TRANSPARENT
+CATEGORIES:Curitiba Open\,WTA
+X-TENNIS-SEASON:2026
+DESCRIPTION:Curitiba Open - Round 1\nConclusa: sconfitta Lucia Bronzetti 6-
+ 7(6) 6-1 2-6\nSuperficie e programma soggetti agli aggiornamenti del torne
+ o\nDati partita: ESPN\; verificare le fonti ufficiali del torneo
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/1080-2026/c
+ ompetitionType/2
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-185674@italian-tennis-calendar
+DTSTAMP:20261029T002202Z
+DTSTART:20261027T081000Z
+DTEND:20261027T111000Z
+SUMMARY:Jasmine Paolini vs Naomi Osaka
+LOCATION:Tokyo\, Japan\, Center
+STATUS:CONFIRMED
+SEQUENCE:0
+TRANSP:TRANSPARENT
+CATEGORIES:Toray Pan Pacific Open Tennis\,WTA
+X-TENNIS-SEASON:2026
+DESCRIPTION:Toray Pan Pacific Open Tennis - Round 1\nConclusa: sconfitta Ja
+ smine Paolini 3-6 6-7(4)\nSuperficie e programma soggetti agli aggiornamen
+ ti del torneo\nDati partita: ESPN\; verificare le fonti ufficiali del torn
+ eo
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/264-2026/co
+ mpetitionType/2
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-185180@italian-tennis-calendar
+DTSTAMP:20261029T002202Z
+DTSTART:20261027T202500Z
+DTEND:20261027T232500Z
+SUMMARY:Flavio Cobolli vs Grigor Dimitrov
+LOCATION:Vienna\, Austria\, Centre Court
+STATUS:CONFIRMED
+SEQUENCE:0
+TRANSP:TRANSPARENT
+CATEGORIES:Erste Bank Open\,ATP
+X-TENNIS-SEASON:2026
+DESCRIPTION:Erste Bank Open - Round 1\nConclusa: vittoria Flavio Cobolli 6-
+ 4 3-6 6-3\nSuperficie e programma soggetti agli aggiornamenti del torneo\n
+ Dati partita: ESPN\; verificare le fonti ufficiali del torneo
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/10-2026/com
+ petitionType/1
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-185692@italian-tennis-calendar
+DTSTAMP:20261029T002202Z
+DTSTART:20261028T040500Z
+DTEND:20261028T070500Z
+SUMMARY:Sara Errani / Jasmine Paolini vs Anna Danilina / Jiang Xinyu
+LOCATION:Tokyo\, Japan\, Show Court
+STATUS:CONFIRMED
+SEQUENCE:0
+TRANSP:TRANSPARENT
+CATEGORIES:Toray Pan Pacific Open Tennis\,WTA\,Doppio
+X-TENNIS-SEASON:2026
+DESCRIPTION:Toray Pan Pacific Open Tennis - Round 1\nConclusa: vittoria Sar
+ a Errani / Jasmine Paolini 7-6(7) 6-2\nSuperficie e programma soggetti agl
+ i aggiornamenti del torneo\nDati partita: ESPN\; verificare le fonti uffic
+ iali del torneo
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/264-2026/co
+ mpetitionType/2
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-185178@italian-tennis-calendar
+DTSTAMP:20261029T002202Z
+DTSTART:20261028T143000Z
+DTEND:20261028T173000Z
+SUMMARY:Lorenzo Musetti vs Frances Tiafoe
+LOCATION:Vienna\, Austria\, Centre Court
+STATUS:CONFIRMED
+SEQUENCE:0
+TRANSP:TRANSPARENT
+CATEGORIES:Erste Bank Open\,ATP
+X-TENNIS-SEASON:2026
+DESCRIPTION:Erste Bank Open - Round 1\nConclusa: vittoria Lorenzo Musetti 7
+ -6(6) 7-5\nSuperficie e programma soggetti agli aggiornamenti del torneo\n
+ Dati partita: ESPN\; verificare le fonti ufficiali del torneo
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/10-2026/com
+ petitionType/1
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-185782@italian-tennis-calendar
+DTSTAMP:20261029T002202Z
+DTSTART:20261028T182500Z
+DTEND:20261028T212500Z
+SUMMARY:Lucia Bronzetti / Julia Grabher vs Maria Lourdes Carle / Julia Rier
+ a
+LOCATION:Curitiba\, Brazil\, Quadra 1
+STATUS:CONFIRMED
+SEQUENCE:0
+TRANSP:TRANSPARENT
+CATEGORIES:Curitiba Open\,WTA\,Doppio
+X-TENNIS-SEASON:2026
+DESCRIPTION:Curitiba Open - Quarterfinal\nConclusa: sconfitta Lucia Bronzet
+ ti / Julia Grabher 6-2 4-6 0-1\nSuperficie e programma soggetti agli aggio
+ rnamenti del torneo\nDati partita: ESPN\; verificare le fonti ufficiali de
+ l torneo
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/1080-2026/c
+ ompetitionType/2
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-185190@italian-tennis-calendar
+DTSTAMP:20261029T002202Z
+DTSTART:20261029T123000Z
+DTEND:20261029T153000Z
+SUMMARY:Luciano Darderi vs Tommy Paul
+LOCATION:Vienna\, Austria\, Glaubandich Court
+STATUS:CONFIRMED
+SEQUENCE:0
+TRANSP:TRANSPARENT
+CATEGORIES:Erste Bank Open\,ATP
+X-TENNIS-SEASON:2026
+DESCRIPTION:Erste Bank Open - Round 2\nIn programma\nSuperficie e programma
+  soggetti agli aggiornamenti del torneo\nCopertura TV non ancora confermat
+ a\nDati partita: ESPN\; verificare le fonti ufficiali del torneo
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/10-2026/com
+ petitionType/1
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT2H
+DESCRIPTION:Tra due ore: Luciano Darderi vs Tommy Paul
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-185207@italian-tennis-calendar
+DTSTAMP:20261029T002202Z
+DTSTART:20261029T153000Z
+DTEND:20261029T183000Z
+SUMMARY:Ignacio Buse / Luciano Darderi vs Maximo Gonzalez / Andres Molteni
+LOCATION:Vienna\, Austria\, Fairplay Court
+STATUS:CONFIRMED
+SEQUENCE:0
+TRANSP:TRANSPARENT
+CATEGORIES:Erste Bank Open\,ATP\,Doppio
+X-TENNIS-SEASON:2026
+DESCRIPTION:Erste Bank Open - Round 1\nIn programma\nSuperficie e programma
+  soggetti agli aggiornamenti del torneo\nCopertura TV non ancora confermat
+ a\nDati partita: ESPN\; verificare le fonti ufficiali del torneo
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/10-2026/com
+ petitionType/1
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT2H
+DESCRIPTION:Tra due ore: Ignacio Buse / Luciano Darderi vs Maximo Gonzalez
+  / Andres Molteni
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-185194@italian-tennis-calendar
+DTSTAMP:20261029T002202Z
+DTSTART:20261029T160000Z
+DTEND:20261029T190000Z
+SUMMARY:Lorenzo Musetti vs Arthur Fery
+LOCATION:Vienna\, Austria\, Glaubandich Court
+STATUS:CONFIRMED
+SEQUENCE:0
+TRANSP:TRANSPARENT
+CATEGORIES:Erste Bank Open\,ATP
+X-TENNIS-SEASON:2026
+DESCRIPTION:Erste Bank Open - Round 2\nIn programma\nSuperficie e programma
+  soggetti agli aggiornamenti del torneo\nCopertura TV non ancora confermat
+ a\nDati partita: ESPN\; verificare le fonti ufficiali del torneo
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/10-2026/com
+ petitionType/1
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT2H
+DESCRIPTION:Tra due ore: Lorenzo Musetti vs Arthur Fery
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-185196@italian-tennis-calendar
+DTSTAMP:20261029T002202Z
+DTSTART:20261029T190000Z
+DTEND:20261029T220000Z
+SUMMARY:Matteo Berrettini vs Flavio Cobolli
+LOCATION:Vienna\, Austria\, Centre Court
+STATUS:CONFIRMED
+SEQUENCE:0
+TRANSP:TRANSPARENT
+CATEGORIES:Erste Bank Open\,ATP
+X-TENNIS-SEASON:2026
+DESCRIPTION:Erste Bank Open - Round 2\nIn programma\nSuperficie e programma
+  soggetti agli aggiornamenti del torneo\nCopertura TV non ancora confermat
+ a\nDati partita: ESPN\; verificare le fonti ufficiali del torneo
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/10-2026/com
+ petitionType/1
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT2H
+DESCRIPTION:Tra due ore: Matteo Berrettini vs Flavio Cobolli
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-185703@italian-tennis-calendar
+DTSTAMP:20261029T002202Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261031
+SUMMARY:Sara Errani / Jasmine Paolini vs Asia Muhammad / Zhang Shuai
+LOCATION:Tokyo\, Japan
+STATUS:TENTATIVE
+SEQUENCE:0
+TRANSP:TRANSPARENT
+CATEGORIES:Toray Pan Pacific Open Tennis\,WTA\,Doppio
+X-TENNIS-SEASON:2026
+DESCRIPTION:Toray Pan Pacific Open Tennis - Quarterfinal\nIn programma\; or
+ ario da confermare\nSuperficie e programma soggetti agli aggiornamenti del
+  torneo\nCopertura TV non ancora confermata\nDati partita: ESPN\; verifica
+ re le fonti ufficiali del torneo
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/264-2026/co
+ mpetitionType/2
+END:VEVENT
 END:VCALENDAR
