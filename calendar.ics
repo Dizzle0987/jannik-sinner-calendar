@@ -743,68 +743,58 @@ URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/1080-2026/c
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-185190@italian-tennis-calendar
-DTSTAMP:20261029T125228Z
+DTSTAMP:20261029T184207Z
 DTSTART:20261029T124000Z
 DTEND:20261029T154000Z
 SUMMARY:Luciano Darderi vs Tommy Paul
+LOCATION:Vienna\, Austria\, Glaubandich Court
+STATUS:CONFIRMED
+SEQUENCE:2
+TRANSP:TRANSPARENT
+CATEGORIES:Erste Bank Open\,ATP
+X-TENNIS-SEASON:2026
+DESCRIPTION:Erste Bank Open - Round 2\nConclusa: sconfitta Luciano Darderi
+  1-6 1-6\nSuperficie e programma soggetti agli aggiornamenti del torneo\nD
+ ati partita: ESPN\; verificare le fonti ufficiali del torneo
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/10-2026/com
+ petitionType/1
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-185194@italian-tennis-calendar
+DTSTAMP:20261029T184207Z
+DTSTART:20261029T160500Z
+DTEND:20261029T190500Z
+SUMMARY:Lorenzo Musetti vs Arthur Fery
 LOCATION:Vienna\, Austria\, Glaubandich Court
 STATUS:CONFIRMED
 SEQUENCE:1
 TRANSP:TRANSPARENT
 CATEGORIES:Erste Bank Open\,ATP
 X-TENNIS-SEASON:2026
-DESCRIPTION:Erste Bank Open - Round 2\nIn corso: 0-3\nSuperficie e programm
- a soggetti agli aggiornamenti del torneo\nCopertura TV non ancora conferma
- ta\nDati partita: ESPN\; verificare le fonti ufficiali del torneo
+DESCRIPTION:Erste Bank Open - Round 2\nIn corso: 4-6 7-5 4-4\nSuperficie e
+  programma soggetti agli aggiornamenti del torneo\nCopertura TV non ancora
+  confermata\nDati partita: ESPN\; verificare le fonti ufficiali del torneo
 URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/10-2026/com
  petitionType/1
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-185207@italian-tennis-calendar
-DTSTAMP:20261029T002202Z
-DTSTART:20261029T153000Z
-DTEND:20261029T183000Z
+DTSTAMP:20261029T184207Z
+DTSTART:20261029T161000Z
+DTEND:20261029T191000Z
 SUMMARY:Ignacio Buse / Luciano Darderi vs Maximo Gonzalez / Andres Molteni
 LOCATION:Vienna\, Austria\, Fairplay Court
 STATUS:CONFIRMED
-SEQUENCE:0
+SEQUENCE:1
 TRANSP:TRANSPARENT
 CATEGORIES:Erste Bank Open\,ATP\,Doppio
 X-TENNIS-SEASON:2026
-DESCRIPTION:Erste Bank Open - Round 1\nIn programma\nSuperficie e programma
-  soggetti agli aggiornamenti del torneo\nCopertura TV non ancora confermat
- a\nDati partita: ESPN\; verificare le fonti ufficiali del torneo
+DESCRIPTION:Erste Bank Open - Round 1\nConclusa: sconfitta Ignacio Buse / L
+ uciano Darderi 6-7(4) 3-6\nSuperficie e programma soggetti agli aggiorname
+ nti del torneo\nDati partita: ESPN\; verificare le fonti ufficiali del tor
+ neo
 URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/10-2026/com
  petitionType/1
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT2H
-DESCRIPTION:Tra due ore: Ignacio Buse / Luciano Darderi vs Maximo Gonzalez
-  / Andres Molteni
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:espn-185194@italian-tennis-calendar
-DTSTAMP:20261029T002202Z
-DTSTART:20261029T160000Z
-DTEND:20261029T190000Z
-SUMMARY:Lorenzo Musetti vs Arthur Fery
-LOCATION:Vienna\, Austria\, Glaubandich Court
-STATUS:CONFIRMED
-SEQUENCE:0
-TRANSP:TRANSPARENT
-CATEGORIES:Erste Bank Open\,ATP
-X-TENNIS-SEASON:2026
-DESCRIPTION:Erste Bank Open - Round 2\nIn programma\nSuperficie e programma
-  soggetti agli aggiornamenti del torneo\nCopertura TV non ancora confermat
- a\nDati partita: ESPN\; verificare le fonti ufficiali del torneo
-URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/10-2026/com
- petitionType/1
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT2H
-DESCRIPTION:Tra due ore: Lorenzo Musetti vs Arthur Fery
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-185196@italian-tennis-calendar
