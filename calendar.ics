@@ -761,19 +761,19 @@ URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/10-2026/com
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-185194@italian-tennis-calendar
-DTSTAMP:20261029T184207Z
+DTSTAMP:20261029T230122Z
 DTSTART:20261029T160500Z
 DTEND:20261029T190500Z
 SUMMARY:Lorenzo Musetti vs Arthur Fery
 LOCATION:Vienna\, Austria\, Glaubandich Court
 STATUS:CONFIRMED
-SEQUENCE:1
+SEQUENCE:2
 TRANSP:TRANSPARENT
 CATEGORIES:Erste Bank Open\,ATP
 X-TENNIS-SEASON:2026
-DESCRIPTION:Erste Bank Open - Round 2\nIn corso: 4-6 7-5 4-4\nSuperficie e
-  programma soggetti agli aggiornamenti del torneo\nCopertura TV non ancora
-  confermata\nDati partita: ESPN\; verificare le fonti ufficiali del torneo
+DESCRIPTION:Erste Bank Open - Round 2\nConclusa: sconfitta Lorenzo Musetti
+  4-6 7-5 4-6\nSuperficie e programma soggetti agli aggiornamenti del torne
+ o\nDati partita: ESPN\; verificare le fonti ufficiali del torneo
 URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/10-2026/com
  petitionType/1
 END:VEVENT
@@ -798,26 +798,21 @@ URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/10-2026/com
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-185196@italian-tennis-calendar
-DTSTAMP:20261029T002202Z
-DTSTART:20261029T190000Z
-DTEND:20261029T220000Z
+DTSTAMP:20261029T230122Z
+DTSTART:20261029T194500Z
+DTEND:20261029T224500Z
 SUMMARY:Matteo Berrettini vs Flavio Cobolli
 LOCATION:Vienna\, Austria\, Centre Court
 STATUS:CONFIRMED
-SEQUENCE:0
+SEQUENCE:1
 TRANSP:TRANSPARENT
 CATEGORIES:Erste Bank Open\,ATP
 X-TENNIS-SEASON:2026
-DESCRIPTION:Erste Bank Open - Round 2\nIn programma\nSuperficie e programma
-  soggetti agli aggiornamenti del torneo\nCopertura TV non ancora confermat
- a\nDati partita: ESPN\; verificare le fonti ufficiali del torneo
+DESCRIPTION:Erste Bank Open - Round 2\nConclusa: vittoria Matteo Berrettini
+  5-2\nSuperficie e programma soggetti agli aggiornamenti del torneo\nDati
+  partita: ESPN\; verificare le fonti ufficiali del torneo
 URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/10-2026/com
  petitionType/1
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT2H
-DESCRIPTION:Tra due ore: Matteo Berrettini vs Flavio Cobolli
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-185703@italian-tennis-calendar
@@ -842,6 +837,29 @@ ACTION:DISPLAY
 TRIGGER:-PT2H
 DESCRIPTION:Tra due ore: Sara Errani / Jasmine Paolini vs Asia Muhammad / Z
  hang Shuai
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-185200@italian-tennis-calendar
+DTSTAMP:20261029T230122Z
+DTSTART:20261030T190000Z
+DTEND:20261030T220000Z
+SUMMARY:Matteo Berrettini vs Alex de Minaur
+LOCATION:Vienna\, Austria\, Centre Court
+STATUS:CONFIRMED
+SEQUENCE:0
+TRANSP:TRANSPARENT
+CATEGORIES:Erste Bank Open\,ATP
+X-TENNIS-SEASON:2026
+DESCRIPTION:Erste Bank Open - Quarterfinal\nIn programma\nSuperficie e prog
+ ramma soggetti agli aggiornamenti del torneo\nCopertura TV non ancora conf
+ ermata\nDati partita: ESPN\; verificare le fonti ufficiali del torneo
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/10-2026/com
+ petitionType/1
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT2H
+DESCRIPTION:Tra due ore: Matteo Berrettini vs Alex de Minaur
 END:VALARM
 END:VEVENT
 END:VCALENDAR
