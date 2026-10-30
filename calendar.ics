@@ -835,24 +835,22 @@ URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/264-2026/co
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-185200@italian-tennis-calendar
-DTSTAMP:20261030T201235Z
+DTSTAMP:20261030T201307Z
 DTSTART:20261030T191500Z
 DTEND:20261030T221500Z
 SUMMARY:Matteo Berrettini vs Alex de Minaur
 LOCATION:Vienna\, Austria\, Centre Court
 STATUS:CONFIRMED
-SEQUENCE:3
+SEQUENCE:4
 TRANSP:TRANSPARENT
 CATEGORIES:Erste Bank Open\,ATP
 X-TENNIS-SEASON:2026
 DESCRIPTION:Erste Bank Open - Quarterfinal\nIn corso: 6-6\nSuperficie e pro
- gramma soggetti agli aggiornamenti del torneo\nDove vederla:\n🇦🇹 Aus
- tria: ServusTV e ServusTV On — GRATIS\nFonte TV: https://www.servustv.co
- m/de/content/artikel/PNW97XFRL3OUE7K/die-erste-bank-open-2026-im-kostenlos
- en-livestream-und-tv\n🇮🇹 Italia: Sky Sport Tennis\, Sky Sport Uno e
-  NOW — A pagamento\nFonte TV: https://sport.sky.it/tennis/2026/10/30/ber
- rettini-de-minaur-atp-vienna-risultato\nDati partita: ESPN\; verificare le
-  fonti ufficiali del torneo
+ gramma soggetti agli aggiornamenti del torneo\nDove vederla:\n🇮🇹 Ita
+ lia: Sky Sport Tennis\, Sky Sport Uno e NOW — A pagamento\nFonte TV: htt
+ ps://sport.sky.it/tennis/2026/10/30/berrettini-de-minaur-atp-vienna-risult
+ ato\nAlternativa gratuita non ancora confermata\nDati partita: ESPN\; veri
+ ficare le fonti ufficiali del torneo
 URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/10-2026/com
  petitionType/1
 END:VEVENT

@@ -124,12 +124,6 @@ function paidAndKnownBroadcasts(record) {
   }
   if (record.season === 2026 && /Erste Bank Open/i.test(record.tournament)) {
     options.push({
-      label: "Austria: ServusTV e ServusTV On",
-      access: "GRATIS",
-      country: "🇦🇹",
-      priority: 130,
-      source: "https://www.servustv.com/de/content/artikel/PNW97XFRL3OUE7K/die-erste-bank-open-2026-im-kostenlosen-livestream-und-tv",
-    }, {
       label: "Italia: Sky Sport Tennis, Sky Sport Uno e NOW",
       access: "A pagamento",
       country: "🇮🇹",
