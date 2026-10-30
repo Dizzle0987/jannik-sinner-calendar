@@ -816,28 +816,22 @@ URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/10-2026/com
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-185703@italian-tennis-calendar
-DTSTAMP:20261029T125228Z
-DTSTART:20261030T043000Z
-DTEND:20261030T073000Z
+DTSTAMP:20261030T155131Z
+DTSTART:20261030T045000Z
+DTEND:20261030T075000Z
 SUMMARY:Sara Errani / Jasmine Paolini vs Asia Muhammad / Zhang Shuai
 LOCATION:Tokyo\, Japan\, Show Court
 STATUS:CONFIRMED
-SEQUENCE:1
+SEQUENCE:2
 TRANSP:TRANSPARENT
 CATEGORIES:Toray Pan Pacific Open Tennis\,WTA\,Doppio
 X-TENNIS-SEASON:2026
-DESCRIPTION:Toray Pan Pacific Open Tennis - Quarterfinal\nIn programma\nSup
- erficie e programma soggetti agli aggiornamenti del torneo\nCopertura TV n
- on ancora confermata\nDati partita: ESPN\; verificare le fonti ufficiali d
- el torneo
+DESCRIPTION:Toray Pan Pacific Open Tennis - Quarterfinal\nConclusa: vittori
+ a Sara Errani / Jasmine Paolini 6-3 6-4\nSuperficie e programma soggetti a
+ gli aggiornamenti del torneo\nDati partita: ESPN\; verificare le fonti uff
+ iciali del torneo
 URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/264-2026/co
  mpetitionType/2
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT2H
-DESCRIPTION:Tra due ore: Sara Errani / Jasmine Paolini vs Asia Muhammad / Z
- hang Shuai
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-185200@italian-tennis-calendar
@@ -860,6 +854,32 @@ BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT2H
 DESCRIPTION:Tra due ore: Matteo Berrettini vs Alex de Minaur
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-185698@italian-tennis-calendar
+DTSTAMP:20261030T155131Z
+DTSTART:20261031T073000Z
+DTEND:20261031T103000Z
+SUMMARY:Sara Errani / Jasmine Paolini vs Tereza Mihalikova / Olivia Nicholl
+ s
+LOCATION:Tokyo\, Japan\, Center
+STATUS:CONFIRMED
+SEQUENCE:0
+TRANSP:TRANSPARENT
+CATEGORIES:Toray Pan Pacific Open Tennis\,WTA\,Doppio
+X-TENNIS-SEASON:2026
+DESCRIPTION:Toray Pan Pacific Open Tennis - Semifinal\nIn programma\nSuperf
+ icie e programma soggetti agli aggiornamenti del torneo\nCopertura TV non
+  ancora confermata\nDati partita: ESPN\; verificare le fonti ufficiali del
+  torneo
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/264-2026/co
+ mpetitionType/2
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT2H
+DESCRIPTION:Tra due ore: Sara Errani / Jasmine Paolini vs Tereza Mihalikova
+  / Olivia Nicholls
 END:VALARM
 END:VEVENT
 END:VCALENDAR
