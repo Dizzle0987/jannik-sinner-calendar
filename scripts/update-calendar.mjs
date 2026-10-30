@@ -103,30 +103,61 @@ function scoreFor(italian, opponent) {
 }
 
 function paidAndKnownBroadcasts(record) {
+  const options = [];
   if (record.season === 2026 && /Rolex Shanghai Masters/i.test(record.tournament)) {
-    return [{
+    options.push({
       label: "Italia: Sky Sport Tennis e NOW",
       access: "A pagamento",
       country: "🇮🇹",
       priority: 50,
       source: "https://sport.sky.it/tennis/2026/10/06/atp-shanghai-2026-dove-vedere-tv-streaming",
-    }];
+    });
   }
   if (record.season === 2026 && /RoveretOpen/i.test(record.tournament)) {
-    return [{
+    options.push({
       label: "Italia: SuperTennis e SuperTennis Plus",
       access: "GRATIS",
       country: "🇮🇹",
       priority: 100,
       source: "https://www.vitatrentina.it/2026/10/09/dal-12-al-18-ottobre-il-roveretopen-citta-della-pace-femminile-di-tennis/",
-    }];
+    });
   }
-  return [];
+  if (record.season === 2026 && /Erste Bank Open/i.test(record.tournament)) {
+    options.push({
+      label: "Austria: ServusTV e ServusTV On",
+      access: "GRATIS",
+      country: "🇦🇹",
+      priority: 130,
+      source: "https://www.servustv.com/de/content/artikel/PNW97XFRL3OUE7K/die-erste-bank-open-2026-im-kostenlosen-livestream-und-tv",
+    }, {
+      label: "Italia: Sky Sport Tennis, Sky Sport Uno e NOW",
+      access: "A pagamento",
+      country: "🇮🇹",
+      priority: 50,
+      source: "https://sport.sky.it/tennis/2026/10/30/berrettini-de-minaur-atp-vienna-risultato",
+    });
+  }
+  if (record.season === 2026 && /Rolex Paris Masters/i.test(record.tournament)) {
+    options.push({
+      label: "Italia: Sky Sport Tennis, Sky Sport Uno e Sky Go",
+      access: "A pagamento",
+      country: "🇮🇹",
+      priority: 50,
+      source: "https://programmi.sky.it/sport/tennis/atp-masters-1000/dove-vedere-parigi-masters",
+    }, {
+      label: "Italia: NOW",
+      access: "A pagamento",
+      country: "🇮🇹",
+      priority: 49,
+      source: "https://www.nowtv.it/sport/tennis/atp-1000-wta-1000/parigi",
+    });
+  }
+  return options;
 }
 
 const lastName = name => normalized(name).split(/\s+/).at(-1);
 const sideLastNames = (record, side) => (record[`${side}Players`] ?? [record[side]]).map(lastName);
-const htmlText = html => normalized(String(html).replace(/<script[\s\S]*?<\/script>/gi, " ").replace(/<style[\s\S]*?<\/style>/gi, " ").replace(/<[^>]+>/g, " "));
+const htmlText = html => normalized(String(html).replace(/<style[\s\S]*?<\/style>/gi, " ").replace(/<[^>]+>/g, " "));
 const pageConfirmsPlayers = (html, record) => {
   const text = htmlText(html);
   return sideLastNames(record, "italian").every(name => text.includes(name))

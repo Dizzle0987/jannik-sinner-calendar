@@ -2,12 +2,20 @@
   "version": 1,
   "records": {
     "185200": {
-      "checkedAt": "2026-10-30T15:51:31.561Z",
+      "checkedAt": "2026-10-30T20:04:04.955Z",
       "options": []
     },
     "185698": {
-      "checkedAt": "2026-10-30T15:51:31.561Z",
-      "options": []
+      "checkedAt": "2026-10-30T20:05:26.594Z",
+      "options": [
+        {
+          "label": "Italia: SuperTennis Plus",
+          "access": "GRATIS",
+          "country": "🇮🇹",
+          "priority": 110,
+          "source": "https://plus.supertennis.tv/live"
+        }
+      ]
     }
   }
 }

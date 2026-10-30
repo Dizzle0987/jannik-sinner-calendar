@@ -835,44 +835,45 @@ URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/264-2026/co
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-185200@italian-tennis-calendar
-DTSTAMP:20261029T230122Z
-DTSTART:20261030T190000Z
-DTEND:20261030T220000Z
+DTSTAMP:20261030T200526Z
+DTSTART:20261030T191500Z
+DTEND:20261030T221500Z
 SUMMARY:Matteo Berrettini vs Alex de Minaur
 LOCATION:Vienna\, Austria\, Centre Court
 STATUS:CONFIRMED
-SEQUENCE:0
+SEQUENCE:2
 TRANSP:TRANSPARENT
 CATEGORIES:Erste Bank Open\,ATP
 X-TENNIS-SEASON:2026
-DESCRIPTION:Erste Bank Open - Quarterfinal\nIn programma\nSuperficie e prog
- ramma soggetti agli aggiornamenti del torneo\nCopertura TV non ancora conf
- ermata\nDati partita: ESPN\; verificare le fonti ufficiali del torneo
+DESCRIPTION:Erste Bank Open - Quarterfinal\nIn corso: 6-5\nSuperficie e pro
+ gramma soggetti agli aggiornamenti del torneo\nDove vederla:\n🇦🇹 Aus
+ tria: ServusTV e ServusTV On — GRATIS\nFonte TV: https://www.servustv.co
+ m/de/content/artikel/PNW97XFRL3OUE7K/die-erste-bank-open-2026-im-kostenlos
+ en-livestream-und-tv\n🇮🇹 Italia: Sky Sport Tennis\, Sky Sport Uno e
+  NOW — A pagamento\nFonte TV: https://sport.sky.it/tennis/2026/10/30/ber
+ rettini-de-minaur-atp-vienna-risultato\nDati partita: ESPN\; verificare le
+  fonti ufficiali del torneo
 URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/10-2026/com
  petitionType/1
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT2H
-DESCRIPTION:Tra due ore: Matteo Berrettini vs Alex de Minaur
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-185698@italian-tennis-calendar
-DTSTAMP:20261030T155131Z
+DTSTAMP:20261030T200526Z
 DTSTART:20261031T073000Z
 DTEND:20261031T103000Z
 SUMMARY:Sara Errani / Jasmine Paolini vs Tereza Mihalikova / Olivia Nicholl
  s
 LOCATION:Tokyo\, Japan\, Center
 STATUS:CONFIRMED
-SEQUENCE:0
+SEQUENCE:1
 TRANSP:TRANSPARENT
 CATEGORIES:Toray Pan Pacific Open Tennis\,WTA\,Doppio
 X-TENNIS-SEASON:2026
 DESCRIPTION:Toray Pan Pacific Open Tennis - Semifinal\nIn programma\nSuperf
- icie e programma soggetti agli aggiornamenti del torneo\nCopertura TV non
-  ancora confermata\nDati partita: ESPN\; verificare le fonti ufficiali del
-  torneo
+ icie e programma soggetti agli aggiornamenti del torneo\nDove vederla:\n
+ 🇮🇹 Italia: SuperTennis Plus — GRATIS\nFonte TV: https://plus.super
+ tennis.tv/live\nDati partita: ESPN\; verificare le fonti ufficiali del tor
+ neo
 URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/264-2026/co
  mpetitionType/2
 BEGIN:VALARM
@@ -881,5 +882,120 @@ TRIGGER:-PT2H
 DESCRIPTION:Tra due ore: Sara Errani / Jasmine Paolini vs Tereza Mihalikova
   / Olivia Nicholls
 END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-186448@italian-tennis-calendar
+DTSTAMP:20261030T200526Z
+DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261103
+SUMMARY:Matteo Arnaldi vs Cameron Norrie
+LOCATION:Paris\, France
+STATUS:TENTATIVE
+SEQUENCE:1
+TRANSP:TRANSPARENT
+CATEGORIES:Rolex Paris Masters\,ATP
+X-TENNIS-SEASON:2026
+DESCRIPTION:Rolex Paris Masters - Round 1\nIn programma\; orario da conferm
+ are\nSuperficie e programma soggetti agli aggiornamenti del torneo\nDove v
+ ederla:\n🇮🇹 Italia: Sky Sport Tennis\, Sky Sport Uno e Sky Go — A
+  pagamento\nFonte TV: https://programmi.sky.it/sport/tennis/atp-masters-10
+ 00/dove-vedere-parigi-masters\n🇮🇹 Italia: NOW — A pagamento\nFonte
+  TV: https://www.nowtv.it/sport/tennis/atp-1000-wta-1000/parigi\nAlternati
+ va gratuita non ancora confermata\nDati partita: ESPN\; verificare le font
+ i ufficiali del torneo
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/13-2026/com
+ petitionType/1
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-186455@italian-tennis-calendar
+DTSTAMP:20261030T200526Z
+DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261103
+SUMMARY:Matteo Berrettini vs Brandon Nakashima
+LOCATION:Paris\, France
+STATUS:TENTATIVE
+SEQUENCE:1
+TRANSP:TRANSPARENT
+CATEGORIES:Rolex Paris Masters\,ATP
+X-TENNIS-SEASON:2026
+DESCRIPTION:Rolex Paris Masters - Round 1\nIn programma\; orario da conferm
+ are\nSuperficie e programma soggetti agli aggiornamenti del torneo\nDove v
+ ederla:\n🇮🇹 Italia: Sky Sport Tennis\, Sky Sport Uno e Sky Go — A
+  pagamento\nFonte TV: https://programmi.sky.it/sport/tennis/atp-masters-10
+ 00/dove-vedere-parigi-masters\n🇮🇹 Italia: NOW — A pagamento\nFonte
+  TV: https://www.nowtv.it/sport/tennis/atp-1000-wta-1000/parigi\nAlternati
+ va gratuita non ancora confermata\nDati partita: ESPN\; verificare le font
+ i ufficiali del torneo
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/13-2026/com
+ petitionType/1
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-186456@italian-tennis-calendar
+DTSTAMP:20261030T200526Z
+DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261103
+SUMMARY:Luciano Darderi - prossimo turno
+LOCATION:Paris\, France
+STATUS:TENTATIVE
+SEQUENCE:1
+TRANSP:TRANSPARENT
+CATEGORIES:Rolex Paris Masters\,ATP
+X-TENNIS-SEASON:2026
+DESCRIPTION:Rolex Paris Masters - Round 1\nIn programma\; avversario\, data
+  e orario da confermare\nSuperficie e programma soggetti agli aggiornament
+ i del torneo\nDove vederla:\n🇮🇹 Italia: Sky Sport Tennis\, Sky Sport
+  Uno e Sky Go — A pagamento\nFonte TV: https://programmi.sky.it/sport/te
+ nnis/atp-masters-1000/dove-vedere-parigi-masters\n🇮🇹 Italia: NOW —
+  A pagamento\nFonte TV: https://www.nowtv.it/sport/tennis/atp-1000-wta-100
+ 0/parigi\nAlternativa gratuita non ancora confermata\nDati partita: ESPN\;
+  verificare le fonti ufficiali del torneo
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/13-2026/com
+ petitionType/1
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-186462@italian-tennis-calendar
+DTSTAMP:20261030T200526Z
+DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261103
+SUMMARY:Lorenzo Musetti vs Hubert Hurkacz
+LOCATION:Paris\, France
+STATUS:TENTATIVE
+SEQUENCE:1
+TRANSP:TRANSPARENT
+CATEGORIES:Rolex Paris Masters\,ATP
+X-TENNIS-SEASON:2026
+DESCRIPTION:Rolex Paris Masters - Round 1\nIn programma\; orario da conferm
+ are\nSuperficie e programma soggetti agli aggiornamenti del torneo\nDove v
+ ederla:\n🇮🇹 Italia: Sky Sport Tennis\, Sky Sport Uno e Sky Go — A
+  pagamento\nFonte TV: https://programmi.sky.it/sport/tennis/atp-masters-10
+ 00/dove-vedere-parigi-masters\n🇮🇹 Italia: NOW — A pagamento\nFonte
+  TV: https://www.nowtv.it/sport/tennis/atp-1000-wta-1000/parigi\nAlternati
+ va gratuita non ancora confermata\nDati partita: ESPN\; verificare le font
+ i ufficiali del torneo
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/13-2026/com
+ petitionType/1
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-186485@italian-tennis-calendar
+DTSTAMP:20261030T200526Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261105
+SUMMARY:Flavio Cobolli - prossimo turno
+LOCATION:Paris\, France
+STATUS:TENTATIVE
+SEQUENCE:1
+TRANSP:TRANSPARENT
+CATEGORIES:Rolex Paris Masters\,ATP
+X-TENNIS-SEASON:2026
+DESCRIPTION:Rolex Paris Masters - Round 2\nIn programma\; avversario\, data
+  e orario da confermare\nSuperficie e programma soggetti agli aggiornament
+ i del torneo\nDove vederla:\n🇮🇹 Italia: Sky Sport Tennis\, Sky Sport
+  Uno e Sky Go — A pagamento\nFonte TV: https://programmi.sky.it/sport/te
+ nnis/atp-masters-1000/dove-vedere-parigi-masters\n🇮🇹 Italia: NOW —
+  A pagamento\nFonte TV: https://www.nowtv.it/sport/tennis/atp-1000-wta-100
+ 0/parigi\nAlternativa gratuita non ancora confermata\nDati partita: ESPN\;
+  verificare le fonti ufficiali del torneo
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/13-2026/com
+ petitionType/1
 END:VEVENT
 END:VCALENDAR
