@@ -892,84 +892,39 @@ URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/264-2026/co
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-186456@italian-tennis-calendar
-DTSTAMP:20261102T022507Z
-DTSTART:20261102T100000Z
-DTEND:20261102T130000Z
+DTSTAMP:20261103T084901Z
+DTSTART:20261102T101000Z
+DTEND:20261102T131000Z
 SUMMARY:Luciano Darderi vs Rinky Hijikata
 LOCATION:Paris\, France\, Court 1
 STATUS:CONFIRMED
-SEQUENCE:2
+SEQUENCE:3
 TRANSP:TRANSPARENT
 CATEGORIES:Rolex Paris Masters\,ATP
 X-TENNIS-SEASON:2026
-DESCRIPTION:Rolex Paris Masters - Round 1\nIn programma\nSuperficie e progr
- amma soggetti agli aggiornamenti del torneo\nDove vederla:\n🇮🇹 Itali
- a: Sky Sport Tennis\, Sky Sport Uno e Sky Go — A pagamento\nFonte TV: ht
- tps://programmi.sky.it/sport/tennis/atp-masters-1000/dove-vedere-parigi-ma
- sters\n🇮🇹 Italia: NOW — A pagamento\nFonte TV: https://www.nowtv.i
- t/sport/tennis/atp-1000-wta-1000/parigi\nAlternativa gratuita non ancora c
- onfermata\nDati partita: ESPN\; verificare le fonti ufficiali del torneo
+DESCRIPTION:Rolex Paris Masters - Round 1\nConclusa: sconfitta Luciano Dard
+ eri 2-6 2-6\nSuperficie e programma soggetti agli aggiornamenti del torneo
+ \nDati partita: ESPN\; verificare le fonti ufficiali del torneo
 URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/13-2026/com
  petitionType/1
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT2H
-DESCRIPTION:Tra due ore: Luciano Darderi vs Rinky Hijikata
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-186462@italian-tennis-calendar
-DTSTAMP:20261102T022507Z
-DTSTART:20261102T100000Z
-DTEND:20261102T130000Z
+DTSTAMP:20261103T084901Z
+DTSTART:20261102T101000Z
+DTEND:20261102T131000Z
 SUMMARY:Lorenzo Musetti vs Hubert Hurkacz
 LOCATION:Paris\, France\, Court Central
 STATUS:CONFIRMED
-SEQUENCE:2
+SEQUENCE:3
 TRANSP:TRANSPARENT
 CATEGORIES:Rolex Paris Masters\,ATP
 X-TENNIS-SEASON:2026
-DESCRIPTION:Rolex Paris Masters - Round 1\nIn programma\nSuperficie e progr
- amma soggetti agli aggiornamenti del torneo\nDove vederla:\n🇮🇹 Itali
- a: Sky Sport Tennis\, Sky Sport Uno e Sky Go — A pagamento\nFonte TV: ht
- tps://programmi.sky.it/sport/tennis/atp-masters-1000/dove-vedere-parigi-ma
- sters\n🇮🇹 Italia: NOW — A pagamento\nFonte TV: https://www.nowtv.i
- t/sport/tennis/atp-1000-wta-1000/parigi\nAlternativa gratuita non ancora c
- onfermata\nDati partita: ESPN\; verificare le fonti ufficiali del torneo
+DESCRIPTION:Rolex Paris Masters - Round 1\nConclusa: vittoria Lorenzo Muset
+ ti 7-6(3) 7-6(10)\nSuperficie e programma soggetti agli aggiornamenti del
+  torneo\nDati partita: ESPN\; verificare le fonti ufficiali del torneo
 URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/13-2026/com
  petitionType/1
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT2H
-DESCRIPTION:Tra due ore: Lorenzo Musetti vs Hubert Hurkacz
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:espn-186448@italian-tennis-calendar
-DTSTAMP:20261102T022507Z
-DTSTART:20261102T130000Z
-DTEND:20261102T160000Z
-SUMMARY:Matteo Arnaldi vs Cameron Norrie
-LOCATION:Paris\, France\, Court 1
-STATUS:CONFIRMED
-SEQUENCE:2
-TRANSP:TRANSPARENT
-CATEGORIES:Rolex Paris Masters\,ATP
-X-TENNIS-SEASON:2026
-DESCRIPTION:Rolex Paris Masters - Round 1\nIn programma\nSuperficie e progr
- amma soggetti agli aggiornamenti del torneo\nDove vederla:\n🇮🇹 Itali
- a: Sky Sport Tennis\, Sky Sport Uno e Sky Go — A pagamento\nFonte TV: ht
- tps://programmi.sky.it/sport/tennis/atp-masters-1000/dove-vedere-parigi-ma
- sters\n🇮🇹 Italia: NOW — A pagamento\nFonte TV: https://www.nowtv.i
- t/sport/tennis/atp-1000-wta-1000/parigi\nAlternativa gratuita non ancora c
- onfermata\nDati partita: ESPN\; verificare le fonti ufficiali del torneo
-URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/13-2026/com
- petitionType/1
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT2H
-DESCRIPTION:Tra due ore: Matteo Arnaldi vs Cameron Norrie
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-187295@italian-tennis-calendar
@@ -1001,41 +956,82 @@ DESCRIPTION:Tra due ore: Ignacio Buse / Luciano Darderi vs Benjamin Bonzi /
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:espn-186711@italian-tennis-calendar
-DTSTAMP:20261102T022507Z
-DTSTART:20261102T160000Z
-DTEND:20261102T190000Z
-SUMMARY:Lucia Bronzetti vs Leolia Jeanjean
-LOCATION:Cali\, Colombia\, Campo 3
+UID:espn-186448@italian-tennis-calendar
+DTSTAMP:20261103T084901Z
+DTSTART:20261102T135000Z
+DTEND:20261102T165000Z
+SUMMARY:Matteo Arnaldi vs Cameron Norrie
+LOCATION:Paris\, France\, Court 1
 STATUS:CONFIRMED
-SEQUENCE:0
-TRANSP:TRANSPARENT
-CATEGORIES:Reto Win Tennis Cali Open\,WTA
-X-TENNIS-SEASON:2026
-DESCRIPTION:Reto Win Tennis Cali Open - Round 1\nIn programma\nSuperficie e
-  programma soggetti agli aggiornamenti del torneo\nCopertura TV non ancora
-  confermata\nDati partita: ESPN\; verificare le fonti ufficiali del torneo
-URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/1007-2026/c
- ompetitionType/2
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT2H
-DESCRIPTION:Tra due ore: Lucia Bronzetti vs Leolia Jeanjean
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:espn-186455@italian-tennis-calendar
-DTSTAMP:20261102T022507Z
-DTSTART;VALUE=DATE:20261103
-DTEND;VALUE=DATE:20261104
-SUMMARY:Matteo Berrettini vs Brandon Nakashima
-LOCATION:Paris\, France
-STATUS:TENTATIVE
-SEQUENCE:2
+SEQUENCE:3
 TRANSP:TRANSPARENT
 CATEGORIES:Rolex Paris Masters\,ATP
 X-TENNIS-SEASON:2026
-DESCRIPTION:Rolex Paris Masters - Round 1\nIn programma\; orario da conferm
+DESCRIPTION:Rolex Paris Masters - Round 1\nConclusa: sconfitta Matteo Arnal
+ di 4-6 6-1 3-6\nSuperficie e programma soggetti agli aggiornamenti del tor
+ neo\nDati partita: ESPN\; verificare le fonti ufficiali del torneo
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/13-2026/com
+ petitionType/1
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-186711@italian-tennis-calendar
+DTSTAMP:20261103T084901Z
+DTSTART:20261102T160500Z
+DTEND:20261102T190500Z
+SUMMARY:Lucia Bronzetti vs Leolia Jeanjean
+LOCATION:Cali\, Colombia\, Campo 3
+STATUS:CONFIRMED
+SEQUENCE:1
+TRANSP:TRANSPARENT
+CATEGORIES:Reto Win Tennis Cali Open\,WTA
+X-TENNIS-SEASON:2026
+DESCRIPTION:Reto Win Tennis Cali Open - Round 1\nConclusa: sconfitta Lucia
+  Bronzetti 7-6(2) 4-6 3-6\nSuperficie e programma soggetti agli aggiorname
+ nti del torneo\nDati partita: ESPN\; verificare le fonti ufficiali del tor
+ neo
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/1007-2026/c
+ ompetitionType/2
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-186455@italian-tennis-calendar
+DTSTAMP:20261103T084901Z
+DTSTART:20261103T113000Z
+DTEND:20261103T143000Z
+SUMMARY:Matteo Berrettini vs Brandon Nakashima
+LOCATION:Paris\, France\, Court 2
+STATUS:CONFIRMED
+SEQUENCE:3
+TRANSP:TRANSPARENT
+CATEGORIES:Rolex Paris Masters\,ATP
+X-TENNIS-SEASON:2026
+DESCRIPTION:Rolex Paris Masters - Round 1\nIn programma\nSuperficie e progr
+ amma soggetti agli aggiornamenti del torneo\nDove vederla:\n🇮🇹 Itali
+ a: Sky Sport Tennis\, Sky Sport Uno e Sky Go — A pagamento\nFonte TV: ht
+ tps://programmi.sky.it/sport/tennis/atp-masters-1000/dove-vedere-parigi-ma
+ sters\n🇮🇹 Italia: NOW — A pagamento\nFonte TV: https://www.nowtv.i
+ t/sport/tennis/atp-1000-wta-1000/parigi\nAlternativa gratuita non ancora c
+ onfermata\nDati partita: ESPN\; verificare le fonti ufficiali del torneo
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/13-2026/com
+ petitionType/1
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT2H
+DESCRIPTION:Tra due ore: Matteo Berrettini vs Brandon Nakashima
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-186478@italian-tennis-calendar
+DTSTAMP:20261103T084901Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261105
+SUMMARY:Lorenzo Musetti vs Alexander Zverev
+LOCATION:Paris\, France
+STATUS:TENTATIVE
+SEQUENCE:0
+TRANSP:TRANSPARENT
+CATEGORIES:Rolex Paris Masters\,ATP
+X-TENNIS-SEASON:2026
+DESCRIPTION:Rolex Paris Masters - Round 2\nIn programma\; orario da conferm
  are\nSuperficie e programma soggetti agli aggiornamenti del torneo\nDove v
  ederla:\n🇮🇹 Italia: Sky Sport Tennis\, Sky Sport Uno e Sky Go — A
   pagamento\nFonte TV: https://programmi.sky.it/sport/tennis/atp-masters-10
