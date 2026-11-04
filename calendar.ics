@@ -994,51 +994,19 @@ URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/1007-2026/c
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-186455@italian-tennis-calendar
-DTSTAMP:20261103T084901Z
-DTSTART:20261103T113000Z
-DTEND:20261103T143000Z
+DTSTAMP:20261104T021501Z
+DTSTART:20261103T132000Z
+DTEND:20261103T162000Z
 SUMMARY:Matteo Berrettini vs Brandon Nakashima
 LOCATION:Paris\, France\, Court 2
 STATUS:CONFIRMED
-SEQUENCE:3
+SEQUENCE:4
 TRANSP:TRANSPARENT
 CATEGORIES:Rolex Paris Masters\,ATP
 X-TENNIS-SEASON:2026
-DESCRIPTION:Rolex Paris Masters - Round 1\nIn programma\nSuperficie e progr
- amma soggetti agli aggiornamenti del torneo\nDove vederla:\n🇮🇹 Itali
- a: Sky Sport Tennis\, Sky Sport Uno e Sky Go — A pagamento\nFonte TV: ht
- tps://programmi.sky.it/sport/tennis/atp-masters-1000/dove-vedere-parigi-ma
- sters\n🇮🇹 Italia: NOW — A pagamento\nFonte TV: https://www.nowtv.i
- t/sport/tennis/atp-1000-wta-1000/parigi\nAlternativa gratuita non ancora c
- onfermata\nDati partita: ESPN\; verificare le fonti ufficiali del torneo
-URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/13-2026/com
- petitionType/1
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT2H
-DESCRIPTION:Tra due ore: Matteo Berrettini vs Brandon Nakashima
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:espn-186478@italian-tennis-calendar
-DTSTAMP:20261103T084901Z
-DTSTART;VALUE=DATE:20261104
-DTEND;VALUE=DATE:20261105
-SUMMARY:Lorenzo Musetti vs Alexander Zverev
-LOCATION:Paris\, France
-STATUS:TENTATIVE
-SEQUENCE:0
-TRANSP:TRANSPARENT
-CATEGORIES:Rolex Paris Masters\,ATP
-X-TENNIS-SEASON:2026
-DESCRIPTION:Rolex Paris Masters - Round 2\nIn programma\; orario da conferm
- are\nSuperficie e programma soggetti agli aggiornamenti del torneo\nDove v
- ederla:\n🇮🇹 Italia: Sky Sport Tennis\, Sky Sport Uno e Sky Go — A
-  pagamento\nFonte TV: https://programmi.sky.it/sport/tennis/atp-masters-10
- 00/dove-vedere-parigi-masters\n🇮🇹 Italia: NOW — A pagamento\nFonte
-  TV: https://www.nowtv.it/sport/tennis/atp-1000-wta-1000/parigi\nAlternati
- va gratuita non ancora confermata\nDati partita: ESPN\; verificare le font
- i ufficiali del torneo
+DESCRIPTION:Rolex Paris Masters - Round 1\nConclusa: vittoria Matteo Berret
+ tini 6-4 3-6 7-6(8)\nSuperficie e programma soggetti agli aggiornamenti de
+ l torneo\nDati partita: ESPN\; verificare le fonti ufficiali del torneo
 URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/13-2026/com
  petitionType/1
 END:VEVENT
@@ -1064,5 +1032,123 @@ DESCRIPTION:Rolex Paris Masters - Round 2\nIn programma\; avversario\, data
   verificare le fonti ufficiali del torneo
 URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/13-2026/com
  petitionType/1
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-186478@italian-tennis-calendar
+DTSTAMP:20261104T021501Z
+DTSTART:20261104T123000Z
+DTEND:20261104T153000Z
+SUMMARY:Lorenzo Musetti vs Alexander Zverev
+LOCATION:Paris\, France\, Court Central
+STATUS:CONFIRMED
+SEQUENCE:1
+TRANSP:TRANSPARENT
+CATEGORIES:Rolex Paris Masters\,ATP
+X-TENNIS-SEASON:2026
+DESCRIPTION:Rolex Paris Masters - Round 2\nIn programma\nSuperficie e progr
+ amma soggetti agli aggiornamenti del torneo\nDove vederla:\n🇮🇹 Itali
+ a: Sky Sport Tennis\, Sky Sport Uno e Sky Go — A pagamento\nFonte TV: ht
+ tps://programmi.sky.it/sport/tennis/atp-masters-1000/dove-vedere-parigi-ma
+ sters\n🇮🇹 Italia: NOW — A pagamento\nFonte TV: https://www.nowtv.i
+ t/sport/tennis/atp-1000-wta-1000/parigi\nAlternativa gratuita non ancora c
+ onfermata\nDati partita: ESPN\; verificare le fonti ufficiali del torneo
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/13-2026/com
+ petitionType/1
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT2H
+DESCRIPTION:Tra due ore: Lorenzo Musetti vs Alexander Zverev
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-186489@italian-tennis-calendar
+DTSTAMP:20261104T021501Z
+DTSTART:20261104T160000Z
+DTEND:20261104T190000Z
+SUMMARY:Matteo Berrettini vs Ugo Humbert
+LOCATION:Paris\, France\, Court 1
+STATUS:CONFIRMED
+SEQUENCE:0
+TRANSP:TRANSPARENT
+CATEGORIES:Rolex Paris Masters\,ATP
+X-TENNIS-SEASON:2026
+DESCRIPTION:Rolex Paris Masters - Round 2\nIn programma\nSuperficie e progr
+ amma soggetti agli aggiornamenti del torneo\nDove vederla:\n🇮🇹 Itali
+ a: Sky Sport Tennis\, Sky Sport Uno e Sky Go — A pagamento\nFonte TV: ht
+ tps://programmi.sky.it/sport/tennis/atp-masters-1000/dove-vedere-parigi-ma
+ sters\n🇮🇹 Italia: NOW — A pagamento\nFonte TV: https://www.nowtv.i
+ t/sport/tennis/atp-1000-wta-1000/parigi\nAlternativa gratuita non ancora c
+ onfermata\nDati partita: ESPN\; verificare le fonti ufficiali del torneo
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/13-2026/com
+ petitionType/1
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT2H
+DESCRIPTION:Tra due ore: Matteo Berrettini vs Ugo Humbert
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-187391@italian-tennis-calendar
+DTSTAMP:20261104T021501Z
+DTSTART:20261108T230000Z
+DTEND:20261109T020000Z
+SUMMARY:Sara Errani / Jasmine Paolini vs Katerina Siniakova / Taylor Townse
+ nd
+LOCATION:Indian Wells\, USA\, Indian Wells
+STATUS:CONFIRMED
+SEQUENCE:0
+TRANSP:TRANSPARENT
+CATEGORIES:WTA Finals\,WTA\,Doppio
+X-TENNIS-SEASON:2026
+DESCRIPTION:WTA Finals - Group Stage\nIn programma\nSuperficie e programma
+  soggetti agli aggiornamenti del torneo\nCopertura TV non ancora confermat
+ a\nDati partita: ESPN\; verificare le fonti ufficiali del torneo
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/382-2026/co
+ mpetitionType/2
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT2H
+DESCRIPTION:Tra due ore: Sara Errani / Jasmine Paolini vs Katerina Siniakov
+ a / Taylor Townsend
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-187393@italian-tennis-calendar
+DTSTAMP:20261104T021501Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:Sara Errani / Jasmine Paolini vs Cristina Bucsa / Nicole Melichar-M
+ artinez
+LOCATION:Indian Wells\, USA
+STATUS:TENTATIVE
+SEQUENCE:0
+TRANSP:TRANSPARENT
+CATEGORIES:WTA Finals\,WTA\,Doppio
+X-TENNIS-SEASON:2026
+DESCRIPTION:WTA Finals - Group Stage\nIn programma\; orario da confermare\n
+ Superficie e programma soggetti agli aggiornamenti del torneo\nCopertura T
+ V non ancora confermata\nDati partita: ESPN\; verificare le fonti ufficial
+ i del torneo
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/382-2026/co
+ mpetitionType/2
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-187394@italian-tennis-calendar
+DTSTAMP:20261104T021501Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:Sara Errani / Jasmine Paolini vs Ellen Perez / Demi  Schuurs
+LOCATION:Indian Wells\, USA
+STATUS:TENTATIVE
+SEQUENCE:0
+TRANSP:TRANSPARENT
+CATEGORIES:WTA Finals\,WTA\,Doppio
+X-TENNIS-SEASON:2026
+DESCRIPTION:WTA Finals - Group Stage\nIn programma\; orario da confermare\n
+ Superficie e programma soggetti agli aggiornamenti del torneo\nCopertura T
+ V non ancora confermata\nDati partita: ESPN\; verificare le fonti ufficial
+ i del torneo
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/382-2026/co
+ mpetitionType/2
 END:VEVENT
 END:VCALENDAR
