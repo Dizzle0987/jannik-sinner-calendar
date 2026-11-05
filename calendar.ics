@@ -1071,57 +1071,39 @@ URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/13-2026/com
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-186499@italian-tennis-calendar
-DTSTAMP:20261105T101240Z
-DTSTART:20261105T130000Z
-DTEND:20261105T160000Z
+DTSTAMP:20261105T180747Z
+DTSTART:20261105T143500Z
+DTEND:20261105T173500Z
 SUMMARY:Lorenzo Musetti vs Luca Van Assche
 LOCATION:Paris\, France\, Court Central
 STATUS:CONFIRMED
-SEQUENCE:0
+SEQUENCE:1
 TRANSP:TRANSPARENT
 CATEGORIES:Rolex Paris Masters\,ATP
 X-TENNIS-SEASON:2026
-DESCRIPTION:Rolex Paris Masters - Round 3\nIn programma\nSuperficie e progr
- amma soggetti agli aggiornamenti del torneo\nDove vederla:\n🇮🇹 Itali
- a: Sky Sport Tennis\, Sky Sport Uno e Sky Go — A pagamento\nFonte TV: ht
- tps://programmi.sky.it/sport/tennis/atp-masters-1000/dove-vedere-parigi-ma
- sters\n🇮🇹 Italia: NOW — A pagamento\nFonte TV: https://www.nowtv.i
- t/sport/tennis/atp-1000-wta-1000/parigi\nAlternativa gratuita non ancora c
- onfermata\nDati partita: ESPN\; verificare le fonti ufficiali del torneo
+DESCRIPTION:Rolex Paris Masters - Round 3\nConclusa: sconfitta Lorenzo Muse
+ tti 5-7 6-3 4-6\nSuperficie e programma soggetti agli aggiornamenti del to
+ rneo\nDati partita: ESPN\; verificare le fonti ufficiali del torneo
 URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/13-2026/com
  petitionType/1
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT2H
-DESCRIPTION:Tra due ore: Lorenzo Musetti vs Luca Van Assche
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-186502@italian-tennis-calendar
-DTSTAMP:20261105T101240Z
+DTSTAMP:20261105T180747Z
 DTSTART:20261105T180000Z
 DTEND:20261105T210000Z
 SUMMARY:Matteo Berrettini vs Carlos Alcaraz
-LOCATION:Paris\, France\, Court Central
+LOCATION:Paris\, France
 STATUS:CONFIRMED
-SEQUENCE:0
+SEQUENCE:1
 TRANSP:TRANSPARENT
 CATEGORIES:Rolex Paris Masters\,ATP
 X-TENNIS-SEASON:2026
-DESCRIPTION:Rolex Paris Masters - Round 3\nIn programma\nSuperficie e progr
- amma soggetti agli aggiornamenti del torneo\nDove vederla:\n🇮🇹 Itali
- a: Sky Sport Tennis\, Sky Sport Uno e Sky Go — A pagamento\nFonte TV: ht
- tps://programmi.sky.it/sport/tennis/atp-masters-1000/dove-vedere-parigi-ma
- sters\n🇮🇹 Italia: NOW — A pagamento\nFonte TV: https://www.nowtv.i
- t/sport/tennis/atp-1000-wta-1000/parigi\nAlternativa gratuita non ancora c
- onfermata\nDati partita: ESPN\; verificare le fonti ufficiali del torneo
+DESCRIPTION:Rolex Paris Masters - Round 3\nConclusa: sconfitta Matteo Berre
+ ttini\nSuperficie e programma soggetti agli aggiornamenti del torneo\nDati
+  partita: ESPN\; verificare le fonti ufficiali del torneo
 URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/13-2026/com
  petitionType/1
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT2H
-DESCRIPTION:Tra due ore: Matteo Berrettini vs Carlos Alcaraz
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-187391@italian-tennis-calendar
