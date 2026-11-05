@@ -1035,44 +1035,53 @@ URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/13-2026/com
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-186478@italian-tennis-calendar
-DTSTAMP:20261104T021501Z
-DTSTART:20261104T123000Z
-DTEND:20261104T153000Z
+DTSTAMP:20261105T101240Z
+DTSTART:20261104T124000Z
+DTEND:20261104T154000Z
 SUMMARY:Lorenzo Musetti vs Alexander Zverev
 LOCATION:Paris\, France\, Court Central
+STATUS:CONFIRMED
+SEQUENCE:2
+TRANSP:TRANSPARENT
+CATEGORIES:Rolex Paris Masters\,ATP
+X-TENNIS-SEASON:2026
+DESCRIPTION:Rolex Paris Masters - Round 2\nConclusa: vittoria Lorenzo Muset
+ ti 7-6(5) 6-2\nSuperficie e programma soggetti agli aggiornamenti del torn
+ eo\nDati partita: ESPN\; verificare le fonti ufficiali del torneo
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/13-2026/com
+ petitionType/1
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-186489@italian-tennis-calendar
+DTSTAMP:20261105T101240Z
+DTSTART:20261104T173500Z
+DTEND:20261104T203500Z
+SUMMARY:Matteo Berrettini vs Ugo Humbert
+LOCATION:Paris\, France\, Court 1
 STATUS:CONFIRMED
 SEQUENCE:1
 TRANSP:TRANSPARENT
 CATEGORIES:Rolex Paris Masters\,ATP
 X-TENNIS-SEASON:2026
-DESCRIPTION:Rolex Paris Masters - Round 2\nIn programma\nSuperficie e progr
- amma soggetti agli aggiornamenti del torneo\nDove vederla:\n🇮🇹 Itali
- a: Sky Sport Tennis\, Sky Sport Uno e Sky Go — A pagamento\nFonte TV: ht
- tps://programmi.sky.it/sport/tennis/atp-masters-1000/dove-vedere-parigi-ma
- sters\n🇮🇹 Italia: NOW — A pagamento\nFonte TV: https://www.nowtv.i
- t/sport/tennis/atp-1000-wta-1000/parigi\nAlternativa gratuita non ancora c
- onfermata\nDati partita: ESPN\; verificare le fonti ufficiali del torneo
+DESCRIPTION:Rolex Paris Masters - Round 2\nConclusa: vittoria Matteo Berret
+ tini 7-6(3) 7-5\nSuperficie e programma soggetti agli aggiornamenti del to
+ rneo\nDati partita: ESPN\; verificare le fonti ufficiali del torneo
 URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/13-2026/com
  petitionType/1
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT2H
-DESCRIPTION:Tra due ore: Lorenzo Musetti vs Alexander Zverev
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:espn-186489@italian-tennis-calendar
-DTSTAMP:20261104T021501Z
-DTSTART:20261104T160000Z
-DTEND:20261104T190000Z
-SUMMARY:Matteo Berrettini vs Ugo Humbert
-LOCATION:Paris\, France\, Court 1
+UID:espn-186499@italian-tennis-calendar
+DTSTAMP:20261105T101240Z
+DTSTART:20261105T130000Z
+DTEND:20261105T160000Z
+SUMMARY:Lorenzo Musetti vs Luca Van Assche
+LOCATION:Paris\, France\, Court Central
 STATUS:CONFIRMED
 SEQUENCE:0
 TRANSP:TRANSPARENT
 CATEGORIES:Rolex Paris Masters\,ATP
 X-TENNIS-SEASON:2026
-DESCRIPTION:Rolex Paris Masters - Round 2\nIn programma\nSuperficie e progr
+DESCRIPTION:Rolex Paris Masters - Round 3\nIn programma\nSuperficie e progr
  amma soggetti agli aggiornamenti del torneo\nDove vederla:\n🇮🇹 Itali
  a: Sky Sport Tennis\, Sky Sport Uno e Sky Go — A pagamento\nFonte TV: ht
  tps://programmi.sky.it/sport/tennis/atp-masters-1000/dove-vedere-parigi-ma
@@ -1084,19 +1093,46 @@ URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/13-2026/com
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT2H
-DESCRIPTION:Tra due ore: Matteo Berrettini vs Ugo Humbert
+DESCRIPTION:Tra due ore: Lorenzo Musetti vs Luca Van Assche
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-186502@italian-tennis-calendar
+DTSTAMP:20261105T101240Z
+DTSTART:20261105T180000Z
+DTEND:20261105T210000Z
+SUMMARY:Matteo Berrettini vs Carlos Alcaraz
+LOCATION:Paris\, France\, Court Central
+STATUS:CONFIRMED
+SEQUENCE:0
+TRANSP:TRANSPARENT
+CATEGORIES:Rolex Paris Masters\,ATP
+X-TENNIS-SEASON:2026
+DESCRIPTION:Rolex Paris Masters - Round 3\nIn programma\nSuperficie e progr
+ amma soggetti agli aggiornamenti del torneo\nDove vederla:\n🇮🇹 Itali
+ a: Sky Sport Tennis\, Sky Sport Uno e Sky Go — A pagamento\nFonte TV: ht
+ tps://programmi.sky.it/sport/tennis/atp-masters-1000/dove-vedere-parigi-ma
+ sters\n🇮🇹 Italia: NOW — A pagamento\nFonte TV: https://www.nowtv.i
+ t/sport/tennis/atp-1000-wta-1000/parigi\nAlternativa gratuita non ancora c
+ onfermata\nDati partita: ESPN\; verificare le fonti ufficiali del torneo
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/13-2026/com
+ petitionType/1
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT2H
+DESCRIPTION:Tra due ore: Matteo Berrettini vs Carlos Alcaraz
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-187391@italian-tennis-calendar
-DTSTAMP:20261104T093037Z
+DTSTAMP:20261105T101240Z
 DTSTART:20261108T230000Z
 DTEND:20261109T020000Z
 SUMMARY:Sara Errani / Jasmine Paolini vs Katerina Siniakova / Taylor Townse
  nd
-LOCATION:Indian Wells\, USA\, Indian Wells
+LOCATION:Indian Wells\, USA\, Indian Wells Tennis Garden
 STATUS:CONFIRMED
-SEQUENCE:1
+SEQUENCE:2
 TRANSP:TRANSPARENT
 CATEGORIES:FAGE WTA Finals Indian Wells\,WTA\,Doppio
 X-TENNIS-SEASON:2026
