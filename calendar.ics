@@ -1107,21 +1107,22 @@ URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/13-2026/com
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-187391@italian-tennis-calendar
-DTSTAMP:20261105T101240Z
+DTSTAMP:20261106T182410Z
 DTSTART:20261108T230000Z
 DTEND:20261109T020000Z
 SUMMARY:Sara Errani / Jasmine Paolini vs Katerina Siniakova / Taylor Townse
  nd
 LOCATION:Indian Wells\, USA\, Indian Wells Tennis Garden
 STATUS:CONFIRMED
-SEQUENCE:2
+SEQUENCE:3
 TRANSP:TRANSPARENT
 CATEGORIES:FAGE WTA Finals Indian Wells\,WTA\,Doppio
 X-TENNIS-SEASON:2026
 DESCRIPTION:FAGE WTA Finals Indian Wells - Group Stage\nIn programma\nSuper
- ficie e programma soggetti agli aggiornamenti del torneo\nCopertura TV non
-  ancora confermata\nDati partita: ESPN\; verificare le fonti ufficiali del
-  torneo
+ ficie e programma soggetti agli aggiornamenti del torneo\nDove vederla:\n
+ 🇮🇹 Italia: SuperTennis Plus — GRATIS\nFonte TV: https://plus.super
+ tennis.tv/live\nDati partita: ESPN\; verificare le fonti ufficiali del tor
+ neo
 URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/382-2026/co
  mpetitionType/2
 BEGIN:VALARM
