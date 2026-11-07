@@ -1133,6 +1133,25 @@ DESCRIPTION:Tra due ore: Sara Errani / Jasmine Paolini vs Katerina Siniakov
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:espn-186543@italian-tennis-calendar
+DTSTAMP:20261107T162235Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:Lorenzo Musetti - prossimo turno
+LOCATION:Stockholm\, Sweden
+STATUS:TENTATIVE
+SEQUENCE:0
+TRANSP:TRANSPARENT
+CATEGORIES:Bybit Stockholm Open\,ATP
+X-TENNIS-SEASON:2026
+DESCRIPTION:Bybit Stockholm Open - Round 2\nIn programma\; avversario\, dat
+ a e orario da confermare\nSuperficie e programma soggetti agli aggiornamen
+ ti del torneo\nCopertura TV non ancora confermata\nDati partita: ESPN\; ve
+ rificare le fonti ufficiali del torneo
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/148-2026/co
+ mpetitionType/1
+END:VEVENT
+BEGIN:VEVENT
 UID:espn-187393@italian-tennis-calendar
 DTSTAMP:20261104T093037Z
 DTSTART;VALUE=DATE:20261110
