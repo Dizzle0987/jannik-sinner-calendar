@@ -1152,6 +1152,25 @@ URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/148-2026/co
  mpetitionType/1
 END:VEVENT
 BEGIN:VEVENT
+UID:espn-186752@italian-tennis-calendar
+DTSTAMP:20261108T203733Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:Lucia Bronzetti vs Julieta Pareja
+LOCATION:Sopo\, Colombia
+STATUS:TENTATIVE
+SEQUENCE:0
+TRANSP:TRANSPARENT
+CATEGORIES:DIRECTV Open Presentado por Compesar\,WTA
+X-TENNIS-SEASON:2026
+DESCRIPTION:DIRECTV Open Presentado por Compesar - Round 1\nIn programma\;
+  orario da confermare\nSuperficie e programma soggetti agli aggiornamenti
+  del torneo\nCopertura TV non ancora confermata\nDati partita: ESPN\; veri
+ ficare le fonti ufficiali del torneo
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/1084-2026/c
+ ompetitionType/2
+END:VEVENT
+BEGIN:VEVENT
 UID:espn-187393@italian-tennis-calendar
 DTSTAMP:20261104T093037Z
 DTSTART;VALUE=DATE:20261110
