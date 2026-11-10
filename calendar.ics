@@ -1127,45 +1127,40 @@ URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/382-2026/co
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-186752@italian-tennis-calendar
-DTSTAMP:20261110T154625Z
+DTSTAMP:20261110T212826Z
 DTSTART:20261110T153500Z
 DTEND:20261110T183500Z
 SUMMARY:Lucia Bronzetti vs Julieta Pareja
 LOCATION:Sopo\, Colombia\, Court 2
 STATUS:CONFIRMED
-SEQUENCE:2
+SEQUENCE:3
 TRANSP:TRANSPARENT
 CATEGORIES:DIRECTV Open Presentado por Compesar\,WTA
 X-TENNIS-SEASON:2026
-DESCRIPTION:DIRECTV Open Presentado por Compesar - Round 1\nIn corso: 3-0\n
- Superficie e programma soggetti agli aggiornamenti del torneo\nCopertura T
- V non ancora confermata\nDati partita: ESPN\; verificare le fonti ufficial
- i del torneo
+DESCRIPTION:DIRECTV Open Presentado por Compesar - Round 1\nConclusa: vitto
+ ria Lucia Bronzetti 6-3 4-6 6-3\nSuperficie e programma soggetti agli aggi
+ ornamenti del torneo\nDati partita: ESPN\; verificare le fonti ufficiali d
+ el torneo
 URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/1084-2026/c
  ompetitionType/2
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-186543@italian-tennis-calendar
-DTSTAMP:20261110T002559Z
-DTSTART:20261110T183000Z
-DTEND:20261110T213000Z
+DTSTAMP:20261110T212826Z
+DTSTART:20261110T190500Z
+DTEND:20261110T220500Z
 SUMMARY:Lorenzo Musetti vs Toby Samuel
 LOCATION:Stockholm\, Sweden\, Center Court
 STATUS:CONFIRMED
-SEQUENCE:1
+SEQUENCE:2
 TRANSP:TRANSPARENT
 CATEGORIES:Bybit Stockholm Open\,ATP
 X-TENNIS-SEASON:2026
-DESCRIPTION:Bybit Stockholm Open - Round 2\nIn programma\nSuperficie e prog
- ramma soggetti agli aggiornamenti del torneo\nCopertura TV non ancora conf
- ermata\nDati partita: ESPN\; verificare le fonti ufficiali del torneo
+DESCRIPTION:Bybit Stockholm Open - Round 2\nConclusa: vittoria Lorenzo Muse
+ tti 6-1 6-4\nSuperficie e programma soggetti agli aggiornamenti del torneo
+ \nDati partita: ESPN\; verificare le fonti ufficiali del torneo
 URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/148-2026/co
  mpetitionType/1
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT2H
-DESCRIPTION:Tra due ore: Lorenzo Musetti vs Toby Samuel
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-187393@italian-tennis-calendar
@@ -1192,6 +1187,49 @@ TRIGGER:-PT2H
 DESCRIPTION:Tra due ore: Sara Errani / Jasmine Paolini vs Cristina Bucsa /
   Nicole Melichar-Martinez
 END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-186761@italian-tennis-calendar
+DTSTAMP:20261110T212826Z
+DTSTART:20261111T163000Z
+DTEND:20261111T193000Z
+SUMMARY:Lucia Bronzetti vs Elizabeth Mandlik
+LOCATION:Sopo\, Colombia\, Main Court
+STATUS:CONFIRMED
+SEQUENCE:0
+TRANSP:TRANSPARENT
+CATEGORIES:DIRECTV Open Presentado por Compesar\,WTA
+X-TENNIS-SEASON:2026
+DESCRIPTION:DIRECTV Open Presentado por Compesar - Round 2\nIn programma\nS
+ uperficie e programma soggetti agli aggiornamenti del torneo\nCopertura TV
+  non ancora confermata\nDati partita: ESPN\; verificare le fonti ufficiali
+  del torneo
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/1084-2026/c
+ ompetitionType/2
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT2H
+DESCRIPTION:Tra due ore: Lucia Bronzetti vs Elizabeth Mandlik
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-186550@italian-tennis-calendar
+DTSTAMP:20261110T212826Z
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261113
+SUMMARY:Lorenzo Musetti - prossimo turno
+LOCATION:Stockholm\, Sweden
+STATUS:TENTATIVE
+SEQUENCE:0
+TRANSP:TRANSPARENT
+CATEGORIES:Bybit Stockholm Open\,ATP
+X-TENNIS-SEASON:2026
+DESCRIPTION:Bybit Stockholm Open - Quarterfinal\nIn programma\; avversario\
+ , data e orario da confermare\nSuperficie e programma soggetti agli aggior
+ namenti del torneo\nCopertura TV non ancora confermata\nDati partita: ESPN
+ \; verificare le fonti ufficiali del torneo
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/148-2026/co
+ mpetitionType/1
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-187394@italian-tennis-calendar
