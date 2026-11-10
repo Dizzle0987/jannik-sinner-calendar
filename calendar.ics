@@ -1127,27 +1127,22 @@ URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/382-2026/co
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-186752@italian-tennis-calendar
-DTSTAMP:20261110T002559Z
-DTSTART:20261110T150000Z
-DTEND:20261110T180000Z
+DTSTAMP:20261110T154625Z
+DTSTART:20261110T153500Z
+DTEND:20261110T183500Z
 SUMMARY:Lucia Bronzetti vs Julieta Pareja
 LOCATION:Sopo\, Colombia\, Court 2
 STATUS:CONFIRMED
-SEQUENCE:1
+SEQUENCE:2
 TRANSP:TRANSPARENT
 CATEGORIES:DIRECTV Open Presentado por Compesar\,WTA
 X-TENNIS-SEASON:2026
-DESCRIPTION:DIRECTV Open Presentado por Compesar - Round 1\nIn programma\nS
- uperficie e programma soggetti agli aggiornamenti del torneo\nCopertura TV
-  non ancora confermata\nDati partita: ESPN\; verificare le fonti ufficiali
-  del torneo
+DESCRIPTION:DIRECTV Open Presentado por Compesar - Round 1\nIn corso: 3-0\n
+ Superficie e programma soggetti agli aggiornamenti del torneo\nCopertura T
+ V non ancora confermata\nDati partita: ESPN\; verificare le fonti ufficial
+ i del torneo
 URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/1084-2026/c
  ompetitionType/2
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT2H
-DESCRIPTION:Tra due ore: Lucia Bronzetti vs Julieta Pareja
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-186543@italian-tennis-calendar
@@ -1171,25 +1166,6 @@ ACTION:DISPLAY
 TRIGGER:-PT2H
 DESCRIPTION:Tra due ore: Lorenzo Musetti vs Toby Samuel
 END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:espn-187394@italian-tennis-calendar
-DTSTAMP:20261109T061135Z
-DTSTART;VALUE=DATE:20261111
-DTEND;VALUE=DATE:20261112
-SUMMARY:Sara Errani / Jasmine Paolini vs Ellen Perez / Demi  Schuurs
-LOCATION:Indian Wells\, USA
-STATUS:TENTATIVE
-SEQUENCE:2
-TRANSP:TRANSPARENT
-CATEGORIES:FAGE WTA Finals Indian Wells\,WTA\,Doppio
-X-TENNIS-SEASON:2026
-DESCRIPTION:FAGE WTA Finals Indian Wells - Group Stage\nIn programma\; orar
- io da confermare\nSuperficie e programma soggetti agli aggiornamenti del t
- orneo\nCopertura TV non ancora confermata\nDati partita: ESPN\; verificare
-  le fonti ufficiali del torneo
-URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/382-2026/co
- mpetitionType/2
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-187393@italian-tennis-calendar
@@ -1216,5 +1192,24 @@ TRIGGER:-PT2H
 DESCRIPTION:Tra due ore: Sara Errani / Jasmine Paolini vs Cristina Bucsa /
   Nicole Melichar-Martinez
 END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-187394@italian-tennis-calendar
+DTSTAMP:20261110T154625Z
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261113
+SUMMARY:Sara Errani / Jasmine Paolini vs Ellen Perez / Demi  Schuurs
+LOCATION:Indian Wells\, USA
+STATUS:TENTATIVE
+SEQUENCE:3
+TRANSP:TRANSPARENT
+CATEGORIES:FAGE WTA Finals Indian Wells\,WTA\,Doppio
+X-TENNIS-SEASON:2026
+DESCRIPTION:FAGE WTA Finals Indian Wells - Group Stage\nIn programma\; orar
+ io da confermare\nSuperficie e programma soggetti agli aggiornamenti del t
+ orneo\nCopertura TV non ancora confermata\nDati partita: ESPN\; verificare
+  le fonti ufficiali del torneo
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/382-2026/co
+ mpetitionType/2
 END:VEVENT
 END:VCALENDAR
