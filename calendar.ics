@@ -1208,22 +1208,26 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-186550@italian-tennis-calendar
-DTSTAMP:20261110T212826Z
-DTSTART;VALUE=DATE:20261112
-DTEND;VALUE=DATE:20261113
-SUMMARY:Lorenzo Musetti - prossimo turno
-LOCATION:Stockholm\, Sweden
-STATUS:TENTATIVE
-SEQUENCE:0
+DTSTAMP:20261111T162213Z
+DTSTART:20261112T190000Z
+DTEND:20261112T220000Z
+SUMMARY:Lorenzo Musetti vs Ugo Humbert
+LOCATION:Stockholm\, Sweden\, Center Court
+STATUS:CONFIRMED
+SEQUENCE:1
 TRANSP:TRANSPARENT
 CATEGORIES:Bybit Stockholm Open\,ATP
 X-TENNIS-SEASON:2026
-DESCRIPTION:Bybit Stockholm Open - Quarterfinal\nIn programma\; avversario\
- , data e orario da confermare\nSuperficie e programma soggetti agli aggior
- namenti del torneo\nCopertura TV non ancora confermata\nDati partita: ESPN
- \; verificare le fonti ufficiali del torneo
+DESCRIPTION:Bybit Stockholm Open - Quarterfinal\nIn programma\nSuperficie e
+  programma soggetti agli aggiornamenti del torneo\nCopertura TV non ancora
+  confermata\nDati partita: ESPN\; verificare le fonti ufficiali del torneo
 URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/148-2026/co
  mpetitionType/1
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT2H
+DESCRIPTION:Tra due ore: Lorenzo Musetti vs Ugo Humbert
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-187394@italian-tennis-calendar
