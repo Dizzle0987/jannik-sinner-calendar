@@ -1164,29 +1164,23 @@ URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/148-2026/co
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-187393@italian-tennis-calendar
-DTSTAMP:20261109T061135Z
-DTSTART:20261111T003000Z
-DTEND:20261111T033000Z
+DTSTAMP:20261111T082133Z
+DTSTART:20261111T015000Z
+DTEND:20261111T045000Z
 SUMMARY:Sara Errani / Jasmine Paolini vs Cristina Bucsa / Nicole Melichar-M
  artinez
 LOCATION:Indian Wells\, USA\, Indian Wells Tennis Garden
 STATUS:CONFIRMED
-SEQUENCE:2
+SEQUENCE:3
 TRANSP:TRANSPARENT
 CATEGORIES:FAGE WTA Finals Indian Wells\,WTA\,Doppio
 X-TENNIS-SEASON:2026
-DESCRIPTION:FAGE WTA Finals Indian Wells - Group Stage\nIn programma\nSuper
- ficie e programma soggetti agli aggiornamenti del torneo\nCopertura TV non
-  ancora confermata\nDati partita: ESPN\; verificare le fonti ufficiali del
-  torneo
+DESCRIPTION:FAGE WTA Finals Indian Wells - Group Stage\nConclusa: vittoria
+  Sara Errani / Jasmine Paolini 3-6 6-2 1-0\nSuperficie e programma soggett
+ i agli aggiornamenti del torneo\nDati partita: ESPN\; verificare le fonti
+  ufficiali del torneo
 URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/382-2026/co
  mpetitionType/2
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT2H
-DESCRIPTION:Tra due ore: Sara Errani / Jasmine Paolini vs Cristina Bucsa /
-  Nicole Melichar-Martinez
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-186761@italian-tennis-calendar
@@ -1233,21 +1227,27 @@ URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/148-2026/co
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-187394@italian-tennis-calendar
-DTSTAMP:20261110T154625Z
-DTSTART;VALUE=DATE:20261112
-DTEND;VALUE=DATE:20261113
+DTSTAMP:20261111T082133Z
+DTSTART:20261113T003000Z
+DTEND:20261113T033000Z
 SUMMARY:Sara Errani / Jasmine Paolini vs Ellen Perez / Demi  Schuurs
-LOCATION:Indian Wells\, USA
-STATUS:TENTATIVE
-SEQUENCE:3
+LOCATION:Indian Wells\, USA\, Indian Wells Tennis Garden
+STATUS:CONFIRMED
+SEQUENCE:4
 TRANSP:TRANSPARENT
 CATEGORIES:FAGE WTA Finals Indian Wells\,WTA\,Doppio
 X-TENNIS-SEASON:2026
-DESCRIPTION:FAGE WTA Finals Indian Wells - Group Stage\nIn programma\; orar
- io da confermare\nSuperficie e programma soggetti agli aggiornamenti del t
- orneo\nCopertura TV non ancora confermata\nDati partita: ESPN\; verificare
-  le fonti ufficiali del torneo
+DESCRIPTION:FAGE WTA Finals Indian Wells - Group Stage\nIn programma\nSuper
+ ficie e programma soggetti agli aggiornamenti del torneo\nCopertura TV non
+  ancora confermata\nDati partita: ESPN\; verificare le fonti ufficiali del
+  torneo
 URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/382-2026/co
  mpetitionType/2
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT2H
+DESCRIPTION:Tra due ore: Sara Errani / Jasmine Paolini vs Ellen Perez / Dem
+ i  Schuurs
+END:VALARM
 END:VEVENT
 END:VCALENDAR
