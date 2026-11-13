@@ -1263,6 +1263,25 @@ DESCRIPTION:Tra due ore: Lorenzo Musetti vs Taylor Fritz
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:espn-187443@italian-tennis-calendar
+DTSTAMP:20261113T153145Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:Sara Errani / Jasmine Paolini - prossimo turno
+LOCATION:Indian Wells\, USA
+STATUS:TENTATIVE
+SEQUENCE:0
+TRANSP:TRANSPARENT
+CATEGORIES:FAGE WTA Finals Indian Wells\,WTA\,Doppio
+X-TENNIS-SEASON:2026
+DESCRIPTION:FAGE WTA Finals Indian Wells - Semifinal\nIn programma\; avvers
+ ari\, data e orario da confermare\nSuperficie e programma soggetti agli ag
+ giornamenti del torneo\nCopertura TV non ancora confermata\nDati partita:
+  ESPN\; verificare le fonti ufficiali del torneo
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/382-2026/co
+ mpetitionType/2
+END:VEVENT
+BEGIN:VEVENT
 UID:espn-187510@italian-tennis-calendar
 DTSTAMP:20261112T191252Z
 DTSTART;VALUE=DATE:20261116
