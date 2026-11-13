@@ -1203,36 +1203,32 @@ URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/1084-2026/c
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-186550@italian-tennis-calendar
-DTSTAMP:20261112T191252Z
-DTSTART:20261112T191500Z
-DTEND:20261112T221500Z
+DTSTAMP:20261113T003421Z
+DTSTART:20261112T192500Z
+DTEND:20261112T222500Z
 SUMMARY:Lorenzo Musetti vs Ugo Humbert
 LOCATION:Stockholm\, Sweden\, Center Court
 STATUS:CONFIRMED
-SEQUENCE:2
+SEQUENCE:3
 TRANSP:TRANSPARENT
 CATEGORIES:Bybit Stockholm Open\,ATP
 X-TENNIS-SEASON:2026
-DESCRIPTION:Bybit Stockholm Open - Quarterfinal\nIn programma\nSuperficie e
-  programma soggetti agli aggiornamenti del torneo\nCopertura TV non ancora
-  confermata\nDati partita: ESPN\; verificare le fonti ufficiali del torneo
+DESCRIPTION:Bybit Stockholm Open - Quarterfinal\nConclusa: vittoria Lorenzo
+  Musetti 7-6(5) 3-6 6-4\nSuperficie e programma soggetti agli aggiornament
+ i del torneo\nDati partita: ESPN\; verificare le fonti ufficiali del torne
+ o
 URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/148-2026/co
  mpetitionType/1
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT2H
-DESCRIPTION:Tra due ore: Lorenzo Musetti vs Ugo Humbert
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-187394@italian-tennis-calendar
-DTSTAMP:20261112T191252Z
-DTSTART:20261113T003000Z
-DTEND:20261113T033000Z
+DTSTAMP:20261113T003421Z
+DTSTART:20261113T020000Z
+DTEND:20261113T050000Z
 SUMMARY:Sara Errani / Jasmine Paolini vs Ellen Perez / Demi  Schuurs
 LOCATION:Indian Wells\, USA\, Indian Wells Tennis Garden
 STATUS:CONFIRMED
-SEQUENCE:5
+SEQUENCE:6
 TRANSP:TRANSPARENT
 CATEGORIES:FAGE WTA Finals Indian Wells\,WTA\,Doppio
 X-TENNIS-SEASON:2026
@@ -1248,6 +1244,29 @@ ACTION:DISPLAY
 TRIGGER:-PT2H
 DESCRIPTION:Tra due ore: Sara Errani / Jasmine Paolini vs Ellen Perez / Dem
  i  Schuurs
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-186547@italian-tennis-calendar
+DTSTAMP:20261113T003421Z
+DTSTART:20261113T160000Z
+DTEND:20261113T190000Z
+SUMMARY:Lorenzo Musetti vs Taylor Fritz
+LOCATION:Stockholm\, Sweden\, Center Court
+STATUS:CONFIRMED
+SEQUENCE:0
+TRANSP:TRANSPARENT
+CATEGORIES:Bybit Stockholm Open\,ATP
+X-TENNIS-SEASON:2026
+DESCRIPTION:Bybit Stockholm Open - Semifinal\nIn programma\nSuperficie e pr
+ ogramma soggetti agli aggiornamenti del torneo\nCopertura TV non ancora co
+ nfermata\nDati partita: ESPN\; verificare le fonti ufficiali del torneo
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/148-2026/co
+ mpetitionType/1
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT2H
+DESCRIPTION:Tra due ore: Lorenzo Musetti vs Taylor Fritz
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
