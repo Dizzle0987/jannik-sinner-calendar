@@ -1222,29 +1222,22 @@ URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/148-2026/co
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-187394@italian-tennis-calendar
-DTSTAMP:20261113T003421Z
-DTSTART:20261113T020000Z
-DTEND:20261113T050000Z
+DTSTAMP:20261113T071358Z
+DTSTART:20261113T030500Z
+DTEND:20261113T060500Z
 SUMMARY:Sara Errani / Jasmine Paolini vs Ellen Perez / Demi  Schuurs
 LOCATION:Indian Wells\, USA\, Indian Wells Tennis Garden
 STATUS:CONFIRMED
-SEQUENCE:6
+SEQUENCE:7
 TRANSP:TRANSPARENT
 CATEGORIES:FAGE WTA Finals Indian Wells\,WTA\,Doppio
 X-TENNIS-SEASON:2026
-DESCRIPTION:FAGE WTA Finals Indian Wells - Group Stage\nIn programma\nSuper
- ficie e programma soggetti agli aggiornamenti del torneo\nDove vederla:\n
- 🇮🇹 Italia: SuperTennis Plus — GRATIS\nFonte TV: https://plus.super
- tennis.tv/live\nDati partita: ESPN\; verificare le fonti ufficiali del tor
- neo
+DESCRIPTION:FAGE WTA Finals Indian Wells - Group Stage\nConclusa: vittoria
+  Sara Errani / Jasmine Paolini 6-3 6-4\nSuperficie e programma soggetti ag
+ li aggiornamenti del torneo\nDati partita: ESPN\; verificare le fonti uffi
+ ciali del torneo
 URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/382-2026/co
  mpetitionType/2
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT2H
-DESCRIPTION:Tra due ore: Sara Errani / Jasmine Paolini vs Ellen Perez / Dem
- i  Schuurs
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-186547@italian-tennis-calendar
