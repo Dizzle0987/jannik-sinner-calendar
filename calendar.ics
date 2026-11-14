@@ -1283,6 +1283,25 @@ DESCRIPTION:Tra due ore: Sara Errani / Jasmine Paolini vs Guo Hanyu / Krist
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:espn-186785@italian-tennis-calendar
+DTSTAMP:20261114T232840Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261117
+SUMMARY:Lucia Bronzetti vs Alicia Herrero Linana
+LOCATION:Colina\, Chile
+STATUS:TENTATIVE
+SEQUENCE:0
+TRANSP:TRANSPARENT
+CATEGORIES:LP Open by IND\,WTA
+X-TENNIS-SEASON:2026
+DESCRIPTION:LP Open by IND - Round 1\nIn programma\; orario da confermare\n
+ Superficie e programma soggetti agli aggiornamenti del torneo\nCopertura T
+ V non ancora confermata\nDati partita: ESPN\; verificare le fonti ufficial
+ i del torneo
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/904-2026/co
+ mpetitionType/2
+END:VEVENT
+BEGIN:VEVENT
 UID:espn-187510@italian-tennis-calendar
 DTSTAMP:20261112T191252Z
 DTSTART;VALUE=DATE:20261116
