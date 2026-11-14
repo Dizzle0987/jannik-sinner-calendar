@@ -1241,45 +1241,46 @@ URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/382-2026/co
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-186547@italian-tennis-calendar
-DTSTAMP:20261113T003421Z
-DTSTART:20261113T160000Z
-DTEND:20261113T190000Z
+DTSTAMP:20261114T080911Z
+DTSTART:20261113T160500Z
+DTEND:20261113T190500Z
 SUMMARY:Lorenzo Musetti vs Taylor Fritz
 LOCATION:Stockholm\, Sweden\, Center Court
 STATUS:CONFIRMED
-SEQUENCE:0
+SEQUENCE:1
 TRANSP:TRANSPARENT
 CATEGORIES:Bybit Stockholm Open\,ATP
 X-TENNIS-SEASON:2026
-DESCRIPTION:Bybit Stockholm Open - Semifinal\nIn programma\nSuperficie e pr
- ogramma soggetti agli aggiornamenti del torneo\nCopertura TV non ancora co
- nfermata\nDati partita: ESPN\; verificare le fonti ufficiali del torneo
+DESCRIPTION:Bybit Stockholm Open - Semifinal\nConclusa: sconfitta Lorenzo M
+ usetti 4-6 2-6\nSuperficie e programma soggetti agli aggiornamenti del tor
+ neo\nDati partita: ESPN\; verificare le fonti ufficiali del torneo
 URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/148-2026/co
  mpetitionType/1
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT2H
-DESCRIPTION:Tra due ore: Lorenzo Musetti vs Taylor Fritz
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-187443@italian-tennis-calendar
-DTSTAMP:20261113T153145Z
-DTSTART;VALUE=DATE:20261114
-DTEND;VALUE=DATE:20261115
-SUMMARY:Sara Errani / Jasmine Paolini - prossimo turno
-LOCATION:Indian Wells\, USA
-STATUS:TENTATIVE
-SEQUENCE:0
+DTSTAMP:20261114T080911Z
+DTSTART:20261115T003000Z
+DTEND:20261115T033000Z
+SUMMARY:Sara Errani / Jasmine Paolini vs Guo Hanyu / Kristina Mladenovic
+LOCATION:Indian Wells\, USA\, Indian Wells Tennis Garden
+STATUS:CONFIRMED
+SEQUENCE:1
 TRANSP:TRANSPARENT
 CATEGORIES:FAGE WTA Finals Indian Wells\,WTA\,Doppio
 X-TENNIS-SEASON:2026
-DESCRIPTION:FAGE WTA Finals Indian Wells - Semifinal\nIn programma\; avvers
- ari\, data e orario da confermare\nSuperficie e programma soggetti agli ag
- giornamenti del torneo\nCopertura TV non ancora confermata\nDati partita:
-  ESPN\; verificare le fonti ufficiali del torneo
+DESCRIPTION:FAGE WTA Finals Indian Wells - Semifinal\nIn programma\nSuperfi
+ cie e programma soggetti agli aggiornamenti del torneo\nCopertura TV non a
+ ncora confermata\nDati partita: ESPN\; verificare le fonti ufficiali del t
+ orneo
 URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/382-2026/co
  mpetitionType/2
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT2H
+DESCRIPTION:Tra due ore: Sara Errani / Jasmine Paolini vs Guo Hanyu / Krist
+ ina Mladenovic
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-187510@italian-tennis-calendar
