@@ -1298,71 +1298,75 @@ URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/382-2026/co
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-187512@italian-tennis-calendar
-DTSTAMP:20261116T194954Z
+DTSTAMP:20261117T110835Z
 DTSTART:20261116T195500Z
 DTEND:20261116T225500Z
 SUMMARY:Flavio Cobolli vs Daniil Medvedev
 LOCATION:Turin\, Italy\, Inalpi Arena
 STATUS:CONFIRMED
-SEQUENCE:1
+SEQUENCE:2
+TRANSP:TRANSPARENT
+CATEGORIES:Nitto ATP Finals\,ATP
+X-TENNIS-SEASON:2026
+DESCRIPTION:Nitto ATP Finals - Group Stage\nConclusa: sconfitta Flavio Cobo
+ lli 6-7(4) 3-6\nSuperficie e programma soggetti agli aggiornamenti del tor
+ neo\nDati partita: ESPN\; verificare le fonti ufficiali del torneo
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/339-2026/co
+ mpetitionType/3
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-186785@italian-tennis-calendar
+DTSTAMP:20261117T110835Z
+DTSTART:20261117T153000Z
+DTEND:20261117T183000Z
+SUMMARY:Lucia Bronzetti vs Alicia Herrero Linana
+LOCATION:Colina\, Chile\, Grandstand
+STATUS:CONFIRMED
+SEQUENCE:2
+TRANSP:TRANSPARENT
+CATEGORIES:LP Open by IND\,WTA
+X-TENNIS-SEASON:2026
+DESCRIPTION:LP Open by IND - Round 1\nIn programma\nSuperficie e programma
+  soggetti agli aggiornamenti del torneo\nCopertura TV non ancora confermat
+ a\nDati partita: ESPN\; verificare le fonti ufficiali del torneo
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/904-2026/co
+ mpetitionType/2
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT2H
+DESCRIPTION:Tra due ore: Lucia Bronzetti vs Alicia Herrero Linana
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-187514@italian-tennis-calendar
+DTSTAMP:20261117T110835Z
+DTSTART:20261118T193000Z
+DTEND:20261118T223000Z
+SUMMARY:Flavio Cobolli vs Frances Tiafoe
+LOCATION:Turin\, Italy\, Inalpi Arena
+STATUS:CONFIRMED
+SEQUENCE:3
 TRANSP:TRANSPARENT
 CATEGORIES:Nitto ATP Finals\,ATP
 X-TENNIS-SEASON:2026
 DESCRIPTION:Nitto ATP Finals - Group Stage\nIn programma\nSuperficie e prog
- ramma soggetti agli aggiornamenti del torneo\nCopertura TV non ancora conf
- ermata\nDati partita: ESPN\; verificare le fonti ufficiali del torneo
+ ramma soggetti agli aggiornamenti del torneo\nDove vederla:\n🇮🇹 Ital
+ ia: SuperTennis Plus — GRATIS\nFonte TV: https://plus.supertennis.tv/liv
+ e\nDati partita: ESPN\; verificare le fonti ufficiali del torneo
 URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/339-2026/co
  mpetitionType/3
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT2H
-DESCRIPTION:Tra due ore: Flavio Cobolli vs Daniil Medvedev
+DESCRIPTION:Tra due ore: Flavio Cobolli vs Frances Tiafoe
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:espn-186785@italian-tennis-calendar
-DTSTAMP:20261116T093109Z
-DTSTART;VALUE=DATE:20261117
-DTEND;VALUE=DATE:20261118
-SUMMARY:Lucia Bronzetti vs Alicia Herrero Linana
-LOCATION:Colina\, Chile
-STATUS:TENTATIVE
-SEQUENCE:1
-TRANSP:TRANSPARENT
-CATEGORIES:LP Open by IND\,WTA
-X-TENNIS-SEASON:2026
-DESCRIPTION:LP Open by IND - Round 1\nIn programma\; orario da confermare\n
- Superficie e programma soggetti agli aggiornamenti del torneo\nCopertura T
- V non ancora confermata\nDati partita: ESPN\; verificare le fonti ufficial
- i del torneo
-URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/904-2026/co
- mpetitionType/2
-END:VEVENT
-BEGIN:VEVENT
 UID:espn-187510@italian-tennis-calendar
-DTSTAMP:20261116T093109Z
-DTSTART;VALUE=DATE:20261118
-DTEND;VALUE=DATE:20261119
+DTSTAMP:20261117T110835Z
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261120
 SUMMARY:Flavio Cobolli vs Carlos Alcaraz
-LOCATION:Turin\, Italy
-STATUS:TENTATIVE
-SEQUENCE:1
-TRANSP:TRANSPARENT
-CATEGORIES:Nitto ATP Finals\,ATP
-X-TENNIS-SEASON:2026
-DESCRIPTION:Nitto ATP Finals - Group Stage\nIn programma\; orario da confer
- mare\nSuperficie e programma soggetti agli aggiornamenti del torneo\nCoper
- tura TV non ancora confermata\nDati partita: ESPN\; verificare le fonti uf
- ficiali del torneo
-URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/339-2026/co
- mpetitionType/3
-END:VEVENT
-BEGIN:VEVENT
-UID:espn-187514@italian-tennis-calendar
-DTSTAMP:20261116T194954Z
-DTSTART;VALUE=DATE:20261118
-DTEND;VALUE=DATE:20261119
-SUMMARY:Flavio Cobolli vs Frances Tiafoe
 LOCATION:Turin\, Italy
 STATUS:TENTATIVE
 SEQUENCE:2
