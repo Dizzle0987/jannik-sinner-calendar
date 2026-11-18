@@ -1316,26 +1316,21 @@ URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/339-2026/co
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-186785@italian-tennis-calendar
-DTSTAMP:20261117T110835Z
-DTSTART:20261117T153000Z
-DTEND:20261117T183000Z
+DTSTAMP:20261118T182215Z
+DTSTART:20261117T155000Z
+DTEND:20261117T185000Z
 SUMMARY:Lucia Bronzetti vs Alicia Herrero Linana
 LOCATION:Colina\, Chile\, Grandstand
 STATUS:CONFIRMED
-SEQUENCE:2
+SEQUENCE:3
 TRANSP:TRANSPARENT
 CATEGORIES:LP Open by IND\,WTA
 X-TENNIS-SEASON:2026
-DESCRIPTION:LP Open by IND - Round 1\nIn programma\nSuperficie e programma
-  soggetti agli aggiornamenti del torneo\nCopertura TV non ancora confermat
- a\nDati partita: ESPN\; verificare le fonti ufficiali del torneo
+DESCRIPTION:LP Open by IND - Round 1\nConclusa: vittoria Lucia Bronzetti 6-
+ 3 6-1\nSuperficie e programma soggetti agli aggiornamenti del torneo\nDati
+  partita: ESPN\; verificare le fonti ufficiali del torneo
 URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/904-2026/co
  mpetitionType/2
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT2H
-DESCRIPTION:Tra due ore: Lucia Bronzetti vs Alicia Herrero Linana
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-187514@italian-tennis-calendar
@@ -1362,14 +1357,33 @@ DESCRIPTION:Tra due ore: Flavio Cobolli vs Frances Tiafoe
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:espn-187510@italian-tennis-calendar
-DTSTAMP:20261117T110835Z
+UID:espn-186809@italian-tennis-calendar
+DTSTAMP:20261118T182215Z
 DTSTART;VALUE=DATE:20261119
 DTEND;VALUE=DATE:20261120
+SUMMARY:Lucia Bronzetti vs Carole Monnet
+LOCATION:Colina\, Chile
+STATUS:TENTATIVE
+SEQUENCE:0
+TRANSP:TRANSPARENT
+CATEGORIES:LP Open by IND\,WTA
+X-TENNIS-SEASON:2026
+DESCRIPTION:LP Open by IND - Round 2\nIn programma\; orario da confermare\n
+ Superficie e programma soggetti agli aggiornamenti del torneo\nCopertura T
+ V non ancora confermata\nDati partita: ESPN\; verificare le fonti ufficial
+ i del torneo
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/904-2026/co
+ mpetitionType/2
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-187510@italian-tennis-calendar
+DTSTAMP:20261118T182215Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
 SUMMARY:Flavio Cobolli vs Carlos Alcaraz
 LOCATION:Turin\, Italy
 STATUS:TENTATIVE
-SEQUENCE:2
+SEQUENCE:3
 TRANSP:TRANSPARENT
 CATEGORIES:Nitto ATP Finals\,ATP
 X-TENNIS-SEASON:2026
