@@ -21,6 +21,17 @@ const PLAYERS = new Map([
   ["Lucia Bronzetti", "wta"],
 ]);
 
+const OFFICIAL_SCHEDULE_OVERRIDES = new Map([
+  ["187510", {
+    tournament: "Nitto ATP Finals",
+    italian: "Flavio Cobolli",
+    opponent: "Carlos Alcaraz",
+    start: "2026-11-20T13:00:00Z",
+    source: "https://www.nittoatpfinals.com/en/news/nitto-atp-finals-2026-schedule",
+    provider: "ATP",
+  }],
+]);
+
 const pad = value => String(value).padStart(2, "0");
 const compactUtc = date => `${date.getUTCFullYear()}${pad(date.getUTCMonth() + 1)}${pad(date.getUTCDate())}T${pad(date.getUTCHours())}${pad(date.getUTCMinutes())}${pad(date.getUTCSeconds())}Z`;
 const apiDate = date => `${date.getUTCFullYear()}${pad(date.getUTCMonth() + 1)}${pad(date.getUTCDate())}`;
@@ -401,6 +412,24 @@ async function fetchScoreboards(now) {
   };
 }
 
+function applyOfficialSchedule(record) {
+  const official = OFFICIAL_SCHEDULE_OVERRIDES.get(record.id);
+  if (!official
+    || record.tournament !== official.tournament
+    || record.italian !== official.italian
+    || record.opponent !== official.opponent) return record;
+  const start = new Date(official.start);
+  return {
+    ...record,
+    start,
+    date: localDate(start),
+    timeValid: true,
+    url: official.source,
+    scheduleProvider: official.provider,
+    scheduleSource: official.source,
+  };
+}
+
 function buildEvent(record, { uid, stamp, sequence }) {
   const broadcast = record.completed ? null : television(record);
   const broadcastLines = record.completed
@@ -424,6 +453,7 @@ function buildEvent(record, { uid, stamp, sequence }) {
           ? `In programma; ${record.doubles ? "avversari" : record.league === "wta" ? "avversaria" : "avversario"}, data e orario da confermare`
         : record.timeValid ? "In programma" : "In programma; orario da confermare",
     "Superficie e programma soggetti agli aggiornamenti del torneo",
+    ...(record.scheduleSource ? [`Orario ufficiale: ${record.scheduleProvider}`, `Fonte orario: ${record.scheduleSource}`] : []),
     ...broadcastLines,
     "Dati partita: ESPN; verificare le fonti ufficiali del torneo",
   ].join("\n");
@@ -582,7 +612,7 @@ const scoreboard = await fetchScoreboards(now);
 const savedSeason = Number(unfold(oldCalendar).match(/^X-CURRENT-TENNIS-SEASON:(\d{4})$/m)?.[1]);
 const sourceSeason = scoreboard.activeSeasons.length ? Math.max(...scoreboard.activeSeasons) : 0;
 const currentSeason = Math.max(savedSeason || fallbackSeason(now), sourceSeason);
-const records = scoreboard.records.filter(record => record.season >= currentSeason);
+const records = scoreboard.records.map(applyOfficialSchedule).filter(record => record.season >= currentSeason);
 await attachVerifiedFreeBroadcasts(records, now);
 
 const newCalendar = updateCalendar(oldCalendar, records, now, currentSeason);
