@@ -1370,22 +1370,21 @@ URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/904-2026/co
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-187510@italian-tennis-calendar
-DTSTAMP:20261119T232320Z
+DTSTAMP:20261120T124639Z
 DTSTART:20261120T130000Z
 DTEND:20261120T160000Z
 SUMMARY:Flavio Cobolli vs Carlos Alcaraz
 LOCATION:Turin\, Italy\, Inalpi Arena
 STATUS:CONFIRMED
-SEQUENCE:5
+SEQUENCE:6
 TRANSP:TRANSPARENT
 CATEGORIES:Nitto ATP Finals\,ATP
 X-TENNIS-SEASON:2026
 DESCRIPTION:Nitto ATP Finals - Group Stage\nIn programma\nSuperficie e prog
  ramma soggetti agli aggiornamenti del torneo\nOrario ufficiale: ATP\nFonte
   orario: https://www.nittoatpfinals.com/en/news/nitto-atp-finals-2026-sche
- dule\nDove vederla:\n🇮🇹 Italia: SuperTennis Plus — GRATIS\nFonte T
- V: https://plus.supertennis.tv/live\nDati partita: ESPN\; verificare le fo
- nti ufficiali del torneo
+ dule\nCopertura TV non ancora confermata\nDati partita: ESPN\; verificare
+  le fonti ufficiali del torneo
 URL:https://www.nittoatpfinals.com/en/news/nitto-atp-finals-2026-schedule
 BEGIN:VALARM
 ACTION:DISPLAY
