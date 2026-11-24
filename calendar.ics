@@ -1370,49 +1370,75 @@ URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/904-2026/co
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-187510@italian-tennis-calendar
-DTSTAMP:20261120T124639Z
+DTSTAMP:20261124T181936Z
 DTSTART:20261120T130000Z
 DTEND:20261120T160000Z
 SUMMARY:Flavio Cobolli vs Carlos Alcaraz
 LOCATION:Turin\, Italy\, Inalpi Arena
 STATUS:CONFIRMED
-SEQUENCE:6
+SEQUENCE:7
 TRANSP:TRANSPARENT
 CATEGORIES:Nitto ATP Finals\,ATP
 X-TENNIS-SEASON:2026
-DESCRIPTION:Nitto ATP Finals - Group Stage\nIn programma\nSuperficie e prog
- ramma soggetti agli aggiornamenti del torneo\nOrario ufficiale: ATP\nFonte
-  orario: https://www.nittoatpfinals.com/en/news/nitto-atp-finals-2026-sche
- dule\nCopertura TV non ancora confermata\nDati partita: ESPN\; verificare
-  le fonti ufficiali del torneo
+DESCRIPTION:Nitto ATP Finals - Group Stage\nConclusa: sconfitta Flavio Cobo
+ lli 4-6 1-6\nSuperficie e programma soggetti agli aggiornamenti del torneo
+ \nOrario ufficiale: ATP\nFonte orario: https://www.nittoatpfinals.com/en/n
+ ews/nitto-atp-finals-2026-schedule\nDati partita: ESPN\; verificare le fon
+ ti ufficiali del torneo
 URL:https://www.nittoatpfinals.com/en/news/nitto-atp-finals-2026-schedule
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT2H
-DESCRIPTION:Tra due ore: Flavio Cobolli vs Carlos Alcaraz
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:espn-186800@italian-tennis-calendar
-DTSTAMP:20261119T232320Z
-DTSTART:20261120T163000Z
-DTEND:20261120T193000Z
+DTSTAMP:20261124T181936Z
+DTSTART:20261120T172500Z
+DTEND:20261120T202500Z
 SUMMARY:Lucia Bronzetti vs Valeriya Strakhova
+LOCATION:Colina\, Chile\, Center Court
+STATUS:CONFIRMED
+SEQUENCE:1
+TRANSP:TRANSPARENT
+CATEGORIES:LP Open by IND\,WTA
+X-TENNIS-SEASON:2026
+DESCRIPTION:LP Open by IND - Quarterfinal\nConclusa: vittoria Lucia Bronzet
+ ti 6-4 6-2\nSuperficie e programma soggetti agli aggiornamenti del torneo\
+ nDati partita: ESPN\; verificare le fonti ufficiali del torneo
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/904-2026/co
+ mpetitionType/2
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-186811@italian-tennis-calendar
+DTSTAMP:20261124T181936Z
+DTSTART:20261121T200500Z
+DTEND:20261121T230500Z
+SUMMARY:Lucia Bronzetti vs Leyre Romero Gormaz
 LOCATION:Colina\, Chile\, Center Court
 STATUS:CONFIRMED
 SEQUENCE:0
 TRANSP:TRANSPARENT
 CATEGORIES:LP Open by IND\,WTA
 X-TENNIS-SEASON:2026
-DESCRIPTION:LP Open by IND - Quarterfinal\nIn programma\nSuperficie e progr
- amma soggetti agli aggiornamenti del torneo\nCopertura TV non ancora confe
- rmata\nDati partita: ESPN\; verificare le fonti ufficiali del torneo
+DESCRIPTION:LP Open by IND - Semifinal\nConclusa: sconfitta Lucia Bronzetti
+  3-6 6-3 5-7\nSuperficie e programma soggetti agli aggiornamenti del torne
+ o\nDati partita: ESPN\; verificare le fonti ufficiali del torneo
 URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/904-2026/co
  mpetitionType/2
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT2H
-DESCRIPTION:Tra due ore: Lucia Bronzetti vs Valeriya Strakhova
-END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:espn-186818@italian-tennis-calendar
+DTSTAMP:20261124T181936Z
+DTSTART:20261124T155500Z
+DTEND:20261124T185500Z
+SUMMARY:Lucia Bronzetti vs Alicia Herrero Linana
+LOCATION:Buenos Aires\, Argentina\, Cancha 3
+STATUS:CONFIRMED
+SEQUENCE:0
+TRANSP:TRANSPARENT
+CATEGORIES:IEB+ Argentina Open\,WTA
+X-TENNIS-SEASON:2026
+DESCRIPTION:IEB+ Argentina Open - Round 1\nConclusa: sconfitta Lucia Bronze
+ tti 1-6 2-6\nSuperficie e programma soggetti agli aggiornamenti del torneo
+ \nDati partita: ESPN\; verificare le fonti ufficiali del torneo
+URL:https://www.espn.com/tennis/scoreboard/tournament/_/eventId/867-2026/co
+ mpetitionType/2
 END:VEVENT
 END:VCALENDAR
