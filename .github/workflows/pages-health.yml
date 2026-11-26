@@ -1,0 +1,39 @@
+name: Controlla pubblicazione Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - index.html
+      - calendar.ics
+      - .github/scripts/check-pages.mjs
+      - .github/workflows/pages-health.yml
+  workflow_run:
+    workflows: ["Aggiorna calendario automaticamente"]
+    branches: [main]
+    types: [completed]
+  schedule:
+    - cron: "37 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: italian-tennis-pages-health
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: false
+      - name: Verifica homepage e feed
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node .github/scripts/check-pages.mjs
